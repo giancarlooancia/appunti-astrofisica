@@ -1,0 +1,95 @@
+\documentclass[a4paper, 11pt]{book} %10pt 11pt o 12pt permessi
+\usepackage[T1]{fontenc} % codifica dei font
+\usepackage[utf8]{inputenc} % lettere accentate da tastiera
+\usepackage[italian]{babel} % lingua del documento
+
+\usepackage{indentfirst} % indenta primo capoverso di paragrafo
+\usepackage{microtype} % migliora riempimento righe - carica sempre
+\usepackage{appendix}
+\usepackage{emptypage}
+
+\usepackage[]{layaureo} % con big nell'argomento bordi più larghi ancora
+
+\usepackage{lipsum} % genera testo fittizio
+\usepackage{comment}
+\usepackage{quoting} % per le citazioni in display
+\quotingsetup{font=small} % serve per mantenere lo stesso stile in tutte le citazioni
+
+\usepackage{amsmath} % per la matematica
+\usepackage{amssymb} % per la matematica
+\usepackage{mathtools} % per valore assoluto e norma
+\usepackage{braket} % per i comandi \Set e \Bra e simili
+\usepackage{amsthm} % per teoremi e dimostrazioni
+
+\usepackage[version=4]{mhchem} %CHIMICA
+
+\usepackage{siunitx} % per unità di misura SI
+\usepackage{textcomp} % SOLO SE si usano gradi Celsius
+
+\usepackage{booktabs} % per tabelle
+\usepackage{caption} % per tabelle
+\usepackage{graphicx} % per figure
+\usepackage{subfig} % per sottofigure
+
+\usepackage{hyperref} % metti alla fine
+\usepackage{impostazioni} % per ultimo
+
+\begin{document}
+
+\frontmatter
+\author{Giancarlo Oancia}
+\title{Appunti di Astrofisica}
+\date{A.A 2022/2023} %lasciando l'argomento vuoto NON viene messa la data
+%\maketitle
+\tableofcontents
+
+\mainmatter
+\chapter{Setting the stage}
+\input{capitoli/setting/introduzione.tex}
+\input{capitoli/setting/unità.tex}
+
+\chapter{Meccanismi di emissione}
+\input{capitoli/emissione/introduzione-astrofisica-osservativa.tex}
+\input{capitoli/emissione/trasporto-radiativo.tex}
+\input{capitoli/emissione/corpo-nero.tex}
+\input{capitoli/emissione/flusso.tex}
+\input{capitoli/emissione/magnitudine.tex}
+\input{capitoli/emissione/colore.tex}
+
+\chapter{Struttura della stelle}
+\input{capitoli/stelle/modelli-stellari.tex}
+\input{capitoli/stelle/equilibrio-idrostatico.tex}
+\input{capitoli/stelle/continuità-massa.tex}
+\input{capitoli/stelle/equazione-stato.tex}
+\input{capitoli/stelle/bilancio-energetico.tex}
+\input{capitoli/stelle/gradiente-radiativo.tex}
+\input{capitoli/stelle/opacità.tex}
+\input{capitoli/stelle/reazioni-termonucleari.tex}
+
+\chapter{Modello di atmosfera stellare}
+\input{capitoli/atmosfera/profondita-ottica.tex}
+\input{capitoli/atmosfera/righe-spettrali.tex}
+
+
+\chapter{Evoluzione Stellare}
+\input{capitoli/evoluzione/modello-evoluzione.tex}
+\input{capitoli/evoluzione/pre-main-sequence.tex}
+\input{capitoli/evoluzione/main-sequence.tex}
+\input{capitoli/evoluzione/post-main-sequence.tex}
+
+\chapter{Galassie}
+
+\chapter{Ammassi di galassie}
+
+\chapter{Introduzione alla cosmologia}
+
+%\chapter{Da fare}
+%\input{da-fare.tex}
+
+\appendix
+\chapter{Appendici}
+\input{capitoli/appendici/dati-numerici.tex}
+\input{capitoli/appendici/unità.tex}
+\input{capitoli/appendici/conto-trasporto-radiativo.tex}
+
+\end{document}

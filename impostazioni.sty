@@ -1,0 +1,74 @@
+\begin{comment}
+Qui vanno le impostazioni del documento, delle componenti e altre cose tecniche brutte da vedere prima dell'inizio del documento nel main. Va incluso come fosse un pacchetto e per ultimo.
+\end{comment}
+
+%opzioni sui collegamenti ipertestuali
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    }
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}} % in questo modo le note a piè di pagina sono contrassegnate da un simbolo e non da un numero
+
+% serie di comandi per insiemi numerici
+\newcommand{\numberset}{\mathbb}
+\newcommand{\N}{\numberset{N}}
+\newcommand{\R}{\numberset{R}}
+\newcommand{\C}{\numberset{C}}
+
+% Definisco comandi per valore assoluto e norma del pacchetto mathtools
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norma}{\lVert}{\rVert}
+
+% Definisco gli operatori che mi servono nel corso del testo che sto scrivendo
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\Realpart}{Re} % ridefinisco parte reale
+\renewcommand{\Re}{\Realpart} % ridefinisco parte reale (altrimenti dà simbolo in gotico)
+%variante asterisco serve per operatori che hanno indici scritto come nei limiti
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% ALTRE IMPOSTAZIONI PER LE FORMULE
+\newcommand{\bcdot}{\boldsymbol{\cdot}} % così \bcdot è prodotto scalare in grassetto
+\newcommand{\ud}{\mathop{}\!\mathrm{d}} % così \ud è la d del differenziale in un integrale
+
+% impostazioni per TEOREMI, DEFINIZIONI e ANNOTAZIONI -> va fatto a mano
+\theoremstyle{plain}
+\newtheorem{teorema}{Teorema}
+
+\theoremstyle{definition}
+\newtheorem{definizione}{Definizione}
+
+\theoremstyle{remark}
+\newtheorem{osservazione}{Osservazione}
+
+\theoremstyle{plain}
+\newtheorem{murphy}{Murphy}[section] % con [section] la numerazione ha preceduto il numero del paragrafo
+
+% impostazioni per tabelle e grafici
+\captionsetup{tableposition=top,figureposition=bottom,font=small} % impostazioni didascalie, vedi arte Latex di Pantieri
+\captionsetup{format=hang,labelfont={sf,bf}} % NON OBBLIGATORIO -> VEDI SE TI PIACCIONO LE DIDASCALIE E IN CASO ELIMINA
+
+\DeclareSIUnit\solarmass{M\ensuremath{_\odot}}
+\DeclareSIUnit\solarradius{R\ensuremath{_\odot}}
+\DeclareSIUnit\solarluminosity{L\ensuremath{_\odot}}
+
+\DeclareMathOperator{\EBV}{E(B-V)}
+\DeclareMathOperator{\kb}{k_B}
+
+% IMPOSTAZIONI CHIMICA
+\makeatletter
+\newcounter{reaction}
+\renewcommand\thereaction{R\,\thechapter.\arabic{reaction}}
+\@addtoreset{reaction}{chapter}
+\newcommand\reactiontag%
+{\refstepcounter{reaction}\tag{\thereaction}}
+\newcommand\reaction@[2][]%
+{\begin{equation}\ce{#2}%
+\ifx\@empty#1\@empty\else\label{#1}\fi%
+\reactiontag\end{equation}}
+\newcommand\reaction@nonumber[1]%
+{\begin{equation*}\ce{#1}\end{equation*}}
+\newcommand\reaction%
+{\@ifstar{\reaction@nonumber}{\reaction@}}
+\makeatother

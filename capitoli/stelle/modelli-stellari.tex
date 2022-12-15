@@ -1,0 +1,72 @@
+\section{Modelli stellari}\label{sec:modelli-stellari}
+Una \emph{stella} è una sfera auto-gravitante di gas in equilibrio idrostatico, in cui, dunque, la forza di pressione del gas eguaglia la forza di gravità. I parametri principali con cui si descrive una stella sono la sua \emph{massa} $M$ e la sua \emph{composizione chimica}. Di seguito è riportato il modo usuale in cui si esprime quest'ultima:
+\begin{description}\label{tab:composizione-chimica}
+    \item[X] Frazione in massa dell'\emph{idrogeno}.
+    \item[Y] Frazione in massa dell'\emph{elio}.
+    \item[Z] Frazione in massa degli elementi più pesanti dell'elio, ovvero dei \emph{metalli}.
+\end{description}
+Per il Sole, ad esempio, si ha:
+\[
+    X=0.70 \qquad Y=0.28 \qquad Z=0.02
+\]
+
+Una stella è caratterizzata da tre regioni principali:
+\begin{description}
+    \item[Nucleo] Dove viene prodotta l'energia.
+    \item[Inviluppo] Dove l'energia è trasportata in superficie. Vi sono zone radiative e convettive.
+    \item[Atmosfera] è a sua volta suddivisa in tre zone
+    \begin{description}
+        \item[Fotosfera] Emette la maggior parte della luce. Sotto la fotosfera la stella è opaca.
+        \item[Cromosfera] Ciò che vediamo durante un'eclissi.
+        \item[Corona] Strato più esterno della stella. Può essere visto durante un'eclissi.
+    \end{description}
+\end{description}
+
+Di una stella, osserviamo la magnitudine e il colore che vengono dall'atmosfera e per interpretare le misurazioni e inferire la sua struttura interna, è necessario un \emph{modello stellare}. Esso prenderà in input la massa e la composizione chimica e darà in output la luminosità e la temperatura superficiale. Queste, tuttavia, non sono direttamente osservabili, quindi, dovrò tenere conto di tutti i fenomeni fisici visti in precedenza e ricondurmi a tali grandezze attraverso la \emph{magnitudine} e il \emph{colore} per confrontare teoria e dati sperimentali. Di seguito sono esposte le sette equazioni necessarie per un modello stellare esaustivo:
+\begin{enumerate}
+    \item \emph{Equilibrio idrostatico}:
+    \[
+    \dfrac{\ud P(r)}{\ud r} = -\dfrac{G M(r)}{r^2} \rho(r)
+    \]
+    \item \emph{Continuità di massa}:
+    \[
+    \dfrac{\ud M(r)}{\ud r} = 4 \pi r^2 \rho(r)
+    \]
+    \item \emph{Equazione di stato}:
+    \[
+    P = \dfrac{aT^4}{3} + \dfrac{k \rho T}{\mu_i H} + 
+    \begin{cases} 
+    \frac{k \rho T}{\mu_e H} \\ 
+    k_1 \rho^{5/3} \\ 
+    k_2 \rho^{4/3}
+    \end{cases}
+    \]
+    \item \emph{Bilancio energetico}:
+    \[
+    \dfrac{\ud L(r)}{\ud r} = 4 \pi r^2 \rho(r) \epsilon
+    \]
+    \item \emph{Gradiente radiativo e criterio di Schwarzschild}:
+    \[
+    \dfrac{\ud T}{\ud r}\Big|_\textup{rad} = - \dfrac{3 \kappa \rho}{4 \pi r^2} \dfrac{L(r)}{4 a c T^3}
+    \]
+    \[
+    \text{se} \quad \abs*{\dfrac{\ud T}{\ud r}}_\textup{rad} > \abs*{\dfrac{\ud T}{\ud r}}_\textup{ad} \implies \text{c'è convezione.}
+    \]
+    \item \emph{Opacità}:
+    \[
+    \kappa = \kappa(\rho, T) 
+    \begin{cases} 
+    \kappa_{BF} \propto 10^{25} Z(1 + X) \frac{\rho}{T^{3.5}} \\ 
+    \kappa_{FF} \propto 10^{22} (X+Y)(1+X) \frac{\rho}{T^{3.5}} \\ 
+    \kappa_{E} \propto 0.2 (1+X) \\ 
+    \end{cases}
+    \]
+    \item \emph{Produzione di energia tramite reazioni termonucleari}:
+    \[
+    \epsilon = \epsilon(X, \rho, T) 
+    \begin{cases} \epsilon_{PP} = \epsilon_1 \rho X^2 T_6^\alpha \quad \alpha \in [3.5 - 6] \\ 
+    \epsilon_{CN} = \epsilon_2 \rho X X_{CN} T_6^\beta \quad \beta \in [13 - 20] \\ 
+    \epsilon_{3\alpha} = \epsilon_3 \rho^2 Y^3 T_8^\gamma \quad \gamma \in [20 - 30] \\
+    \end{cases}
+    \]
+\end{enumerate}
