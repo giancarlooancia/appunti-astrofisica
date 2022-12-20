@@ -1,5 +1,5 @@
 \section{Struttura delle galassie a spirale}\label{sec:struttura-delle-galassie-a-spirale}
-Analizziamo ora la struttura delle galassie a spirale: i dischi di spirale sono sempre in rotazione attorno al centro galattico. In quasi tutti i casi i bracci ruotano con bracci “trailing”, solo in pochissime galassie si hanno “leading arms” (fare riferimento alla figura \ref{fig:trailing-leading arms}): la forma a spirale quindi data dal materiale che viene trascinato dai bracci ma che si muove con velocità diverse. Infatti NON si ha rotazione rigida: la velocità angolare NON è la stessa in tutti i punti del disco. Si ha invece rotazione differenziale, quindi le stelle più vicine al centro ruotano con velocità più elevate; in genere la velocità tangenziale è la stessa indipendentemente dalla distanza dal centro, quindi le regioni più esterne hanno velocità angolare $\omega = V/r$ minore rispetto a quelle più vicine al centro. Questo significa che le stelle delle regioni più lontane dal centro impiegheranno decisamente più tempo per compiere un'orbita rispetto a quelle più vicine al centro.
+Analizziamo ora la struttura delle galassie a spirale: i dischi di spirale sono sempre in rotazione attorno al centro galattico. In quasi tutti i casi i bracci ruotano con bracci “trailing”, solo in pochissime galassie si hanno “leading arms” (fare riferimento alla figura~\ref{fig:trailing-leading arms}): la forma a spirale quindi data dal materiale che viene trascinato dai bracci ma che si muove con velocità diverse. Infatti NON si ha rotazione rigida: la velocità angolare NON è la stessa in tutti i punti del disco. Si ha invece rotazione differenziale, quindi le stelle più vicine al centro ruotano con velocità più elevate; in genere la velocità tangenziale è la stessa indipendentemente dalla distanza dal centro, quindi le regioni più esterne hanno velocità angolare $\omega = V/r$ minore rispetto a quelle più vicine al centro. Questo significa che le stelle delle regioni più lontane dal centro impiegheranno decisamente più tempo per compiere un'orbita rispetto a quelle più vicine al centro.
 
 \begin{figure}
     \centering
@@ -8,7 +8,7 @@ Analizziamo ora la struttura delle galassie a spirale: i dischi di spirale sono 
     \label{fig:trailing-leading arms}
 \end{figure}
 
-In seguito a questa osservazione nasce il cosiddetto "dilemma del winding", mostrato in figura \ref{fig:winding-dilemma}: se i bracci fossero fatti da materia, allora dovrebbero avvolgersi attorno al centro galattico in tempi scala più corti dell’età della galassia stessa (dopo poche decine di rotazioni). Questo però comporterebbe la perdita dei bracci, che risulterebbero tutti avvolti su se stessi, ma non è quello che noi osserviamo; infatti siamo in grado di osservare bracci a spirale anche per galassie molto antiche. La risposta quindi è che questo “arrotolamento” non c’è anche se è presente rotazione differenziale. Ma perché non c'è?
+In seguito a questa osservazione nasce il cosiddetto "dilemma del winding", mostrato in figura~\ref{fig:winding-dilemma}: se i bracci fossero fatti da materia, allora dovrebbero avvolgersi attorno al centro galattico in tempi scala più corti dell’età della galassia stessa (dopo poche decine di rotazioni). Questo però comporterebbe la perdita dei bracci, che risulterebbero tutti avvolti su se stessi, ma non è quello che noi osserviamo; infatti siamo in grado di osservare bracci a spirale anche per galassie molto antiche. La risposta quindi è che questo “arrotolamento” non c’è anche se è presente rotazione differenziale. Ma perché non c'è?
 
 \begin{figure}
     \centering
@@ -22,23 +22,3 @@ La soluzione a questo quesito è basata sulla teoria di onda di densità di Lin:
 Questo modello spiega anche perché si ha formazione stellare lungo i bracci: quando le stelle e i gas entrano nell’onda si crea una regione di compressione che, per il criterio di instabilità di Jeans TEMP (che dice che le stelle si formano più facilmente in regioni di alta densità), fa sì che la formazione stellare sia favorita.
 
 Un'altra cosa che a questo punto è naturale chiedersi è da cosa siano generate queste onde di densità? La risposta non è ancora chiara, ma si ipotizza che ci siano mancanze di simmetria iniziali nel disco, ad esempio legate al processo di formazione delle galassie, che prevedere l’interazione con altre galassie (quindi potrebbe esserci una galassia molto grande che interagisce con una piccolina a formare la galassia finale che in quella zona presenterà un zona a più alta densità).
-
-\section{Brillanza superficiale}
-Un altro parametro importante della galassie è la loro brillanza superficiale (surface brightness, SB): questa altro non è che la distribuzione bidimensionale della materia luminosa sul piano del cielo, quindi la magnitudine per unità di area. Come facciamo a calcolare i profili di brillanza superficiale? Per farlo si costruiscono le isofote (ossia anelli di profilo caratterizzata dalla stessa brillantezza), si calcola la brillanza in ogni anello e infine si plottano i profili di brillanza superficiale (magnitudine - raggio), rappresentati in figura \ref{fig:profili-brillanza}.
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.5 \textwidth]{immagini/profili-di-brillanza.png}
-    \caption{Profili di brillanza, costruiti plottando la magnitudine a raggi diversi (quindi studiando la magnitudine delle isofite).}
-    \label{fig:profili-brillanza}
-\end{figure}
-
-Si è osservato che quasi tutti i profili di brillanza delle galassie (sia ellittiche sia a spirale) seguono il profilo di Sersic, descritto dalla seguente equazione:
-
-\begin{equation*}
-    I(r) = I_0 \; e^{-b_n \big(\frac{r}{r_e}\big)^\frac{1}{n}}
-\end{equation*}
-
-in cui $I(r)$ è la brillantezza superficiale, $I_0$ è la brillantezza centrale, $r_e$ è il raggio effettivo (ossia il raggio contenente il 50\% della luce proiettata), $b_n$ una costante e $n$ è l'indice di concentrazione (compreso fra $1$ e $10$).
-
-Le galassie ellittiche sono caratterizzate da un cosiddetto "profilo Vaucoulerurs", corrispondente a n=4, mentre le galassie a spirale hanno un profilo di tipo esponenziale, corrispondente a n=1. 
