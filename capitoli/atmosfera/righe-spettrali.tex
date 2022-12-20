@@ -1,6 +1,6 @@
 \section{Righe Spettrali}\label{sec:righe-spettrali}
 
-\subsection{Opacità per l'atmosfera stellare}\label{sec:opacità-atmosfera}
+\subsection{Opacità per l'atmosfera stellare}\label{sec:opacita-atmosfera}
 Un parametro importante per la determinazione di un modello per l'atmosfera stellare è l'opacità, già discussa nel par.~\ref{sec:opacità}. Ripassiamo i concetti principali. I processi che determinano l'opacità di una struttura sono:
 \begin{description}
     \item[BB] discusso nel par.~\ref{sec:bound-bound}. Avviene a una determinata lunghezza d'onda, secondo l'eq.~\eqref{eq:lunghezza-BB}. È responsabile delle \emph{righe di assorbimento}, poiché determinano la mancanza di flusso a una determinata lunghezza d'onda.
@@ -16,7 +16,7 @@ In particolare, nelle atmosfere le temperature sono sufficientemente basse affin
 \subsection{Continuo spettrale e righe spettrali di assorbimento}
 
 \subsection{Classificazione spettrale delle stelle}
-Come visto nel par.~\ref{sec:opacità-atmosfera}, l'\emph{atmosfera} stellare è dove si formano il \emph{continuo spettrale} e le \emph{righe spettrali di assorbimento}. Le righe di assorbimento, in particolare, sono degli osservabili fondamentali perché è dalla loro intensità che possiamo misurare l'\emph{abbondanza} dei diversi elementi chimici. Si faccia attenzione al seguente fatto: la presenza o meno di una data riga spettrale \emph{non} dipende dalla presenza o meno di quel dato elemento, ma è fortemente modulata dalla \emph{temperatura}. Vediamo di chiarire il fatto.
+Come visto nel par.~\ref{sec:opacita-atmosfera}, l'\emph{atmosfera} stellare è dove si formano il \emph{continuo spettrale} e le \emph{righe spettrali di assorbimento}. Le righe di assorbimento, in particolare, sono degli osservabili fondamentali perché è dalla loro intensità che possiamo misurare l'\emph{abbondanza} dei diversi elementi chimici. Si faccia attenzione al seguente fatto: la presenza o meno di una data riga spettrale \emph{non} dipende dalla presenza o meno di quel dato elemento, ma è fortemente modulata dalla \emph{temperatura}. Vediamo di chiarire il fatto.
 
 Ovviamente, se un elemento non è presente nella struttura stellare, lo spettro non potrà mostrare le sue righe. Tuttavia, l'assenza di righe di un dato elemento \emph{non necessariamente} significa che quel dato elemento è assente: potrebbe esserci, ma la \emph{temperatura} non è tale da far manifestare le sue righe. Infatti, le righe di assorbimento sono dovute a fenomeni di eccitazioni o ionizzazioni della materia e, come noto,  il numero di stati eccitati o ionizzati dipende primariamente dalla temperatura. Se, ad esempio, la temperatura non è sufficientemente alta da far sì che tutti gli atomi di un dato elemento siano ionizzati, non potrò mai vedere la riga di assorbimento di tale elemento, anche se esso è presente.
 
@@ -104,14 +104,14 @@ Per ogni specie chimica, l'\emph{equazione di Saha} fornisce la percentuale di a
 dove:
 \begin{description}
     \item[$N_j$, $N_{j+1}$]: numero di atomi nello stato di ionizzazione $j$ e $j+1$, ovvero contigui.
-    \item[$P_e$]: pressione elettronica, ovvero esercitata dalla componente elettronica del gas.
+    \item[$P_e$]: pressione elettronica, ovvero esercitata dalla componente elettronica del gas. Si ricordi che siamo nelle atmosfere stellari, in cui il gas è sempre approssimabile come gas perfetto.
     \item[$\theta \equiv \frac{5040}{T} \si{eV^{-1}}$], con $T$ espressa in $\si{K}$.
     \item[$\chi_i$]: potenziale di ionizzazione dell'atomo ionizzato $j$--volte. ERRORE FORSE, NON DOVREBBE ESSERE CHI J??????
     \item[${U_j}(T)$, ${U_{j+1}}(T)$]: funzioni di partizione per gli stati di ionizzazione $j$ e $j+1$.
 \end{description}
 Si faccia molta attenzione a cosa si riferisce l'eq.~\eqref{eq:equazione-saha}. Essa \emph{non} permette di calcolare il numero di atomi in un certo stato di ionizzazione ( $N_j$ ) rispetto al numero totale ($N$) di atomi di quella specie, che sarebbe equivalente a $N_j / N$, tuttavia essa calcola il rapporto tra il numero di atomi in due stati di ionizzaione contigui ($j+1$ e $j$), equivalente a $N_{j+1} / N_j$. Per ottenere $N_j / N$ sono necessarie applicazioni successive dell'equazione di Saha tra due stati di ionizzazione contigui.
 
-\subsection{Frazione di atomi attivi}
+\subsection{Frazione di atomi attivi}\label{sec:frazione-atomi-attivi}
 In pratica, mettendo insieme le due equazioni, per ogni equazione chimica:
 \begin{itemize}
     \item l'equazione di Saha~\eqref{eq:equazione-saha} mi dice se, a quella data temperatura $T$ esistono atomi che non sono completamente ionizzati, cioè che hanno ancora elettroni legati
@@ -119,7 +119,45 @@ In pratica, mettendo insieme le due equazioni, per ogni equazione chimica:
 \end{itemize}
 Insieme, le eq.~\eqref{eq:equazione-saha} e~\eqref{eq:equazione-boltzmann} forniscono la \emph{frazione di atomi attivi} $N_a$ (che generano le righe spettrali) rispetto al totale di atomi di quella specie. È possibile misurare $N_a$ attraverso un'analisi spettroscopica delle righe spettrali, dunque, in definitiva, usando le equazioni di Saha e Boltzmann è possibile ricavare l'\emph{abbondanza} di quel dato elemento chimico. 
 
-\subsection{Velocità radiale}
+\subsection{Analisi delle righe spettrali}
+Come discusso nel par.~\ref{sec:opacita-atmosfera}, le linee spettrali sono originate dalle transizioni elettroni che di tipo bound--bound. Nelle righe spettrali sono contenute informazioni di cruciale importanza, tra cui le \emph{abbondanze chimiche} e la \emph{velocità radiale}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/righe-spettrali.png}
+    \caption{Misura di una riga spettrale e analisi per la determinazione della velocità radiale e delle abbondanze chimiche. La riga spettrale di una transizione elettronica B--B è misurata a lunghezza d'onda $\lambda_1$, confrontata con la lunghezza d'onda di laboratorio di tale transizione $\lambda_0$.}
+    \label{fig:righe-spettrali}
+    
+\end{figure}
+
+Per capire come si procede sperimentalmente all'analisi delle righe spettrali, consideriamo una situazione tipo, illustrata in fig.~\ref{fig:righe-spettrali}. Immaginiamo di misurare una riga spettrale corrispondente a una data transizione elettronica a una lunghezza d'onda $\lambda_1$, diversa, in generale, dalla lunghezza d'onda di laboratorio di tale transizione, $\lambda_0$. A causa dell'\emph{effetto Doppler}, la differenza tra la lunghezza d'onda misurata e quella di laboratorio è una misura diretta della \emph{velocità radiale} della stella. Infatti si ha:
+\begin{equation}\label{eq:effetto-doppler}
+    \dfrac{\lambda_1 - \lambda_0}{\lambda_0} = \dfrac{\Delta \lambda}{\lambda_0} = \dfrac{v_r}{c}
+\end{equation}
+
+Per ciò che concerne le \emph{abbondanze chimiche}, è necessario misurare l'\emph{intensità} delle righe spettrali prodotte dagli atomi della specie studiata attraverso transizioni BB. In particolare, l'intensità, come mostrato in fig.~\ref{fig:righe-spettrali}, è rappresentata dall'area sotto la curva dello spettro continuo. È tuttavia comunemente misurata in termini di \emph{larghezza equivalente}. La larghezza equivalente $W$ è la larghezza (in Armstrong) di un rettangolo di altezza unitaria e area uguale all'intensità della riga spettrale. Si può calcolare nella seguente maniera:
+\begin{equation}\label{eq:larghezza-equivalente}
+    W = \int \dfrac{F_c - F_\lambda}{F_c} \ud \lambda
+\end{equation} 
+dove $F$ rappresenta il flusso. In particolare $W$ è correlato con il numero di atomi per $\si{cm^2}$ che generano la transizione, ovvero con $N_a$, il numero di atomi attivi. Come è possibile osservare in figura~\ref{fig:righe-spettrali-numero-atomi}, la riga spettrale è tanto più profonda quanto maggiore è l'abbondanza dell'elemento considerato. Siccome la profondità della riga dipende dal numero di atomi attivi, anche $W$ dipenderà da $N_a$. In particolare è possibile osservare la loro correlazione in una \emph{curva di crescita}, mostrata in fig.~\ref{fig:curva-crescita}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/righe-spettrali-numero-atomi.png}
+    \caption{Correlazione tra la larghezza equivalente $W$ e il numero di atomi attivi $N_a$. La riga spettrale è tanto più profonda quanto maggiore è l'abbondanza dell'elemento considerato}
+    \label{fig:righe-spettrali-numero-atomi}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/curva-crescita.png}
+    \caption{}
+    \label{fig:curva-crescita}
+\end{figure}
+
 \subsection{Abbondanze chimiche}
+
+
 \subsubsection{Larghezza equivalente}
+
 \subsection{DA SCRIVERE Altre cose e Recap}
