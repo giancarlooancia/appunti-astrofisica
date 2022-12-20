@@ -1,8 +1,9 @@
-%\documentclass[a4paper, 11pt]{book} %10pt 11pt o 12pt permessi
-\documentclass[]{book}
+\documentclass[a4paper, 11pt]{book} %10pt 11pt o 12pt permessi
+%\documentclass{book}
 \usepackage[T1]{fontenc} % codifica dei font
 \usepackage[utf8]{inputenc} % lettere accentate da tastiera
 \usepackage[italian]{babel} % lingua del documento
+\usepackage{lipsum}
 
 \usepackage{indentfirst} % indenta primo capoverso di paragrafo
 \usepackage{microtype} % migliora riempimento righe - carica sempre
@@ -76,18 +77,19 @@
 \input{capitoli/atmosfera/profondita-ottica.tex}
 \input{capitoli/atmosfera/righe-spettrali.tex}
 
-
 \chapter{Evoluzione Stellare}
 \input{capitoli/evoluzione/modello-evoluzione.tex}
 \input{capitoli/evoluzione/pre-main-sequence.tex}
 \input{capitoli/evoluzione/main-sequence.tex}
 \input{capitoli/evoluzione/post-main-sequence.tex}
 
+
 \chapter{Galassie}
 \input{capitoli/galassie/Classificazione-di-Hubble.tex}
 \input{capitoli/galassie/Spettro-di-emissione-delle-galassie.tex}
 \input{capitoli/galassie/Struttura-delle-galassie-a-spirale.tex}
 \input{capitoli/galassie/Dinamica-interna.tex}
+
 
 \chapter{Ammassi di galassie}
 
@@ -101,5 +103,7 @@
 \input{capitoli/appendici/dati-numerici.tex}
 \input{capitoli/appendici/unità.tex}
 \input{capitoli/appendici/conto-trasporto-radiativo.tex}
+
+
 
 \end{document}
