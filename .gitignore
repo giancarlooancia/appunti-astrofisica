@@ -76,6 +76,8 @@ acs-*.bib
 # endnotes
 *.ent
 
+
+
 # fixme
 *.lox
 
@@ -257,6 +259,12 @@ pythontex-files-*/
 TSWLatexianTemp*
 
 ## Editors:
+
+# DS_Store
+*.DS_Store
+
+#vscode
+*.vscode
 # WinEdt
 *.bak
 *.sav
