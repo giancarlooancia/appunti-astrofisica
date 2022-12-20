@@ -12,14 +12,13 @@ Per avere una rappresentazione visiva dell'evoluzione, costruiamo quello che vie
     \centering
     \begin{tikzpicture}
         \begin{axis}[
-            title = Diagramma H-R,
-            axis x line=center,
-            axis y line=center,
-            xlabel = {$-log(T)$},
-            ylabel = {$log(\frac{L}{L_\odot})$},
-            yticklabels=\empty,
-            xticklabels=\empty
-            ]
+                title = Diagramma H-R,
+                axis x line=center,
+                axis y line=center,
+                xlabel = {$-log(T)$},
+                ylabel = {$log(\frac{L}{L_\odot})$},
+                yticklabels=\empty,
+                xticklabels=\empty
         \end{axis}
     \end{tikzpicture}
     \caption{La figura mostra un diagramma Hertzpsprung-Russell. Si noti che la temperatura, sull'asse delle ascisse, cresce verso sinistra e diminuisce verso destra e che il diagramma è in scala doppio logaritmica.}\label{fig:HR}
@@ -28,9 +27,9 @@ Per avere una rappresentazione visiva dell'evoluzione, costruiamo quello che vie
 Se il modello stellare considerato precedentemente ha una forma del tipo,
 \begin{center}
     \begin{tikzpicture} [
-        blu/.style={rectangle, draw=blue!60, fill=blue!5, very thick, minimum size=5mm},
-        red/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm},
-        green/.style={rectangle, draw=green!60, fill=green!5, very thick, minimum size=5mm},]
+            blu/.style={rectangle, draw=blue!60, fill=blue!5, very thick, minimum size=5mm},
+            red/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm},
+            green/.style={rectangle, draw=green!60, fill=green!5, very thick, minimum size=5mm},]
         \node[red](1){\footnotesize{Massa, X, Y , Z}};
         \node[blu](2)[right=of 1]{\footnotesize{Modello Stellare}};
         \node[green](3)[right=of 2]{\footnotesize{$L, T_e$}};
@@ -42,10 +41,10 @@ Se il modello stellare considerato precedentemente ha una forma del tipo,
 quello che definiamo ora contiene una parte dipendente dal tempo:
 \begin{center}
     \begin{tikzpicture} [
-        blu/.style={rectangle, draw=blue!60, fill=blue!5, very thick, minimum size=5mm},
-        red/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm},
-        green/.style={rectangle, draw=green!60, fill=green!5, very thick, minimum size=5mm},
-        black/.style={rectangle, draw=black!60, fill=black!5, very thick, minimum size=5mm},]
+            blu/.style={rectangle, draw=blue!60, fill=blue!5, very thick, minimum size=5mm},
+            red/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm},
+            green/.style={rectangle, draw=green!60, fill=green!5, very thick, minimum size=5mm},
+            black/.style={rectangle, draw=black!60, fill=black!5, very thick, minimum size=5mm},]
         \node[red](1){\footnotesize{Massa, X, Y , Z}};
         \node[black](2)[right=of 1]{\footnotesize{t $+ \Delta$t}};
         \node[blu](3)[right=of 2]{\footnotesize{Modello Stellare}};
