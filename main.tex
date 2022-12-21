@@ -14,7 +14,8 @@
 \pgfplotsset{compat=1.17}
 \usetikzlibrary{positioning}
 
-\usepackage[]{layaureo} % con big nell'argomento bordi più larghi ancora
+%\usepackage[]{layaureo} % con big nell'argomento bordi più larghi ancora
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
 
 \usepackage{lipsum} % genera testo fittizio
 \usepackage{comment}
@@ -37,19 +38,100 @@
 \usepackage{graphicx} % per figure
 \usepackage{subfig} % per sottofigure
 
+%%%%%%%%%%%%%% NEW THINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the book
+
+% Font Settings
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{hyperref} % metti alla fine
 \usepackage{impostazioni} % per ultimo
 
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+
 \begin{document}
 
-\frontmatter
-\author{Giancarlo Oancia}
-\title{Appunti di Astrofisica}
-\date{A.A 2022/2023} %lasciando l'argomento vuoto NON viene messa la data
-%\maketitle
-\tableofcontents
 
-\mainmatter
+
+
+
+
+
+
+
+\title{Clustering the interstellar medium}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=1.25]{cover/esahubble}}} % Image background
+\centering
+\vspace*{5cm}
+\par\normalfont\fontsize{35}{35}\sffamily\selectfont
+\textbf{Clustering the interstellar medium}\\
+{\LARGE Data Mining and Machine Learning in Astronomy}\par % Book title
+\vspace*{1cm}
+{\Huge Andrea Hidalgo}\par % Author name
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+%\noindent Copyright \copyright\ 2014 Andrea Hidalgo\\ % Copyright notice
+
+\noindent \textsc{Summer Research Internship, University of Western Ontario}\\
+
+\noindent \textsc{github.com/LaurethTeX/Clustering}\\ % URL
+
+\noindent This research was done under the supervision of Dr. Pauline Barmby with the financial support of the MITACS Globalink Research Internship Award within a total of 12 weeks, from June 16th to September 5th of 2014.\\ % License information
+
+\noindent \textit{First release, August 2014} % Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\chapterimage{cover/head1.png} % Table of contents heading image
+
+\pagestyle{empty} % No headers
+
+\tableofcontents % Print the table of contents itself
+
+%\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+\pagestyle{fancy} % Print headers again
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+
+\chapterimage{cover/head2.png} % Chapter heading image
+
+
+
+
+
+
+
+
+%\frontmatter
+%\input{capitoli/cover/cover1.tex}
+
+%\tableofcontents
+
+%\mainmatter
 \chapter{Setting the stage}
 \input{capitoli/setting/introduzione.tex}
 \input{capitoli/setting/unità.tex}
