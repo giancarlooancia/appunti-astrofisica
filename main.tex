@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt]{book} %10pt 11pt o 12pt permessi
+\documentclass[11pt]{book} %10pt 11pt o 12pt permessi
 %\documentclass{book}
 \usepackage[T1]{fontenc} % codifica dei font
 \usepackage[utf8]{inputenc} % lettere accentate da tastiera
@@ -14,8 +14,8 @@
 \pgfplotsset{compat=1.17}
 \usetikzlibrary{positioning}
 
-%\usepackage[]{layaureo} % con big nell'argomento bordi più larghi ancora
-\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
+%\usepackage[big]{layaureo} % con big nell'argomento bordi più larghi ancora
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt, letterpaper]{geometry} % Page margins letterpaper
 
 \usepackage{lipsum} % genera testo fittizio
 \usepackage{comment}
@@ -46,24 +46,21 @@
 \usepackage{avant} % Use the Avantgarde font for headings
 %\usepackage{times} % Use the Times font for headings
 \usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+% Bibliography
+%\usepackage[style=alphabetic,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+%\addbibresource{bibliography.bib} % BibTeX bibliography file
+%\defbibheading{bibempty}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{hyperref} % metti alla fine
+%\usepackage{hyperref} % metti alla fine
 \usepackage{impostazioni} % per ultimo
 
 \input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
 
 \begin{document}
 
-
-
-
-
-
-
-
-
-\title{Clustering the interstellar medium}
+\title{Appunti di Astrofisica}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -75,10 +72,10 @@
 \centering
 \vspace*{5cm}
 \par\normalfont\fontsize{35}{35}\sffamily\selectfont
-\textbf{Clustering the interstellar medium}\\
-{\LARGE Data Mining and Machine Learning in Astronomy}\par % Book title
+\textbf{Appunti di Astrofisica}\\
+{\LARGE Corso della prof.ssa B. Lanzoni - A.A. $2022/2023$}\par % Book title
 \vspace*{1cm}
-{\Huge Andrea Hidalgo}\par % Author name
+{\Huge G.~Oancia, N.~Cognome, N.~Cognome, N.~Cognome}\par % Author name
 \endgroup
 
 %----------------------------------------------------------------------------------------
@@ -91,13 +88,13 @@
 
 %\noindent Copyright \copyright\ 2014 Andrea Hidalgo\\ % Copyright notice
 
-\noindent \textsc{Summer Research Internship, University of Western Ontario}\\
+\noindent \textsc{Università di Bologna}\\
 
-\noindent \textsc{github.com/LaurethTeX/Clustering}\\ % URL
+\noindent \textsc{github.com/gianchix/appunti-astrofisica}\\ % URL
 
-\noindent This research was done under the supervision of Dr. Pauline Barmby with the financial support of the MITACS Globalink Research Internship Award within a total of 12 weeks, from June 16th to September 5th of 2014.\\ % License information
+\noindent Questo è del testo che si può aggiungere a caso\\ % License information
 
-\noindent \textit{First release, August 2014} % Printing/edition date
+\noindent \textit{Prima pubblicazione, Gennaio 2023} % Printing/edition date
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -117,25 +114,18 @@
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------
 
-\chapterimage{cover/head2.png} % Chapter heading image
-
-
-
-
-
-
 
 
 %\frontmatter
 %\input{capitoli/cover/cover1.tex}
-
 %\tableofcontents
-
 %\mainmatter
+\chapterimage{cover/head2.png} % Chapter heading image
 \chapter{Setting the stage}
 \input{capitoli/setting/introduzione.tex}
 \input{capitoli/setting/unità.tex}
 
+%\chapterimage{}
 \chapter{Meccanismi di emissione}
 \input{capitoli/emissione/introduzione-astrofisica-osservativa.tex}
 \input{capitoli/emissione/trasporto-radiativo.tex}
@@ -144,6 +134,7 @@
 \input{capitoli/emissione/magnitudine.tex}
 \input{capitoli/emissione/colore.tex}
 
+%\chapterimage{}
 \chapter{Struttura stellare}
 \input{capitoli/stelle/modelli-stellari.tex}
 \input{capitoli/stelle/equilibrio-idrostatico.tex}
@@ -154,16 +145,19 @@
 \input{capitoli/stelle/opacità.tex}
 \input{capitoli/stelle/reazioni-termonucleari.tex}
 
+%\chapterimage{}
 \chapter{Modello di atmosfera stellare}
 \input{capitoli/atmosfera/profondita-ottica.tex}
 \input{capitoli/atmosfera/righe-spettrali.tex}
 
+%\chapterimage{}
 \chapter{Evoluzione Stellare}
 \input{capitoli/evoluzione/modello-evoluzione.tex}
 \input{capitoli/evoluzione/pre-main-sequence.tex}
 \input{capitoli/evoluzione/main-sequence.tex}
 \input{capitoli/evoluzione/post-main-sequence.tex}
 
+%\chapterimage{}
 \chapter{Galassie}
 \input{capitoli/galassie/classificazione-di-Hubble.tex}
 \input{capitoli/galassie/spettro-di-emissione-delle-galassie.tex}
@@ -171,8 +165,10 @@
 \input{capitoli/galassie/brillanza-superficiale.tex}
 \input{capitoli/galassie/dinamica-interna.tex}
 
+%\chapterimage{}
 \chapter{Ammassi di galassie}
 
+%\chapterimage{}
 \chapter{Introduzione alla cosmologia}
 
 %\chapter{Da fare}
@@ -183,7 +179,5 @@
 %\input{capitoli/appendici/dati-numerici.tex}
 %\input{capitoli/appendici/unità.tex}
 %\input{capitoli/appendici/conto-trasporto-radiativo.tex}
-
-
 
 \end{document}
