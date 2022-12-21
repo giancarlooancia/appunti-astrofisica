@@ -55,7 +55,7 @@ Come detto precedentemente, una data riga di assorbimento è presente o assente 
     \item[Equazione di Saha]: percentuale di atomi in un dato stato di ionizzazione. Risponde alla domanda: "questo elemento ha ancora elettroni legati?"
 \end{description}
 
-\subsection{Equazione di Boltzmann}
+\subsection{Equazione di Boltzmann}\label{sec:equazione-boltzmann}
 Come suggerito nel precedente paragrafo, l'\emph{equazione di Boltzmann} fornisce la percenutale di atomi in un dato stato di eccitazione. In particolare, per ogni specie chimica, considera gli atomi ionizzati $j$--volte ($N_j$) e fornisce la frazioen di quelli che sono eccitati $i$--volte ($N_{ji}$):
 \begin{equation}\label{eq:equazione-boltzmann}
     \dfrac{N_{ji}}{N_j} = \dfrac{g_i}{{U_j}(T)} 10^{-\theta \chi_i} 
@@ -96,7 +96,7 @@ con $Z$ il numero atomico. Essendo il primo livello energetico disponibile il li
   \chi_i = Z^2 \bigl( 1-\dfrac{1}{i^2}  \bigr)  \times \SI{13.6}{eV}
 \]
 
-\subsection{Equazione di Saha}
+\subsection{Equazione di Saha}\label{sec:equazione-saha}
 Per ogni specie chimica, l'\emph{equazione di Saha} fornisce la percentuale di atomi ionizzati $j+1$--volte ($N_{j+1}$) rispetto al numero di atomi ionizzati $j$--volte ($N_j$):
 \begin{equation}\label{eq:equazione-saha}
     \log \dfrac{N_{j+1}}{N_j} = -0.176 - \log P_e - \theta \chi_i + 2.5 \log T + \log \dfrac{{U_{j+1}}(T)}{{U_j}(T)}
@@ -139,25 +139,54 @@ Per ciò che concerne le \emph{abbondanze chimiche}, è necessario misurare l'\e
 \begin{equation}\label{eq:larghezza-equivalente}
     W = \int \dfrac{F_c - F_\lambda}{F_c} \ud \lambda
 \end{equation} 
-dove $F$ rappresenta il flusso. In particolare $W$ è correlato con il numero di atomi per $\si{cm^2}$ che generano la transizione, ovvero con $N_a$, il numero di atomi attivi. Come è possibile osservare in figura~\ref{fig:righe-spettrali-numero-atomi}, la riga spettrale è tanto più profonda quanto maggiore è l'abbondanza dell'elemento considerato. Siccome la profondità della riga dipende dal numero di atomi attivi, anche $W$ dipenderà da $N_a$. In particolare è possibile osservare la loro correlazione in una \emph{curva di crescita}, mostrata in fig.~\ref{fig:curva-crescita}.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{immagini/righe-spettrali-numero-atomi.png}
-    \caption{Correlazione tra la larghezza equivalente $W$ e il numero di atomi attivi $N_a$. La riga spettrale è tanto più profonda quanto maggiore è l'abbondanza dell'elemento considerato}
-    \label{fig:righe-spettrali-numero-atomi}
-\end{figure}
+dove $F$ rappresenta il flusso. In particolare $W$ è correlato con il numero di atomi per $\si{cm^2}$ che generano la transizione, ovvero con $N_a$, il numero di atomi attivi. Come è possibile osservare in figura~\ref{fig:larghezza-equivalente}, la riga spettrale è tanto più profonda quanto maggiore è l'abbondanza dell'elemento considerato. Siccome la profondità della riga dipende dal numero di atomi attivi, anche $W$ dipenderà da $N_a$. In particolare è possibile osservare la loro correlazione in una \emph{curva di crescita}, mostrata in fig.~\ref{fig:curva-crescita}. Come si osserva dal grafico, l'andamento di $W$ con $N_a$ varia all'aumentare del numero di atomi attivi. Nel \emph{regime lineare} si ha $W \propto N_a$ poiché $W$ è dominata dal contributo del core della riga, evidenziato nella fig.~\ref{fig:larghezza-equivalente-regime-lineare}. Aumentando il numero di atomi attivi si entra nel \emph{regime piatto (o di saturazione)}, in cui si ha $W \propto \sqrt{\log N_a}$. In questo regime $W$ cresce molto lentamente, poiché il core della riga è saturo (la riga ha massima profondità, ovvero arriva a toccare lo zero) e il contributo delle ali è ancora trascurabile, come mostrato in fig.~\ref{fig:larghezza-equivalente-regime-piatto}. Nel \emph{regime di smorzamento} $W$ si ha $W \propto \sqrt{N_a}$ e $W$ torna ad essere più sensibile alle variazioni di $N_a$ rispetto al regime di saturazione, poiché le ali hanno un contributo dominante, come mostrato in fig.~\ref{fig:larghezza-equivalente-regime-smorzamento}.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{immagini/curva-crescita.png}
-    \caption{}
+    \caption{Curva di crescita. Descrive la dipendenza della larghezza equivalente $W$ dal numero di atomi attivi $N_a$. La curva è doppio--logaritmica. L'andamento varia con l'aumentare degli atomi attivi. In particolare, sono presenti tre regimi: il regime lineare in cui $W \propto N_a$, il regime piatto in cui $W \propto \sqrt{\log N_a}$ e il regime di smorzamento in cui $W \propto \sqrt{N_a}$.} 
     \label{fig:curva-crescita}
 \end{figure}
 
-\subsection{Abbondanze chimiche}
+\begin{figure}
+\centering
+\subfloat[][\emph{Regime lineare}\label{fig:larghezza-equivalente-regime-lineare}]
+    {\includegraphics[width=0.45\textwidth]{immagini/larghezza-equivalente-regime-lineare.png}} \quad
+\subfloat[][\emph{Regime piatto o di saturazione}\label{fig:larghezza-equivalente-regime-piatto}]
+    {\includegraphics[width=0.45\textwidth]{immagini/larghezza-equivalente-regime-piatto.png}} \quad
+\subfloat[][\emph{Regime di smorzamento}\label{fig:larghezza-equivalente-regime-smorzamento}]
+    {\includegraphics[width=0.45\textwidth]{immagini/larghezza-equivalente-regime-smorzamento.png}}
+\caption{Correlazione tra la larghezza equivalente $W$ e il numero di atomi attivi $N_a$. La riga spettrale è tanto più profonda quanto maggiore è l’abbondanza dell’elemento considerato.}
+\label{fig:larghezza-equivalente}
+\end{figure}
 
+Conoscendo la curva di crescita è possibile ricavare il numero di atomi attivi data la larghezza equivalente, che a sua volta può essere ricavata sperimentalmente dall'analisi spettroscopica del corpo in esame. Tuttavia, siamo interessati all'\emph{abbondanza} di un elemento, piuttosto che il numero dei suoi atomi attivi, $N_a$, che dipende sensibilmente dalla temperatura dell'atmosfera stellare. Ovviamente il numero totale di atomi di una data specie, $N_\textup{tot}$, \emph{non} dipende dalla temperatura. Per ottnere $N_\textup{tot}$ dalla misura di $N_a$ è necessario conoscere la percetuale di atomi di quella data specie chimica che sono nella condizione di attivare le transizioni elettroniche che generano la linea di assorbimento che si sta misurando. Abbiamo dunque bisogno di conoscere:
+\begin{enumerate}
+    \item la percentuale di atomi che hanno ancora elettroni legati alla struttura atomica alla data temperatura $T$, ovvero il \emph{fattore di ionizzazione}. Esso si trova con l'\emph{equazione di Boltzmann}~\eqref{eq:equazione-boltzmann} (vedi par.~\ref{sec:equazione-boltzmann}).
+    \item la percentuale di atomi nei quali gli elettroni possono effettuare le transizioni osservata alla data temperatura $T$, ovvero il \emph{fattore di eccitazione}. Esso si trova con l'\emph{equazione di Saha}~\eqref{eq:equazione-saha} (vedi par.~\ref{sec:equazione-saha}).
+\end{enumerate} 
 
-\subsubsection{Larghezza equivalente}
+A questo punto, conoscendo il numero totale di atomi di un dato elemento, $N_\textup{tot}$, è possibile trovare l'abbondanza in massa di tale elemento nell'atmosfera stellare:
+\begin{equation}\label{eq:abbondanza-in-massa}
+    A_\textup{el} = N_\textup{tot} m_\textup{el}
+\end{equation}
+dove $N_\textup{tot}$ è il numero di atomi per \si{cm} quadro, ovvero è espresso in \si{cm^{-2}}, $m_\textup{el}$ è la massa dell'elemento, espressa in \si{g} e $A_\textup{el}$ è misurato in \si{g.cm^{-2}}. Tuttavia, si preferisce riferirsi alle \emph{square braclet abundances}.
 
-\subsection{DA SCRIVERE Altre cose e Recap}
+\subsection{Square braclet abundances}
+Le abbondanze in massa, espresse dall'eq.~\eqref{eq:abbondanza-in-massa}, sono tipicamente normalizzate all'abbondanza di idrogeno presente nella stella studiata e anche rispetto al rapporto nel Sole, espressi in scala logaritmica. Per fare un esempio chiaritivo, supponiamo di voler esprimere l'abbondanza del sodio in una stella. Con la eq.~\eqref{eq:abbondanza-in-massa} trovo $A_\textup{Na} = \SI{9.3e-5}{g.cm^{-2}}$. Essa è normalizzata rispetto all'abbondanza dell'idrogeno nella stella stessa, che suppongiamo essere $A_\textup{H} = \SI{1.1}{g.cm^{-2}}$, in scala logaritmica:
+\[
+\log \Bigl( \dfrac{A_\textup{Na}}{A_\textup{H}} \Bigr)_* \sim -4 -0 = -4    
+\]
+A sua volta questa quantità è riferita alla quantità analoga del nostro Sole, che in questo caso vale:
+\[
+    \log \Bigl( \dfrac{A_\textup{Na}}{A_\textup{H}} \Bigr)_\odot = 6.33 - 12 = -5.67
+\]
+Ora, il logaritmo del rapporto tra l'abbondanza del sodio nell stella normalizzata rispetto all'idrogeno e l'abbondanza del sodio nel Sole normalizzata rispetto all'idrogeno ci dà la \emph{square bracket adundance} del sodio:
+\[
+\Bigl[ \dfrac{\textup{Na}}{\textup{H}} \Bigr] = \log \dfrac{\Bigl(\frac{A_\textup{Na}}{A_\textup{H}}\Bigr)_*}{\Bigl(\frac{A_\textup{Na}}{A_\textup{H}}\Bigr)_\odot} = \log \Bigl( \dfrac{A_\textup{Na}}{A_\textup{H}} \Bigr)_* - \log \Bigl( \dfrac{A_\textup{Na}}{A_\textup{H}} \Bigr)_\odot = -4 -(-5.67) = +1.67
+\]
+ovvero, nella stella osservata il sodio è $10^{1.67} \sim 50$ volte \emph{più abbondante} che nel Sole. In generale si ha la seguente formula:
+\begin{equation}\label{eq:square-bracket-abundances}
+    \Bigl[ \dfrac{\textup{el}}{\textup{H}} \Bigr] = \log \Bigl( \dfrac{A_\textup{el}}{A_\textup{H}} \Bigr)_* - \log \Bigl( \dfrac{A_\textup{el}}{A_\textup{H}} \Bigr)_\odot
+\end{equation}
+Secondo l'eq.~\eqref{eq:square-bracket-abundances}, $[\frac{el}{H}] = 0$ significa che l'abbondanza in massa dell'elemento \emph{el} è la stessa del Sole, $[\frac{el}{H}] = -0.5$ significa che è pari a $1/3$ di quella del Sole e $[\frac{el}{H}] = -2$ significa che è $1/100$ di quella del Sole.
