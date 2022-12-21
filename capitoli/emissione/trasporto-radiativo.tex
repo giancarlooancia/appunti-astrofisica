@@ -128,7 +128,31 @@ Con queste due nuove variabili, l'equazione assume una forma particolarmente sem
 \begin{equation}\label{eq:trasporto-radiativo3}
     \frac{\ud I_\nu}{\ud \tau_\nu} = -I_\nu + S_\nu
 \end{equation}
-Sviluppando i conti, come mostrato in appendice~\ref{app:trasporto-radiativo} integrando tale equazione si ottiene una soluzione per l'equazione~\eqref{eq:trasporto-radiativo}:
+Integriamo l'equazione~\eqref{eq:trasporto-radiativo3}. Separo le variabili e riscrivo l'equazione in una forma più comoda:
+\[
+    \ud I_\nu = -I_\nu \ud \tau_\nu  + S_\nu \ud \tau_\nu
+\]
+\[
+    \ud I_\nu + I_\nu \ud \tau_\nu  = S_\nu \ud \tau_\nu
+\]
+\[
+    e^{\tau_\nu} (\ud I_nu + I_\nu \ud \tau_\nu)  = e^{\tau_\nu} (S_\nu \ud \tau_\nu)
+\]
+\[
+    d(e^{\tau_\nu} I_\nu) = e^{\tau_\nu} \ud I_\nu + I_\nu e^{\tau_\nu} \ud \tau_\nu
+\]
+\[
+    d(e^{\tau_\nu} I_\nu) = e^{\tau_\nu} S_\nu \ud \tau_\nu
+\]
+Ricordando che la profondità ottica è un integrale tra $0$ e $S$ e al centro è nullo, come limiti inferiori dell'integrazione scelgo $\tau_{\nu_0} = 0$ e $I_{\nu_0}$, corrispondente all'intensità iniziale, prima dell'interazione con la materia. Suppongo, inoltre, che la funzione sorgente $S_\nu$ non vari con $\tau$, ovvero non vari con la distanza.
+\[
+    e^{\tau_\nu} I_\nu - I_{\nu_0} = \int_0^{\tau_\nu} e^{\tau_\nu'} S_\nu \ud \tau_\nu' = S_\nu (e^{\tau_\nu} - 1)
+\]
+Moltiplico ambo i membri per $e^{-\tau_\nu}$
+\[
+    I_\nu (\tau_\nu) - I_{\nu_0} e^{-\tau_\nu} = S_\nu (1-e^{-\tau_\nu})
+\]
+da cui si ottiene:
 \begin{equation}\label{eq:soluzione-trasporto-radiativo}
     I_\nu = I_{\nu_0} e^{-\tau_\nu} + S_\nu (1- e^{-\tau_\nu})
 \end{equation}
