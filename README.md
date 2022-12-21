@@ -4,4 +4,4 @@
 
 [pagina del corso](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/434330)
 
-Versione pdf degli appunti [qui](main.pdf)
+Versione pdf degli appunti [qui](appunti-astrofisica.pdf)
