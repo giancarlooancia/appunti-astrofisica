@@ -1,11 +1,11 @@
 \section{Corpo nero}\label{sec:corpo-nero}
 
 \subsection{Legge di Planck}\label{sec:legge-planck}
-Introdotto da Planck alla fine del 1800, un \emph{corpo nero} è un corpo idealizzato in equilibrio termodinamico che assorbe tutta la radiazione incidente ed emette uno spettro che dipende solo dalla temperatura superficiale $T$ del corpo stesso. Il tasso di assorbimento e di emissione è lo stesso e la forma dello spettro del corpo segue la legge di Planck:(fig.~\ref{fig:corpo-nero}):
+Introdotto da Planck alla fine del 1800, un \emph{corpo nero} è un corpo idealizzato in equilibrio termodinamico che assorbe tutta la radiazione incidente ed emette uno spettro che dipende solo dalla temperatura superficiale $T$ del corpo stesso. Il tasso di assorbimento e di emissione è lo stesso e la forma dello spettro del corpo segue la legge di Planck (fig.~\ref{fig:corpo-nero}):
 \begin{equation}\label{eq:corpo-nero}
     B_{BB} (T) = \frac{2 h}{c^2} \frac{\nu^3}{e^{\frac{h \nu}{k_B T}} - 1}
 \end{equation}
-La planckiana dipende sia dalla \emph{frequenza} che dalla \emph{temperatura} del corpo. Le stelle in prima approssimazione si possono considerare dei corpi neri, come si può osservare da un confronto tra dati sperimentali e curve teoriche in figura~\ref{fig:stelle-corpi-neri}. Guardando come sono fatte le curve a diverse lunghezze d'onda si può inferire la \emph{legge di spostamento di Wien}.
+La planckiana dipende sia dalla \emph{frequenza} che dalla \emph{temperatura} del corpo. Le stelle in prima approssimazione si possono considerare dei corpi neri, come si può osservare da un confronto tra dati sperimentali e curve teoriche in fig.~\ref{fig:stelle-corpi-neri}. Guardando come sono fatte le curve a diverse lunghezze d'onda si può inferire la \emph{legge di spostamento di Wien}.
 
 \begin{figure}
 \centering
@@ -26,7 +26,7 @@ Più elevata è la temperatura $T$ del corpo, più il picco di emissione si trov
 \begin{equation}\label{eq:legge-wien}
     T \lambda_\textup{max} = \SI{0.29}{cm.K}
 \end{equation}
-Da questa legge è immediato capire perché vediamo il nostro sole di colore giallo. Infatti, la sua temperatura sua temperatura superficiale è circa $T \sim \SI{5770}{K}$, da cui una lunghezza d'onda sul picco corrispondente a $\lambda_\textup{max} \sim \SI{0.5}{\mu m}$. Si può esprimere la legge anche in funzione della frequenza, come mostrato in figura~\ref{fig:legge-wien}, ed esprime che più elevata è la temperatura del corpo, più il picco di emissione si trova ad alte frequenze (basse lunghezze d'onda). Quindi, se suppongo che una sorgente che sto osservando sia un corpo nero, effettuando misure a lunghezze d'onda diverse, in base alla frequenza a cui osservo il picco di emissione, posso risalire alla temperatura superficiale della stella. In particolare, una \emph{stella blu} sarà \emph{calda}, mentre una \emph{stella rossa} sarà \emph{fredda}.
+Da questa legge è immediato capire perché vediamo il nostro sole di colore giallo. Infatti, la sua temperatura superficiale è circa $T \sim \SI{5770}{K}$, da cui una lunghezza d'onda sul picco corrispondente a $\lambda_\textup{max} \sim \SI{0.5}{\mu m}$. Si può esprimere la legge di Wien anche in funzione della frequenza, come mostrato in fig.~\ref{fig:legge-wien}. Si nota che più elevata è la temperatura del corpo, più il picco di emissione si trova ad alte frequenze (basse lunghezze d'onda). Dunque, supponendo che una sorgente osservata sia un corpo nero ed effettuando misure a diverse lunghezze d'onda, in base alla frequenza a cui si osserva il picco di emissione è possibile risalire alla temperatura superficiale della stella. In particolare, una \emph{stella blu} sarà \emph{calda}, mentre una \emph{stella rossa} sarà \emph{fredda}.
 
 \begin{figure}
 \centering
@@ -36,9 +36,9 @@ Da questa legge è immediato capire perché vediamo il nostro sole di colore gia
 \end{figure}
 
 \subsection{Legge di Stefan-Boltzmann}\label{sec:legge-stefan-boltzmann}
-All'aumentare della temperatura $T$, aumenta anche l'intensità del corpo nero, come si può osservare nell'equazione~\eqref{eq:corpo-nero}. Questo significa che un corpo nero più caldo emetterà più energia al secondo, su tutte le lunghezze d'onda, infatti basta integrare su tutte le lunghezze d'onda, ovvero basta guardare l'area sotto la curva a fissata temperatura nella figura~\ref{fig:corpo-nero}. Ma l'energia totale emessa integrata su tutte le frequenze (par.~\ref{sec:luminosità}) è proprio la luminosità bolometrica $L_\textup{bol}$ del corpo. Questo suggerisce che debba esistere una relazione tra $T$ e $L_\textup{bol}$.
+Osservando la relazione di corpo nero~\eqref{eq:corpo-nero} è possibile inferire che debba esserci una relazione tra la temperatura $T$ e la luminosità bolometrica della stella, $L_\textup{bol}$. Infatti, all'aumentare di $T$ aumenta l'intensità del corpo nero (l'energia emessa per unità di tempo), ovvero, integrando su tutte le lunghezze d'onda, aumenta l'area sottesa dalla curva~\ref{fig:corpo-nero}. La luminosità integrata su tutte le frequenze è proprio la luminosità bolometrica (par.~\ref{sec:luminosità}).
 
-Gli esperimenti di \emph{Josef Stegan} (1879) hanno mostrato che la luminosità bolometrica $L_\textup{bol}$ di un corpo nero di area $A$ alla temperatura $T$, misurata in Kelvin, è data da:
+Gli esperimenti di \emph{Josef Stefan} (1879) hanno mostrato che la luminosità bolometrica $L_\textup{bol}$ di un corpo nero di area $A$ alla temperatura $T$, misurata in Kelvin, è data da:
 \[
     L_\textup{bol} = A \sigma T^4
 \]
@@ -52,7 +52,7 @@ Dunque, data una stella di raggio $R$ e \emph{temperatura superficiale} T:
 \end{equation}
 Inserendo i dati del Sole
 \[
-    R \sim \SI{7e10}{cm} \qquad T \sim \SI{5770}{K} \qquad \sigma \sim \SI{5.67e-5}{erg.s^{-1}.cm^{-2}.K^{-4}}
+    R \sim \SI{7e10}{cm} \qquad T \sim \SI{5770}{K}
 \]
 si ottiene
 \[

@@ -1,15 +1,15 @@
 \section{Colore}\label{sec:colore}
 \subsection{Definizione di colore}
-L'\emph{indice di colore} è la differenza tra le magnitudini misurate in due diverse bande fotometriche (\emph{filtri}). In particolare, le immagini vengono acquisite attraverso filtri che selezionano solamente alcune lunghezze d'onda. Ciascun filtro ha la propria curva di trasmissione, centrata su una data lunghezza d'onda, con al sua specifica curva e la sua larghezza. D'altra parte, ciascuna sorgente ha il proprio spettro di emissione. Quindi i diversi filtri selezionano solo una frazione dello spettro della sorgente, quella inclusa sotto la loro curva di trasmissione. Ne conviene che il flusso misurato durante l'osservazione in un dato filtro dipende sia dal filtro che dallo spettro della sorgente. Un esempio utile è rappresentato in figura~\ref{fig:filtri-fotometrici}.
+L'\emph{indice di colore} è la differenza tra le magnitudini misurate in due diverse bande fotometriche (\emph{filtri}). In particolare, le immagini vengono acquisite attraverso filtri che selezionano solamente alcune lunghezze d'onda. Ciascun filtro ha la propria curva di trasmissione, centrata su una data lunghezza d'onda. D'altra parte, ciascuna sorgente ha il proprio spettro di emissione. Quindi, i diversi filtri selezionano solo una frazione dello spettro della sorgente, quella inclusa sotto la loro curva di trasmissione (fig.~\ref{fig:filtri-fotometrici}). Ne conviene che il flusso misurato durante l'osservazione in un dato filtro dipende sia dal filtro che dallo spettro della sorgente.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{immagini/filtri-fotometrici.png}
-\caption{Osservazione di due spettri diversi con due filtri, uno blu (B) e uno rosso (R). In verde sono rappresentato gli spettri e le curve in blu e rosso sono rispettivamente le curve di trasmissione del filtro blu e rosso. Le zone evidenziate rappresentano il flusso misurato. Si nota che a sinistra vale $F_B > F_V$ mentre a destra $F_B < F_V$. Ciò evidenzia come il flusso misurato dipende sia dallo spettro della sorgente che dal filtro utilizzato.}
+\caption{Osservazione di due spettri diversi con due filtri, uno blu (B) e uno rosso (R). In verde sono rappresentati gli spettri analizzati e le curve in blu e rosso sono rispettivamente le curve di trasmissione del filtro blu e rosso. Le zone evidenziate rappresentano il flusso misurato. Si nota che a sinistra vale $F_B > F_V$ mentre a destra $F_B < F_V$. Ciò evidenzia come il flusso misurato dipende sia dallo spettro della sorgente che dal filtro utilizzato.}
 \label{fig:filtri-fotometrici}
 \end{figure}
 
-Ricordando l'equazione~\eqref{eq:relazione-magnitudine-apparente-flusso}, posso scrivere
+Ricordando l'equazione~\eqref{eq:relazione-magnitudine-apparente-flusso}, si può scrivere:
 \[
     m_B = -2.5 \log F_B + \textup{const}
 \]
@@ -20,10 +20,10 @@ dove $m_B$ e $m_V$ sono le magnitudini apparenti rispettivamente in filtro blu e
 \begin{equation}\label{eq:colore}
     m_B - m_V \equiv B-V
 \end{equation}
-Il colore, dunque, è un numero puro, e in tabella~\ref{tab:colore} sono presenti le relazioni tra il colore, la magnitudine assoluta e il flusso in filtro blu e rosso. 
+Il colore, dunque, è un numero puro, e in tab.~\ref{tab:colore} sono presenti le relazioni tra il colore, la magnitudine assoluta e il flusso in filtro blu e rosso. 
 
 \begin{table}
-\caption{Relazione tra colore, magnitudine apparente e flusso}
+\caption{Relazione tra colore, magnitudine apparente e flusso.}
 \label{tab:colore}
 \centering
 \begin{tabular}{lll}
@@ -43,7 +43,7 @@ Ovviamente, cambiamo i filtri, cambia anche la denominazione del colore. Si teng
 \end{equation}
 
 \subsection{Colore e temperatura}
-Ci si può chiedere quale sia la ragione fisica alla base del diverso colore delle stelle. Ripensando all'esempio in figura~\ref{fig:filtri-fotometrici}, è evidente che una stella è tanto più blu quanto maggiore è il flusso misurato a basse lunghezze d'onda. Dunque, in definitiva, la ragione fisica del diverso colore è la stessa del diverso spettro. Come introdotto nel paragrafo~\ref{sec:legge-planck} e evidenziato in figura~\ref{fig:stelle-corpi-neri}, le stelle in prima approssimazione sono dei corpi neri, dunque lo spettro è definito dall'equazione di Planck~\eqref{eq:corpo-nero}. Dato un filtro sto fissando una lunghezza d'onda (ovvero una frequenza) di picco a cui lavora il filtro stesso, dunque, in definitiva, lo spettro osservato di una stella dipenderà solamente dalla sua \emph{temperatura superficiale}. Ricordando la relazione tra intensità e luminosità monocromatica~\eqref{eq:luminosità-monocromatica-intensità} e imponendo per una stella $I_\nu = B_nu (T)$ si ottiene:
+Ci si può chiedere quale sia la ragione fisica alla base del diverso colore delle stelle. Ripensando all'esempio in fig.~\ref{fig:filtri-fotometrici} è evidente che una stella è tanto più blu quanto maggiore è il flusso misurato a basse lunghezze d'onda. Dunque, in definitiva, la ragione fisica del diverso colore è la stessa del diverso spettro. Come introdotto nel par.~\ref{sec:legge-planck} ed evidenziato in fig.~\ref{fig:stelle-corpi-neri}, le stelle in prima approssimazione sono dei corpi neri, dunque lo spettro è definito dall'equazione di Planck~\eqref{eq:corpo-nero}. Utilizzando un particolare filtro, si sta fissando la lunghezza d'onda (o frequenza) di picco a qui lavora tale filtro, dunque lo spettro osservato di una stella dipenderà solamente dalla sua \emph{temperatura superficiale}. Ricordando la relazione tra intensità e luminosità monocromatica~\eqref{eq:luminosità-monocromatica-intensità} e imponendo per una stella $I_\nu = B_\nu (T)$ si ottiene:
 \[
     L_\nu = 4 \pi R^2 \pi B_\nu (T)
 \]
@@ -56,7 +56,7 @@ da cui si può inferire che, nel limite di validità dell'approssimazione della 
 Per riassumere, più bassa è la temperatura superficiale, più rossa è la stella, che equivale a un grande $(B-V)$, mentre più alta è la temperatura superficiale, maggiore è il flusso a basse $\lambda$ (cfr. fig.~\ref{fig:corpo-nero}) e più blu è la stella, che equivale a un piccolo $(B-V)$.
 
 \subsection{Estinzione}\label{sec:reddening}
-In generale, a causa dei processi di interazione tra radiazione e materia nel cammino tra la sorgente e l'osservatore, una stella tende ad apparire \emph{più debole} e \emph{più rossa} di come non sia veramente, questo fenomeno prende il nome di \emph{estinzione} (o arrossamento). È possibile esprimere ciò analiticamente, introducendo un parametro di correzione alla magnitudine "intrinseca", ovvero quella che vedremmo se non ci fosse l'interazione con il mezzo interstellare.
+In generale, a causa dei processi d'interazione tra radiazione e materia nel cammino tra la sorgente e l'osservatore, una stella tende ad apparire \emph{più debole} e \emph{più rossa} di come non sia veramente, questo fenomeno prende il nome di \emph{estinzione} (o arrossamento). È possibile esprimere tale fenomeno analiticamente, introducendo un parametro di correzione alla magnitudine "intrinseca", ovvero quella che vedremmo se non ci fosse l'interazione con il mezzo interstellare.
 \begin{equation}\label{eq:estinzione}
     m_\lambda = m_{\lambda 0} + A_\lambda
 \end{equation}
@@ -75,14 +75,14 @@ e sottraendo membro a membro:
 \[
     B_0 - V_0 \equiv (B-V)_0 = (B-V) - (A_B - A_V)
 \]
-Il primo termine, $(B-V)_0$, rappresenta il \emph{colore intrinseco}, $(B-V)$ rappresenta il \emph{colore osservato}, mentre l'ultimo termine, $(A_B-A_V) \equiv \EBV$ rappresenta il \emph{reddening}, ovvero l'eccesso di colore. Partendo dal reddening dei filtri B-V si può indicare l'effetto per dei filtri qualunque moltiplicando per un opportuno fattore correttivo $R_\lambda$:
+Il primo termine, $(B-V)_0$, rappresenta il \emph{colore intrinseco}, $(B-V)$ rappresenta il \emph{colore osservato}, mentre l'ultimo termine, $(A_B-A_V) \equiv \EBV$ rappresenta il \emph{reddening}, ovvero l'eccesso di colore. Partendo dal reddening dei filtri B-V si può indicare l'effetto per dei filtri qualunque, moltiplicando per un opportuno fattore correttivo $R_\lambda$:
 \begin{equation}\label{eq:reddening}
     m_\lambda = m_{\lambda 0} + A_\lambda = m_{\lambda 0} + R_\lambda \EBV
 \end{equation}
 
 \subsection{Modulo di distanza e reddening}
-Si faccia attenzione al fatto che la magnitudine apparente che compare nell'espressione del modulo di distanza~\eqref{eq:modulo-distanza} è quella \emph{vera}, ovvero de-arrossata. Talvolta, tuttavia, in letteratura si trova il modulo di distanza \emph{osservato}, ad esempio, in banda V. In questo caso, per trovare la distanza, è necessario de-arrossare:
+Si faccia attenzione al fatto che la magnitudine apparente che compare nell'espressione del modulo di distanza~\eqref{eq:modulo-distanza} è quella \emph{vera}, ovvero de--arrossata. Talvolta, tuttavia, in letteratura si trova il modulo di distanza \emph{osservato}, ad esempio, in banda V. In questo caso, per trovare la distanza, è necessario de--arrossare:
 \[
-    (m - M)_V = -5 + 5 \log(d_{\si{pc}}) + 3.12 \EBV
+    (m - M)_V = -5 + 5 \log(d_{\si{pc}}) + 3.12 \, \EBV
 \]
 Si faccia attenzione anche a un'ultima cosa: la magnitudine assoluta, per definizione, è sempre quella vera. Non ha senso parlare di magnitudine assoluta arrossata.

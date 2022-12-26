@@ -16,7 +16,7 @@ Quindi risulta:
 da ciò segue che una differenza di $1$ magnitudine corrisponde a un rapporto tra i flussi pari a $100^{1 / 5} \sim 2.5$. Quindi, ad esempio, una stella di magnitudine $m=1$ \emph{appare} $2.5$ volte più brillante di una stella di magnitudine $m=2$ e $2.5^5 \sim 100$ volte più brillante di una stella con magnitudine $m=6$. Si parla dunque di magnitudini \emph{apparenti}.
 
 \subsection{Legame tra magnitudine apparente e flusso}\label{sec:relazione-magnitudine-apparente-flusso}
-Prendendo il logaritmo (sia $\log$ il logaritmo in base $10$) di entrambi i membri dell'equazione~\eqref{eq:magnitudine-apparente}, si trova:
+Prendendo il logaritmo ($\log$ sarà il logaritmo in base $10$) di entrambi i membri dell'equazione~\eqref{eq:magnitudine-apparente}, si trova:
 \[
     \log\frac{F_1}{F_2} = \frac{m_2 - m_1}{5} \log(100) = \frac{2}{5} (m_2 - m_1) = 0.4 (m_2 - m_1)
 \]
@@ -26,14 +26,14 @@ Da cui segue:
 \end{equation}
 Ovvero, considerando i flussi monocromatici:
 \begin{equation}\label{eq:relazione-magnitudine-apparente-flusso-monocromatico}
-    m_1\nu - m_2\nu = -2.5 \log\frac{F_1\nu}{F_2\nu}
+    m_{1\nu} - m_{2\nu} = -2.5 \log\frac{F_{1\nu}}{F_{2\nu}}
 \end{equation}
 
-Misurando il flusso di una sorgente, \emph{non} conosco la sua magnitudine, poiché, come ovvio dall'equazione~\eqref{eq:relazione-magnitudine-apparente-flusso}, posso solamente conoscere la magnitudine \emph{rispetto a un'altra sorgente}. È dunque necessario assegnare un valore di magnitudine apparente fisso attraverso un \emph{sistema fotometrico}. Un esempio è il \emph{sistema fotometrico di Vega}, secondo il quale impongo che la stella Vega abbia magnitudine $m=0$ a tutte le frequenze, sicché la relazione tra magnitudine e flusso diventeranno:
+Misurando il flusso di una sorgente \emph{non} si conosce la sua magnitudine, poiché, come ovvio dall'equazione~\eqref{eq:relazione-magnitudine-apparente-flusso}, è possibile solamente conoscere la magnitudine \emph{rispetto a un'altra sorgente}. È dunque necessario assegnare un valore di magnitudine apparente fisso attraverso un \emph{sistema fotometrico}. Un esempio è il \emph{sistema fotometrico di Vega}, secondo il quale si impone che la stella Vega abbia magnitudine $m=0$ a tutte le frequenze, sicché la relazione tra magnitudine e flusso diventano:
 \[
-    m_\nu = - 2.5 \log\frac{F_nu}{F_0\nu}
+    m_\nu = - 2.5 \log\frac{F_\nu}{F_{0\nu}}
 \]
-dove $m_\nu$ e $F_\nu$ sono rispettivamente la magnitudine e il flusso della sorgente a una data frequenza $\nu$, mentre $F_0\nu$ è il flusso della stella Vega a quella data frequenza. Per farsi un'idea degli ordini di grandezza nel sistema di Vega si faccia riferimento alla tabella~\ref{tab:sistema-fotometrico-vega}.
+dove $m_\nu$ e $F_\nu$ sono rispettivamente la magnitudine e il flusso della sorgente a una data frequenza $\nu$, mentre $F_{0\nu}$ è il flusso della stella Vega a quella data frequenza. Per farsi un'idea degli ordini di grandezza nel sistema di Vega si faccia riferimento alla tab.~\ref{tab:sistema-fotometrico-vega}.
 
 \begin{table}
 \caption{Magnitudini apparenti nel Sistema Fotometrico di Vega. Il Sole, essendo la stella a noi più vicina, è quella che ci \emph{appare} più luminosa, infatti ha la magnitudine assoluta più piccola possibile, ovvero più negativa possibile in questo caso. Il flusso dipende sia dalla luminosità della sorgente sia dalla distanza della sorgente dall'osservatore.}
@@ -62,13 +62,11 @@ Si definisce \emph{magnitudine assoluta} la magnitudine apparente che avrebbe un
 \begin{equation}\label{eq:magnitudine-assoluta}
     M = m_{\SI{10}{pc}}
 \end{equation}
-Se la magnitudine apparente \emph{non} dà informazioni sulla brillantezza intrinseca della sorgente, essendo dipendente dalla distanza della sorgente stessa, la magnitudine è legata alla luminosità intrinseca della sorgente.
-
-Si può ricavare la relazione che sussiste tra la magnitudine assoluta e la luminosità utilizzando l'equazione~\eqref{eq:relazione-magnitudine-apparente-flusso}
+Essa, a differenza della magnitudine apparente, è legata alla luminosità intrinseca della sorgente ed è possibile ricavare la loro relazione utilizzando l'eq.~\eqref{eq:relazione-magnitudine-apparente-flusso}:
 \[
     M_1 - M_2 = m_{1, \SI{10}{pc}} - m_{2, \SI{10}{pc}} = -2.5 \log\frac{F_1 (\SI{10}{pc})}{F_2 (\SI{10}{pc})}
 \]
-e utilizzando l'equazione~\eqref{eq:flusso} per scrivere
+e utilizzando l'equazione~\eqref{eq:flusso} per scrivere:
 \[
     \frac{F_1 (\SI{10}{pc})}{F_2 (\SI{10}{pc})} = \frac{L_1}{L_2}
 \]
@@ -78,15 +76,15 @@ Da ciò segue che:
 \end{equation}
 
 \subsection{Modulo di distanza}
-Conoscendo la magnitudine apparente e la magnitudine assoluta di una sorgente, è possibili stimare la sua distanza attraverso il così detto \emph{modulo di distanza}. Troviamo la relazione tra $m$ e $M$ utilizzando l'equazione~\eqref{eq:relazione-magnitudine-apparente-flusso}
+Conoscendo la magnitudine apparente e la magnitudine assoluta di una sorgente, è possibile stimare la sua distanza attraverso il \emph{modulo di distanza}. Troviamo la relazione tra $m$ e $M$ utilizzando l'equazione~\eqref{eq:relazione-magnitudine-apparente-flusso}:
 \[
     m - M = m - m_{\SI{10}{pc}} = -2.5 \log\frac{F(d)}{F(\SI{10}{pc})}
 \]
-e usando l'equazione~\eqref{eq:flusso} con $r=d$
+e usando l'equazione~\eqref{eq:flusso} con $r=d$:
 \[
     \frac{F(d)}{F(\SI{10}{pc})} = \frac{10^2}{d^2}
 \]
-mettendo insieme si trova
+Mettendo insieme si trova:
 \[
     m - M = -5 \log\frac{10}{d} = -5 + 5 \log d
 \]
