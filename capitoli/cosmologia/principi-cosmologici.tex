@@ -3,13 +3,12 @@ La cosmologia è quella parte della fisica che si occupa di studiare l'origine e
 \subsection{Principi Cosmologici}\label{sec:principi-cosmologici}
 
 Tutti i modelli cosmologici proposti devono tenere conto di quelli che sono i \textit{Principi Cosmologici}, questi impongono l'omogeneità dell'Universo, cioè in ogni punto il cosmo appaia lo stesso, assieme alla sua isotropia, ovvero che ci si possa spostare in ogni direzione senza differenze. Questi due condizioni comportano che non esista un sistema di riferimento o una direzione privilegiata nell'Universo e che quindi un osservatore sia in grado di misurare le stesse caratteristiche medie indipendentemente dalla sua posizione o dal suo movimento. Si arriva quindi a ipotizzare che non esista alcun centro dell'Universo, né alcuni limite ad esso. Queste ipotesi sono state arbitrarie fino a poco tempo fa, quando si sono avute le prime conferme sperimentali grazie al \textit{Casmic Microwave Background} (CMB) e alla distribuzione degli ammassi di galassie, come si osserva in figura~\ref{fig:APM}.
-
-\subsection{Espansione dell'universo e Red-Shift}\label{sec:espansione}
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{immagini/APM.png}
+    \includegraphics[width=0.6\textwidth]{immagini/APM.png}
     \caption{La giura mostra la distribuzione di ammassi di Galassie nel cielo osservabile, si nota come la distribuzioe risulta pressoché uniforme.}\label{fig:APM}
 \end{figure}
+\subsection{Espansione dell'universo e Red-Shift}\label{sec:espansione}
 
 Nel 1929 Edwin Hubble si rese conto che le linee spettrali delle galassie venivano spostate verso il rosso proporzionalmente alla loro distanza da noi, ne dedusse che questa variazione cromatica fosse dovuta all'effetto Doppler e che quindi le galassie si stessero allontanando con una certa velocità dall'osservatore. Le galassie sembrano quindi recedere con una velocità proporzionale con la loro distanza.
 
@@ -30,3 +29,21 @@ Se, quindi, le galassie si stanno allontanando l'una dall'altra senza che esista
     z = \frac{\lambda_{obs} - \lambda_{em}}{\lambda_{em}}
 \end{equation}
 dove $\lambda_{em}$ è la unghezza d'onda emessa, mentre $\lambda_{obs}$ è la lunghezza d'onda osservata e modificata rispetto alla $\lambda_{em}$ a causa del redshift.
+
+Mettendo insieme l'equazione~\ref{eq:hubble} di Hubble e l'equazione~\ref{eq:redshift} si ottiene una equivalenza tra redshift e distanza, sappiamo infatti che:
+\[
+    \frac{\lambda_{obs} - \lambda_{em}}{\lambda_{em}} = \frac{v}{c}
+\]
+dove $c$ è la velocità della luce e $v$ è la velocità di espansione dell'universo, per cui il redshift $z$ non è altro che il la velocità di espansione dell'universo in unità di velocità della luce.
+\[
+    v = \frac{\lambda_{obs} - \lambda_{em}}{\lambda_{em}} c
+\]
+Per cui inserendo ora la relazione di Hubble:
+\[
+    v = H_0 D = c z
+\]
+\begin{equation}\label{eq:ditanza-redshift}
+    D = \frac{c}{H_0}z
+\end{equation}
+
+Si noti che non esistono delle condizioni sul valore che $z$ può assumere, si deduce che potenzialmente può assumere anche valori superiori ad uno, ma questo vorrebbe dire che l'espansione dello spazio-tempo sia più veloce della luce. Questo non è un problema poiché la relatività ristretta impone la velocità della luce come limite all'interno di quello che è il nostro universo, ma non da indicazioni su cosa succeda all'universo stesso al suo esterno.
