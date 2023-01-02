@@ -1,0 +1,67 @@
+\section{Processi relativi a ICM}
+Affrontiamo ora i processi di raffreddamento, di riscaldamento e di formazione dell’intra-cluster medium.
+
+\subsection{Raffreddamento}
+A causa dell’emissione di radiazione tramite il fenomeno di Bremsstrahlung (cap.~\ref{sec:bremsstrahlung}) l’ICM si raffredda e i tempi caratteristici di tale raffreddamento seguono dalla seguente relazione:
+\begin{equation}
+    t_{cool} \approx \num{6e3}\,\frac{T^{\frac{1}{2}}}{n_e}\:\si{anni}
+\end{equation}
+
+\begin{description}
+    \item ove $n_e$ rappresenta la densità degli elettroni nel gas.
+\end{description} 
+
+Inserendo dei plausibili valori per $n_e = \SI{e-3}{cm^{-3}}$ e $T = \SI{e8}{K}$ si ottiene un tempo caratteristico $t_{cool}\sim\SI{6e10}{anni}$ e questo comporta un raffreddamento in media non rilevante.
+Tuttavia, il raffreddamento dell'ICM può risultare rimarchevole: si pensa che la densità di elettroni $n_e$ al centro del gas sia maggiore rispetto ad altre regioni, questo porta a tempi di raffreddamento minori e dunque ci si aspetta di osservare flussi di gas freddo, i quali potrebbero spiegare alcuni fenomeni relativi alla formazione della BCG (cap.~\ref{sec:brightest-cluster-galaxy}). Fino ad oggi non vi sono prove dirette di tale fenomeno.
+
+\subsubsection{Brightest Cluster Galaxy}\label{sec:brightest-cluster-galaxy}
+Ogni ammasso galattico possiede una galassia più luminosa di tutte le altre che viene detta Brightest Cluster Galaxy o BCG.
+Tali galassie si trovano solitamente al centro del relativo ammasso e nella maggior parte dei casi sono galassie ellittiche giganti con una brillanza superficiale molto estesa e un alone stellare molto debole.
+Le origini e i processi di formazione di tali galassie rimangono ancora un mistero, ma vi sono delle possibili ipotesi:
+
+\begin{enumerate}
+    \item I flussi freddi di ICM, dovuti all’elevata densità elettronica della regione centrale del gas, potrebbero spiegare in parte il fenomeno
+    \item La formazione di BCG potrebbe essere legata a rapide fusioni di galassie massive durante la fase iniziale della loro formazione (scenario più accreditato)
+    \item Un'ultima ipotesi considera la fusione di galassie nel centro dell’ammasso dovuta ai fenomeni di frizione dinamica e di \emph{tidal stripping}, ovvero quando una galassia più grande strappa materiale stellare ad una galassia più piccola, durante la fase evolutiva dell’ammasso
+\end{enumerate}
+
+\subsection{Riscaldamento}
+Cerchiamo ora di spiegare il perché dell'elevata temperatura dell'ICM.
+Una prima stima di tale temperatura è ottenibile grazie alla seguente relazione, valida nella buca di potenziale dell'ammasso:
+
+\begin{equation}
+    \frac{3}{2} \frac{k}{\mu} \frac{T}{H} = -\phi =\sigma ^2
+\end{equation}
+
+\noindent Il primo membro corrisponde all'energia interna per unità di massa delle particelle di gas.
+
+\begin{description}
+    \item $\phi$ il potenziale gravitazionale dell'ammasso per unità di massa
+    \item $\sigma^2$ è la dispersione di velocità dell'ammasso
+\end{description}
+
+La temperatura osservata tramite misurazioni è dell'ordine di $T \approx 10^7-\SI{e8}{K} $ compatibile con la temperatura che si ottiene supponendo il gas in equilibrio viriale e sostituendo $\sigma \sim \SI{1000}{km.s^{-1}}$.
+Tuttavia, i processi di raffreddamento del gas sono attivi ed è dunque necessario tenere in considerazione ulteriori meccanismi:
+
+\begin{itemize}
+    \item AGN feedback (ref.~\ref{co-evoluzione-galassie-agn})
+    \item Moto del gas durante i processi di merge 
+    \item Riscaldamento dovuto all'"attrito" conseguente al moto delle galassie 
+    \item Esplosione di supernove
+\end{itemize}
+
+\subsection{Formazione}
+Ricordiamo che la metallicitá dell'ICM ($Z\sim 0.3 Z_{\odot}$) indica che l'origine del gas non è di tipo primordiale, vi sono tre principali ipotesi per spiegare ciò:
+
+\begin{enumerate}
+    \item Si tratta di un gas primordiale arricchito da popolazioni stellari pre-galattiche (Pop $III$ ref.~\ref{pop-stellare-via-lattea}).
+    \item Il gas è stato espulso dalle galassie tramite esplosione di supernove
+    \item Il gas è stato strappato (non espulso) dalle galassie tramite processi dovuti a:
+    \begin{itemize}
+        \item pressione d'ariete (\emph{ram pressure}): particolarmente efficiente nel centro dell'ammasso
+        \item evaporazione: il calore fluisce dalle regioni di gas caldo a quelle più fredde
+        \item vere e proprie collisioni che avvengono fra galassie dell'ammasso
+    \end{itemize}
+\end{enumerate}
+
+L'ipotesi $3$ spiegherebbe inoltre la sovrabbondanza di galassie ellittiche, lenticolari e spirali anemiche (forma a spirale, ma con bracci poco luminosi) negli ammassi rispetto a zone dell'universo poco dense. Dove le collisioni non possono avvenire per mancanza di materiale.
