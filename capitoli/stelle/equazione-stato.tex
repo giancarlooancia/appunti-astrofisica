@@ -9,7 +9,7 @@ Guardando le equazioni~\eqref{eq:equilibrio-idrostatico} e~\eqref{eq:continuità
     \end{cases}
 \end{equation}
 
-Un primo aspetto da considerare è che al pressione nell'interno delle stelle è dovuta a due contributi: la \emph{pressione di radiazione} e \emph{la pressione del gas}
+Un primo aspetto da considerare è che al pressione nell'interno delle stelle è dovuta a due contributi, ossia la \emph{pressione di radiazione} e \emph{la pressione del gas}:
 \[
 P = P_\textup{rad} + P_\textup{gas}
 \]
@@ -18,14 +18,14 @@ I fotoni esercitano una pressione perché a ogni fotone di energia $E$ è associ
 \[
 P_\textup{rad} = \frac{4\pi}{3c}\int_0^\infty B_\nu(T) \ud \nu = \frac{1}{3} a T^4
 \]
-dove $a$ è una costante pari a $a = 4 \sigma / c = \SI{7.6e-15}{erg.cm^{-3}.K^{-4}}$, con $\sigma$ costante di Stefan-Boltzmann. Accontentiamoci del risultato senza ulteriori specificazioni sui dettagli del conto:
+dove $a$ è una costante pari a $a = 4 \sigma / c = \SI{7.6e-15}{erg.cm^{-3}.K^{-4}}$, in cui $\sigma$ è la costante di Stefan-Boltzmann. Accontentiamoci del risultato senza ulteriori specificazioni sui dettagli del conto, quindi si ha:
 \begin{equation}\label{eq:pressione-radiazione}
     P_\textup{rad} = \frac{1}{3} a T^4
 \end{equation}
-Si noti come la pressione di radiazione \emph{non} dipenda dalla densità e dipenda fortemente dalla temperatura.
+Si noti come la pressione di radiazione \emph{non} dipenda dalla densità della stella e invece dipenda fortemente dalla temperatura.
 
 \subsection{Pressione del gas ideale}\label{sec:gas-perfetto}
-A causa delle temperature elevate negli interni stellari, gli atomi sono ionizzati e possiamo pensare al gas stellare come a un \emph{plasma di ioni e elettroni}. Quindi, nella maggior parte dei casi, anche a densità e pressioni elevate, il gas stellare può essere trattato come un \emph{gas ideale}, in cui si trascurano le interazioni tra le particelle del gas e la distribuzione delle velocità è rappresentata dalla distribuzione di Maxwell. La densità del gas, in questo caso, dipende sia dalla pressione che dalla temperatura:
+A causa delle temperature elevate negli interni stellari, gli atomi sono ionizzati e possiamo pensare al gas stellare come a un \emph{plasma di ioni e elettroni}. Quindi, nella maggior parte dei casi, anche a densità e pressioni elevate, il gas stellare può essere trattato come un \emph{gas ideale}, in cui si trascurano le interazioni tra le particelle del gas e la distribuzione delle velocità è rappresentata dalla distribuzione di Maxwell. La densità del gas, in questo caso, dipende sia dalla pressione che dalla temperatura e viceversa, quindi si avrà una pressione che è funzione di densità e temperatura: 
 \[
 P = P (\rho, T)
 \]
@@ -33,18 +33,20 @@ Per un gas ideale, inoltre, vale la nota legge:
 \begin{equation}\label{eq:standard-gas-ideale}
     PV = N \kb T
 \end{equation}
-Utilizzando l'equazione~\eqref{eq:standard-gas-ideale} e definendo $\langle m \rangle \equiv M / N$, la massa media delle particelle del gas, e $\rho \equiv M / V$ la densità, si ottiene:
+Utilizzando l'equazione~\eqref{eq:standard-gas-ideale} e definendo $\langle m \rangle \equiv M / N$ la massa media delle particelle del gas, e $\rho \equiv M / V$ la densità, si ottiene:
 \[
 P = \frac{N}{V} \kb T = \frac{N}{M} \frac{M}{V} \kb T = \frac{\kb \rho T}{\langle m \rangle}
 \]
-ora, la massa media delle particelle del gas può essere scritta come $\langle m \rangle = \mu H$, dove $\mu$ è il \emph{peso molecolare medio} e $H$ rappresenta la massa di un nucleo di idrogeno, ovvero la massa del protone, $H = m_P = \SI{1.6e-24}{g}$. Mettendo tutto insieme si ottiene:
+In più la massa media delle particelle del gas può essere scritta anche come $\langle m \rangle = \mu H$, dove $\mu$ è il \emph{peso molecolare medio} e $H$ rappresenta la massa di un nucleo di idrogeno, ovvero la massa del protone ($H = m_P = \SI{1.6e-24}{g}$). Mettendo tutto insieme si ottiene l'equazione di stato per un gas ideale:
 \begin{equation}\label{eq:gas-ideale}
     P_\textup{gas} = \frac{\kb \rho T}{\mu H}
 \end{equation}
-La caratteristica più importante di questa equazione è la \emph{termo-regolazione}: se $T$ cresce $P$ cresce, ma se $P$ cresce la stella si espande, ma se la stella si espande la temperatura diminuisce. Si faccia tuttavia attenzione al fatto che non tutti i gas si comportano come un gaas ideale (par.~\ref{sec:degenerazione}).
+Vediamo che la costante di proporzionalità $\rho / \mu H$ dipende dalla massa del gas, che a sua volta dipende dalla composizione chimica.
+
+La caratteristica più importante di questa equazione è la cosiddetta \emph{termo-regolazione}: se $T$ cresce $P$ cresce, ma se $P$ cresce la stella si espande, ma se la stella si espande la temperatura diminuisce, quindi si ha continuamente un bilancio fra pressione e temperatura. Si faccia tuttavia attenzione al fatto che non tutti i gas si comportano come un gas ideale (par.~\ref{sec:degenerazione}).
 
 \subsection{Peso molecolare medio}\label{sec:peso-molecolare}
-Vogliamo, ora, legare il \emph{peso molecolare medio} $\mu$ alla composizione chimica del gas, introdotta nel par.~\ref{sec:modelli-stellari}. $\mu$ rappresenta la media delle masse delle particelle che compongono il gas, espressa in termini della massa del protone $H$:
+Arrivati a questo punto ci interessa legare il \emph{peso molecolare medio} $\mu$ alla composizione chimica del gas, introdotta nel par.~\ref{sec:modelli-stellari}. Come già ricordato, $\mu$ rappresenta la media delle masse delle particelle che compongono il gas, espressa in termini della massa del protone $H$:
 \begin{equation}\label{eq:peso-molecolare-medio-definizione}
     \mu = \frac{\langle m \rangle}{H}
 \end{equation}
@@ -52,88 +54,89 @@ D'altra parte, conoscendo la massa totale del gas $M_\textup{tot}$ e il numero t
 \begin{equation}\label{eq:massa-media-particelle}
     \langle m \rangle = \frac{M_\textup{tot}}{N_\textup{free}}
 \end{equation}
-si faccia molta attenzione al fatto che $N_\textup{free}$ rappresenta le particelle libere, dunque, in un gas ionizzato è pari alla somma del numero degli \emph{ioni} e degli \emph{elettroni}. Esso dipende da:
+Si faccia molta attenzione al fatto che $N_\textup{free}$ rappresenta le particelle libere, dunque, in un gas ionizzato è pari alla somma del numero degli \emph{ioni} e degli \emph{elettroni}. Esso dipende da:
 \begin{itemize}
     \item la \emph{composizione chimica del gas}, ovvero da $X$, $Y$ e $Z$ (vedi par.~\ref{sec:modelli-stellari}).
     \item lo \emph{stato di ionizzazione} del gas. In particolare:
     \begin{itemize}
         \item ogni atomo \emph{neutro} contribuisce con 1 particella, ovvero l'atomo stesso.
-        \item ogni atomo \emph{totalmente ionizzato} contribuisce con $1+Z_a$ particelle, ovvero il nucleo e $Z_a$ elettroni.
-        \item ogni atomo \emph{parzialmente ionizzato} contribuisce con più di $1$ e meno di $1+Z_a$ particelle.
+        \item ogni atomo \emph{totalmente ionizzato} contribuisce con $1+Z_a$ particelle, ovvero il nucleo e $Z_a$ elettroni ($Z_a$ è il numero atomico).
+        \item ogni atomo \emph{parzialmente ionizzato} contribuisce con un numero compreso fra $1$ e $1+Z_a$ di particelle.
     \end{itemize}
 \end{itemize}
-Si faccia nuovamente attenzione a due dettagli. Innanzi tutto, stiamo dividendo il gas studiato in tre parti: l'idrogeno, la cui abbondanza in massa è espressa da $X$, l'elio, la cui abbondanza è espressa da $Y$ e gli elementi più pesanti, la cui abbondanza è $Z$. Dunque, non stiamo distinguendo tra gli elementi più pensanti dell'elio, bensì li stiamo accorpando tutti in una stella famiglia. Questo è lecito poiché le loro abbondanze sono ridotte, in confronto ai primi due elementi della tavola periodica. Inoltre, $Z_a$ rappresenta il grado di ionizzazione del gas per un gas totalmente ionizzato, che coincide dunque con il numero di protoni del gas.
+Si faccia nuovamente attenzione a due dettagli. Innanzi tutto, stiamo dividendo il gas studiato in tre parti: l'idrogeno, la cui abbondanza in massa è espressa da $X$, l'elio, la cui abbondanza è espressa da $Y$ e gli elementi più pesanti, la cui abbondanza è $Z$. Dunque, non stiamo distinguendo tra gli elementi più pensanti dell'elio, bensì li stiamo accorpando tutti in una stessa famiglia. Questo è lecito poiché le loro abbondanze sono ridotte in confronto ai primi due elementi della tavola periodica. Inoltre, $Z_a$ rappresenta il grado di ionizzazione del gas per un gas totalmente ionizzato, che coincide dunque con il numero di protoni del gas.
 
-Tenendo a mente che stiamo distinguendo solamente tre specie di elementi (idrogeno, elio e più pesanti), indicizziamo la specie con l'indice $j$, con $j = 1, \, 2, \, 3$. A costo di essere ridondanti, ribadiamo che $j=1$ si riferisce all'idrogeno, $j=2$ all'elio e $j=3$ a tutti gli altri elementi. Possiamo, ora calcolare il numero di atomi della specie $j$-esima:
+Tenendo a mente che stiamo distinguendo solamente tre specie di elementi (idrogeno, elio e più pesanti), indicizziamo la specie con l'indice $j$, con $j = 1, \, 2, \, 3$; a costo di essere ridondanti, ribadiamo che $j=1$ si riferisce all'idrogeno, $j=2$ all'elio e $j=3$ a tutti gli altri elementi. A questo punto possiamo calcolare il numero di atomi della specie $j$-esima:
 \begin{equation}\label{eq:numero-atomi-specie}
     N_j = \frac{M_{\textup{tot}, j}}{m_{\textup{atomo}, j}} \simeq \frac{M_{\textup{tot}, j}}{A_j H}
 \end{equation}
-dove $A_j$ è il \emph{numero di massa}, ovvero il numero di nucleoni, pari alla somma dei protoni e dei neutroni. In particolare, se consideriamo l'isotopo più comune dell'idrogeno, il prozio, il suo nucleo è composto solamente da un protone, per cui $A_1 = 1$. Considerando l'elio $4$, il suo nucleo è composto da $2$ protoni e $2$ neutroni, pertanto $A_2 = 4$. Mentre per gli elementi più pesanti possiamo considerare che i più stabili in genere hanno un numero di protoni circa uguale al numero di elettroni. Se consideriamo un gas \emph{totalmente ionizzato}, gli elementi più pesanti avranno $\sim Z_a$ particelle libere (con $Z_a$ il loro numero atomico) e avremo $A_3 \sim 2 Z_a$.
+dove $A_j$ è il \emph{numero di massa}, ovvero il numero di nucleoni, pari alla somma dei protoni e dei neutroni. In particolare, se consideriamo l'isotopo più comune dell'idrogeno, il prozio, il suo nucleo è composto solamente da un protone, per cui $A_1 = 1$. Considerando l'elio $4$, il suo nucleo è composto da $2$ protoni e $2$ neutroni, pertanto $A_2 = 4$. Invece per gli elementi più pesanti possiamo considerare che i più stabili in genere hanno un numero di protoni circa uguale al numero di elettroni (come abbiamo visto nel corso di Fisica Nucleare questo non è propriamente vero perché la repulsione coulombiana sfavorisce l'aumento dei protoni, quindi al crescere di A avremo in genere un maggior numero di neutroni; ciò nonostante la variazione non è troppo significativa, quindi possiamo assumere che il numero di protoni e quello di neutroni in genere sia lo stesso). Se consideriamo un gas \emph{totalmente ionizzato}, gli elementi più pesanti avranno $\sim Z_a$ particelle libere (con $Z_a$ il loro numero atomico) e avremo $A_3 \sim 2 Z_a$.
 
-Ora, possiamo scrivere l'abbondanza della specie $j$-esima utilizzando la sua definizione: 
+Inoltre possiamo scrivere l'abbondanza in massa della specie $j$-esima utilizzando la definizione stessa, ossia: 
 \begin{equation}\label{eq:definizione-abbondanza}
     X_j = \frac{M_{\textup{tot}, j}}{M_\textup{tot}}
 \end{equation}
-dove $X_1 = X$, $X_2 = Y$ e $X_3 = Z$, come più volte ricordato. Mettendo insieme l'eq.~\eqref{eq:numero-atomi-specie} e~\eqref{eq:definizione-abbondanza} si trova:
+dove $X_1 = X$, $X_2 = Y$ e $X_3 = Z$, come più volte ricordato. Mettendo insieme le equazioni~\eqref{eq:numero-atomi-specie} e~\eqref{eq:definizione-abbondanza} si trova:
 \begin{equation}\label{eq:numero-atomi-specie2}
     N_j =\frac{X_j M_\textup{tot}}{A_j H}
 \end{equation}
-Pertanto, per un gas \emph{totalmente ionizzato} possiamo calcolare il numero totale di particelle libere contando le particelle come espresso nella lista sopra e utilizzando l'eq.~\eqref{eq:numero-atomi-specie2}:
+Pertanto, per un gas \emph{totalmente ionizzato} possiamo calcolare il numero totale di particelle libere contando le particelle come espresso nella lista sopra e utilizzando l'equazione~\eqref{eq:numero-atomi-specie2}:
 \begin{equation}\label{eq:numero-atomi-liberi}
     N_\textup{free} = \sum_{j=1}^3 N_j (1 + Z_j) = \frac{M_\textup{tot}}{H} \sum_{j=1}^3 \frac{X_j}{A_j} (1+Z_j)
 \end{equation}
 dove $Z_j$ rappresenta il numero atomico dell'elemento considerato, dunque per l'idrogeno $Z_1 =1$, per l'elio $Z_2 = 2$ e per gli elementi più pesanti considereremo un numero atomico generico $Z_a$, per cui $Z_3 = Z_a$\footnote{non si confonda $Z_i$ con l'abbondanza degli elementi pesanti $Z$, la quale \emph{non} ha un pedice}. 
 
-Mettendo insieme le eq.~\eqref{eq:peso-molecolare-medio-definizione}, \eqref{eq:massa-media-particelle} e~\eqref{eq:numero-atomi-liberi}, si ottiene:
+Mettendo insieme le equazioni~\eqref{eq:peso-molecolare-medio-definizione}, \eqref{eq:massa-media-particelle} e~\eqref{eq:numero-atomi-liberi}, si ottiene:
 \begin{equation}
     \mu = \dfrac{1}{\sum_{j=1}^3 \frac{X_j}{A_j} (1+Z_j)}
+    \label{eq:formula-generale-mu}
 \end{equation}
 Sostituendo con i valori che sono stati introdotti precedentemente si ha:
 \[
 \mu = \dfrac{1}{\frac{X_1}{A_1}(1+Z_1) + \frac{X_2}{A_2}(1+Z_2) + \frac{X_3}{A_3}(1+Z_3)} = \dfrac{1}{\frac{X}{1}(1+1) + \frac{Y}{4}(1+2) + \frac{Z}{2 Z_a}(1+Z_a)}
 \]
-In definitiva, per un \emph{gas totalmente ionizzato}, considerando sia il contributo degli \emph{ioni} che il contributo degli \emph{elettroni} si ottiene un \emph{peso molecolare medio} pari a:
+In definitiva, per un \emph{gas totalmente ionizzato}, considerando sia il contributo degli \emph{ioni} che il contributo degli \emph{elettroni}, si ottiene un \emph{peso molecolare medio} pari a:
 \begin{equation}\label{eq:peso-molecolare-gas-ionizzato}
     \mu = \dfrac{1}{2 X + \frac{3}{4} Y + \frac{1}{2} Z}
 \end{equation}
 
 Se ora consideriamo il solo contributi degli \emph{elettroni} in un gas totalmente ionizzato, otteniamo:
 \begin{equation}
-    \mu = \dfrac{1}{X + \frac{1}{2} Y + \frac{1}{2}Z}
+    \mu_e = \dfrac{1}{X + \frac{1}{2} Y + \frac{1}{2}Z}
+    \label{eq:formula-mu-elettroni}
 \end{equation}
-infatti, \textbf{finisci di scrivere e spiega il perché considerato quanto scritto prima}.
+infatti se consideriamo solo il contributo degli \emph{elettroni} di ogni componente del gas non stiamo considerando il contributo degli \emph{ioni}, che altro non sono che i nuclei; perciò si avrà che ogni componente contribuisce solo con $Z_j$ particelle invece che con $1+Z_j$ e se si modifica in questo modo l'equazione~\eqref{eq:formula-generale-mu} si ottiene la formula riportata.
 
-Usando che 
+Ma in più possiamo usare il fatto che la somma delle frazioni in massa delle varie componenti è pari a 1, quindi si ottiene che:  
 \[
-X+Y+Z=1 \implies X + \frac{1/2}{(Y+Z)} = \frac{1}{2} + \frac{1}{2} X
+X+Y+Z=1 \implies X + \frac{1}{2}(Y+Z) = \frac{1}{2}X + \frac{1}{2}(X+Y+Z) =\frac{1}{2} + \frac{1}{2}X
 \]
-otteniamo:
+Inserendo nell'equazione~\eqref{eq:formula-mu-elettroni} otteniamo infine:
 \begin{equation}\label{eq:peso-molecolare-elettroni}
-    \mu = \dfrac{2}{X+1}
+    \mu_e = \dfrac{2}{X+1}
 \end{equation}
-\textbf{controlla che sia giusto}
 
 \subsection{Degenerazione}\label{sec:degenerazione}
-Un gas che segue l'equazione~\eqref{eq:gas-ideale} è un gas ideale e come spiegato nel paragrafo~\ref{sec:gas-perfetto} in questo caso la struttura è \emph{termoregolata}. Nel caso in cui il gas \emph{non} sia ideale, si dice che si trova in una situazione di \emph{degenerazione}, e gli effetto quanto-meccanici diventano rilevanti. Per la \emph{componente ionica} del gas (par.\ref{sec:peso-molecolare}) posso sempre mettermi nell'approssimazione di gas perfetto, mentre per la \emph{componente elettronica} non sempre è così. Ciò è dovuto al fatto che la massa dell'elettrone è circa mille volte inferiore alla massa del protone, dunque a densità fissata è possibile una degenerazione della sola componente elettronica del gas. Quindi studieremo quest'ultima, trovando un limite inferiore che varrà sicuramente anche per la componente ionica. Dunque, quando bisogna preoccuparci degli effetti quanto-meccanici?
+Un gas che segue l'equazione~\eqref{eq:gas-ideale} è un gas ideale e come spiegato nel paragrafo~\ref{sec:gas-perfetto} in questo caso la struttura è \emph{termoregolata}. Nel caso in cui il gas \emph{non} sia ideale, si dice che si trova in una situazione di \emph{degenerazione}, e gli effetto quanto-meccanici diventano rilevanti. Per la \emph{componente ionica} del gas (par.~\ref{sec:peso-molecolare}) ci si può sempre mettere nell'approssimazione di gas perfetto, mentre per la \emph{componente elettronica} non sempre è così; ciò è dovuto al fatto che la massa dell'elettrone è circa mille volte inferiore alla massa del protone, dunque a densità fissata è possibile una degenerazione della sola componente elettronica del gas. Possiamo quindi studiare quest'ultima, trovando un limite inferiore che varrà sicuramente anche per la componente ionica. Ma quindi in quali situazioni bisogna preoccuparsi degli effetti quanto-meccanici?
 
 Ricordiamo che in meccanica quantistica una particella è rappresentabile attraverso una \emph{lunghezza d'onda di de Broglie} pari a:
 \begin{equation}\label{eq:lunghezza-de-broglie}
     \lambda = \dfrac{h}{\sqrt{2 m \kb T}}
 \end{equation}
-Se la distanza media tra le particelle è molto più grande della lunghezza d'onda ad essere associata, posso ignorare la natura ondulatoria, mentre dato un certo volume $V$, la distanza media tra le particelle è tanto più grande quando più piccola è la densità. Si può dimostrare che gli effetti quantistici sono trascurabili se:
+Se la distanza media tra le particelle è molto più grande della lunghezza d'onda ad essere associata allora si può ignorare la natura ondulatoria e applicare le leggi della meccanica classica. Dato un certo volume $V$, la distanza media tra le particelle è tanto più grande quando più piccola è la densità. Si può dimostrare che gli effetti quantistici sono trascurabili se:
 \[
 T > 2.4\cdot 10^{-22} \frac{\rho^{2/3}}{m}
 \]
-che rappresenta la \emph{condizione di degenerazione} per un gas di temperatura $T$, alla densità $\rho$, costituito da particelle di massa $m$. Tale condizione tende ad essere violata, ovvero il gas tende ad essere degenere:
+che rappresenta la \emph{condizione di non degenerazione} per un gas di temperatura $T$, alla densità $\rho$, costituito da particelle di massa $m$. Tale condizione tende ad essere violata, ovvero il gas tende ad essere degenere, solitamente in due casi:
 \begin{itemize}
     \item ad alte densità (poiché la distanza media tra le particelle è minore)
     \item  per particelle di massa minore
 \end{itemize}
 
-Come accennato precedentemente, a causa della differenza di massa tra elettrone e protone, è possibile che gli elettroni siano in condizione di degenerazione mentre gli ioni no. D'ora in avanti ci occuperemo solamente della degenerazione elettronica. Dato che per gli elettroni $m_e \sim \SI{e-27}{g}$ ho un limite di demarcazione:
+Come accennato precedentemente, a causa della significativa differenza di massa tra elettrone e protone, è possibile che le condizioni della materia stellare siano tali per cui gli elettroni siano in condizione di degenerazione mentre gli ioni no. D'ora in avanti ci occuperemo solamente della degenerazione elettronica. Dato che per gli elettroni $m_e \sim \SI{e-27}{g}$ si può individuare un limite di demarcazione:
 \begin{itemize}
-    \item $\dfrac{T}{\rho^{2/3}} > 10^5$: in questo caso posso trascurare gli effetti quantistici e trattare il gas come gas perfetto.
-    \item $\dfrac{T}{\rho^{2/3}} < 10^5$: in questo caso \emph{devo} considerare gli effetti quantistici per la degenerazione elettronica.
+    \item $\dfrac{T}{\rho^{2/3}} > 10^5$: in questo caso si possono trascurare gli effetti quantistici e trattare il gas come gas perfetto.
+    \item $\dfrac{T}{\rho^{2/3}} < 10^5$: in questo caso si \emph{devono} considerare gli effetti quantistici per la degenerazione elettronica.
 \end{itemize}
 
 In particolare, gli effetti quantistici che entrano in caso sono il \emph{principio di indeterminazione di Heisenberg} e il \emph{principio di esclusione di Pauli}.
