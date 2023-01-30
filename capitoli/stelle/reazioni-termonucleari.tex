@@ -95,7 +95,7 @@ Senza scendere troppo nei dettagli, evidenziamo che il \emph{tempo scala} della 
 Tuttavia, il decadimento $\beta^+$ per un protone libero è essenzialmente impossibile, poiché la massa del protone è minore della massa del neutrone (eq.~\eqref{eq:difetto-massa}). Nonostante ciò, nel nucleo delle stelle tale reazione può avvenire poiché ci sono tantissimi protoni, dunque anche se la probabilità è bassissima, questa è compensata dall'elevato numero. 
 
 D'altra parte, il \emph{decadimento $\beta^-$}, secondo il quale un neutrone decade in protone, è un processo spontaneo, in quanto il suo tempo scala è dell'ordine di $\SI{800}{s}$ e tende ad eliminare tutti i neutroni liberi:
-\reaction[re:decadimento-beta-]{n -> p^+ + e^- + $\nu$}
+\reaction[re:decadimento-beta-]{n -> p^+ + e^- + $\bar{\nu}$}
 Tuttavia negli interni stellari possono comunque esserci neutroni liberi, i quali contribuiscono alla formazione di elementi più pesanti, come vedremo successivamente.
 
 \paragraph{Catena PPII e PPIII}
@@ -116,7 +116,7 @@ In particolare, nella~\ref{re:ppII3} il \ce{Be^8} è instabile e si spacca in du
 
 Con una probabilità residua di $P_3 = 0.3\%$, la \ref{re:ppsecondaria} può proseguire con una catena PPIII (fig.~\ref{fig:catena-pp3}), nella seguente maniera:
 \reaction[re:ppIII1]{Be^7 + H^1 -> B^8 + $\gamma$}
-\reaction[re:PPIII2]{B^8 -> Be^8 + e^+ + $\gamma$}
+\reaction[re:PPIII2]{B^8 -> Be^8 + e^+ + $\nu$}
 \reaction[re:PPIII3]{Be^8 -> 2 He^4 + $\gamma$}
 
 \begin{figure}
@@ -135,7 +135,7 @@ Un'altra possibile catena di bruciamento dell'idrogeno, è la così detta \emph{
 \reaction[re:cno3]{C^{13} + H^1 -> N^{14} + $\gamma$}
 \reaction[re:cno4]{N^{14} + H^1 -> O^{15} + $\gamma$}
 \reaction[re:cno5]{O^{15} -> N^{15} + e^+ + $\nu$}
-\reaction[re:cno6]{M^{15} + H^1 -> C^{12} + He^4}
+\reaction[re:cno6]{N^{15} + H^1 -> C^{12} + He^4}
 
 \begin{figure}
     \centering
@@ -247,9 +247,9 @@ Processo r & $> \SI{e10}{}$ & $\SI{10}{s}$--$\SI{100}{s}$ \\
 
 Essa può essere stimata così:
 \begin{equation}
-    \epsilon = \sum_{i=1}^{N_r} E_r \dfrac{N_r}{\si{g.s}} = \sum_{i=1}^{N_r} E_r \dfrac{N_r}{\si{cm^3.s}} \dfrac{\si{cm^3}}{\si{g}}
+    \epsilon = \sum_{i=1}^{N_r} E_i \dfrac{N_i}{\si{g.s}} = \sum_{i=1}^{N_i} E_i \dfrac{N_i}{\si{cm^3.s}} \dfrac{\si{cm^3}}{\si{g}}
 \end{equation}
-dove con $i \in [N_r]$ si sta sommando sulle varie reazioni della catena in considerazione, $E_r$ è l'energia prodotta da ciascuna reazione, $N_r/\si{cm^3.s}$ è il numero di reazioni per unità di volume e di tempo e $\si{cm^3} / \si{g}$ rappresenta l'inverso della densità della materia stellare. Essa dipende da:
+dove con $i \in [r]$ si sta sommando sulle varie reazioni della catena in considerazione, $E_r$ è l'energia prodotta da ciascuna reazione, $N_r/\si{cm^3.s}$ è il numero di reazioni per unità di volume e di tempo e $\si{cm^3} / \si{g}$ rappresenta l'inverso della densità della materia stellare. Essa dipende da:
 \begin{itemize}
     \item Carburante disponibile
     \item Temperatura (le reazioni si innescano dopo una certa soglia)
@@ -265,7 +265,7 @@ In un modello stellare si esprime $\epsilon$ in maniera approssimata, in base al
 \epsilon_{3\alpha} &= \epsilon_3 \rho^2 Y^3 {T_8}^{\nu_{3\alpha}} \qquad \qquad \nu_{3 \alpha} \in [20 - 30] \label{eq:energia-3A}
 \end{align}
 \end{subequations}
-dove $T_6$ significa che la temperatura è espressa in unità di $\SI{e6}{K}$, mentre $T_8$ significa che la temperatura è espressa in unità di $\SI{e8}{K}$. $X$ è l'abbondanza dell'idrogeno, $Y$ l'abbondanza dell'elio e $X_\textup{CN}$ l'abbondanza di carbonio e azoto. Si noti la mostruosa dipendenza dalla temperatura delle~\eqref{eq:energia-reazioni-termonucleari}, il che evidenzia che reazioni termonucleari stabili possono avvenire solamente in ambienti termonucleari, ovvero in cui il gas può essere considerato perfetto. Infatti, in ambienti degeneri, in cui la pressione non dipende dalla temperatura, siccome piccole variazioni di energia producono una variazione enorme della creazione di energia, la struttura può esplodere. Come si può notare, queste sono le espressioni che compaiono nell'equazione~\eqref{eq:reazioni-termonucleari}. 
+dove $T_6$ significa che la temperatura è espressa in unità di $\SI{e6}{K}$, mentre $T_8$ significa che la temperatura è espressa in unità di $\SI{e8}{K}$. $X$ è l'abbondanza dell'idrogeno, $Y$ l'abbondanza dell'elio e $X_\textup{CN}$ l'abbondanza di carbonio e azoto. Si noti la mostruosa dipendenza dalla temperatura delle~\eqref{eq:energia-reazioni-termonucleari}, il che evidenzia che reazioni termonucleari stabili possono avvenire solamente in ambienti termo-regolati, ovvero in cui il gas può essere considerato perfetto. Infatti, in ambienti degeneri, in cui la pressione non dipende dalla temperatura, siccome piccole variazioni di energia producono una variazione enorme della creazione di energia, la struttura può esplodere. Come si può notare, queste sono le espressioni che compaiono nell'equazione~\eqref{eq:reazioni-termonucleari}. 
 
 \section{Riassunto sul modello stellare.}
 Con le 7 equazioni presentate nel par.~\ref{sec:modelli-stellari} abbiamo un sistema di 7 equazioni in 7 incognite per descrivere la struttura di una stella. In particolare, le incognite sono:
