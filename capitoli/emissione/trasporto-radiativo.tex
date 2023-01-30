@@ -45,7 +45,7 @@ Ci si può ora chiedere quale sia la relazione tra l'intensità specifica e la l
 \subsection{Relazione tra intensità e luminosità}\label{sec:relazione-intensità-luminosità}
 Consideriamo un campo di radiazione isotropo, per cui $I_\nu$ è uguale in ogni direzione $k$. Questo significa che se considero una superficie infinitesima $\ud A$, la quantità di radiazione entrante e uscente da tale superficie è la stessa per ogni superficie. La luminosità (par.~\ref{sec:luminosità}) della sorgente è la quantità di radiazione \emph{emessa} dalla sorgente nel tempo $\ud t$, cioè la quantità di radiazione che \emph{esce} dalla sorgente stessa, ovvero la quantità di radiazione che \emph{esce da ciascuna superficie $\ud A$, integrata sulla superficie totale della sorgente}.
 
-Per ottenere la quantità di radiazione che \emph{esce} da ciascuna superficie infinitesima $\ud A$ bisogna integrare sull'angolo solido della semisfera \emph{uscente}, ovvero per $\phi \in [0, 2\pi]$ e $\theta \in [0, \pi/2]$, come mostrato in fig.~\ref{fig:emisfera-uscente}.
+Per ottenere la quantità di radiazione che \emph{esce} da ciascuna superficie infinitesima $\ud A$ bisogna integrare sull'angolo solido della semisfera \emph{uscente}, ovvero per $\phi \in [0, 2\pi]$ e $\theta \in [0, \pi/2]$, come mostrato in fig.~\ref{fig:emisfera-uscente}, l'intensità della sorgente.
 
 \begin{figure}
 \centering
@@ -103,7 +103,7 @@ La si può risolvere facilmente in due casi limite. Nel caso si \emph{pura emiss
 \[
     \frac{\ud I_\nu}{\ud S} = j_nu \qquad I_\nu = I_\nu (0) + \int \ud S j_\nu
 \]
-In questo caso, l'aumento di densità è pari al coefficiente di emissione integrato lungo la linea di vista.
+In questo caso, l'aumento di intensita è pari al coefficiente di emissione integrato lungo la linea di vista.
 
 Nel caso di \emph{puro assorbimento}, corrispondente a $j_\nu = 0$, si ha:
 \[
@@ -178,13 +178,13 @@ Questo corrisponde, ad esempio, a osservare il mezzo interposto da una direzione
 
 Ci si può chiedere come sia fatta la funzione sorgente $S_\nu$, definita tramite eq.~\eqref{eq:funzione-sorgente}. Essa è diversa a seconda del tipo di radiazione, cioè del processo responsabile del fenomeno di radiazione osservato. Tipicamente i processi di emissione vengono raggruppati in processi termici e processi non termici.
 \begin{description}
-    \item[Radiazione termica] emessa da un corpo in equilibrio termico (o termodinamico). Ovvero materia e radiazione sono accoppiate, ci sono continui processi di emissione e assorbimento di fotoni e il tasso di assorbimento è uguale al tasso di emissione. Esempi di processi termici sono:
+    \item[Radiazione termica] è emessa da un corpo in equilibrio termico (o termodinamico), in cui tra materia e radiazione avvengono continui processi di emissione e assorbimento di fotoni tali da rendere il tasso di assorbimento uguale al tasso di emissione. Esempi di processi termici sono:
     \begin{itemize}
         \item Radiazione di corpo nero (stelle)
         \item Bremsstrahlung (gas negli ammassi di galassie)
     \end{itemize}
     
-    \item[Radiazione non termica] non sono dovuti a processi di emissione e assorbimento, ma, ad esempio, a moto di cariche elettriche oppure a scattering. Esempio sono:
+    \item[Radiazione non termica] non sono dovuti a processi di emissione e assorbimento, ma, ad esempio, a moto di cariche elettriche oppure a un effetto di scattering. Esempio sono:
     \begin{itemize}
         \item Sincrotrone (pulsar)
         \item Compton (effetto Sinyaev-Zel'dovich)
@@ -192,9 +192,9 @@ Ci si può chiedere come sia fatta la funzione sorgente $S_\nu$, definita tramit
 \end{description}
 
 \subsection{Radiazione termica}
-Se, nell'approssimazione del paragrafo~\ref{sec:trascuro-sorgente-trasporto-radiativo} considero solamente processi termici, ovvero processi dovuti a continue emissioni e assorbimenti, la funzione sorgente coincide con la \emph{funzione di Planck} (eq.~\eqref{eq:corpo-nero}), che verrà introdotta nel prossimo paragrafo:
+Se, nell'approssimazione del paragrafo~\ref{sec:trascuro-sorgente-trasporto-radiativo} considero solamente processi termici, ovvero processi dovuti a continue emissioni e assorbimenti, la funzione sorgente coincide con la \emph{funzione di Planck} (eq.~\eqref{eq:corpo-nero}):
 \[
-    S_\nu = B_{BB} (T)
+    S_\nu = B_{BB} (T) = \frac{2 h}{c^2} \frac{\nu^3}{e^{\frac{h \nu}{k_B T}} - 1}
 \]
 In questo caso, i due regimi di approssimazione si riducono alle seguenti espressioni:
 \begin{description}
