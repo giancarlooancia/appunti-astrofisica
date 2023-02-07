@@ -1,5 +1,5 @@
 \section{Equazione di stato}\label{sec:equazione-stato}
-Guardando le equazioni~\eqref{eq:equilibrio-idrostatico} e~\eqref{eq:continuità-massa}, queste sono 2 equazioni in 3 incognite: $P(r)$, $M(r)$ e $\rho(r)$. Una relazione tra $P$ e $\rho$ è stabilita dall'\emph{equazione di stato}:
+Guardando le equazioni~\eqref{eq:equilibrio-idrostatico} e~\eqref{eq:continuità-massa}, notiamo come queste siano 2 equazioni in 3 incognite: $P(r)$, $M(r)$ e $\rho(r)$. Per risolvere completamente il sistema è necessario stabilire un'altra relazione tra grandezze indipendenti. Una relazione tra $P$ e $\rho$ è stabilita dall'\emph{equazione di stato}:
 \begin{equation}\label{eq:equazione-stato}
     P = \dfrac{aT^4}{3} + \dfrac{k \rho T}{\mu_i H} + 
     \begin{cases} 
@@ -9,7 +9,7 @@ Guardando le equazioni~\eqref{eq:equilibrio-idrostatico} e~\eqref{eq:continuità
     \end{cases}
 \end{equation}
 
-Un primo aspetto da considerare è che al pressione nell'interno delle stelle è dovuta a due contributi, ossia la \emph{pressione di radiazione} e \emph{la pressione del gas}:
+Un primo aspetto da considerare è che la pressione nell'interno delle stelle è dovuta a due contributi, ossia la \emph{pressione di radiazione} e \emph{la pressione del gas}:
 \[
 P = P_\textup{rad} + P_\textup{gas}
 \]
@@ -18,7 +18,7 @@ I fotoni esercitano una pressione perché a ogni fotone di energia $E$ è associ
 \[
 P_\textup{rad} = \frac{4\pi}{3c}\int_0^\infty B_\nu(T) \ud \nu = \frac{1}{3} a T^4
 \]
-dove $a$ è una costante pari a $a = 4 \sigma / c = \SI{7.6e-15}{erg.cm^{-3}.K^{-4}}$, in cui $\sigma$ è la costante di Stefan-Boltzmann. Accontentiamoci del risultato senza ulteriori specificazioni sui dettagli del conto, quindi si ha:
+dove $a$ è una costante pari a $a = 4 \sigma / c = \SI{7.6e-15}{erg.cm^{-3}.K^{-4}}$, in cui $\sigma$ è la costante di Stefan-Boltzmann. Accontentiamoci del risultato senza ulteriori specificazioni sui dettagli del conto. Si ha:
 \begin{equation}\label{eq:pressione-radiazione}
     P_\textup{rad} = \frac{1}{3} a T^4
 \end{equation}
@@ -46,7 +46,7 @@ Vediamo che la costante di proporzionalità $\rho / \mu H$ dipende dalla massa d
 La caratteristica più importante di questa equazione è la cosiddetta \emph{termo-regolazione}: se $T$ cresce $P$ cresce, ma se $P$ cresce la stella si espande e la temperatura diminuisce, quindi si ha continuamente un bilancio fra pressione e temperatura. Si faccia tuttavia attenzione al fatto che non tutti i gas si comportano come un gas ideale (par.~\ref{sec:degenerazione}).
 
 \subsection{Peso molecolare medio}\label{sec:peso-molecolare}
-Arrivati a questo punto ci interessa legare il \emph{peso molecolare medio} $\mu$ alla composizione chimica del gas, introdotta nel par.~\ref{sec:modelli-stellari}. Come già ricordato, $\mu$ rappresenta la media delle masse delle particelle che compongono il gas, espressa in termini della massa del protone $H$:
+Arrivati a questo punto ci interessa legare il \emph{peso molecolare medio} $\mu$ alla composizione chimica del gas, introdotta all'inizio del par.~\ref{sec:modelli-stellari}. Come già ricordato, $\mu$ rappresenta la media delle masse delle particelle che compongono il gas, espressa in termini della massa del protone $H$:
 \begin{equation}\label{eq:peso-molecolare-medio-definizione}
     \mu = \frac{\langle m \rangle}{H}
 \end{equation}
@@ -64,13 +64,13 @@ Si faccia molta attenzione al fatto che $N_\textup{free}$ rappresenta le partice
         \item ogni atomo \emph{parzialmente ionizzato} contribuisce con un numero compreso fra $1$ e $1+Z_a$ di particelle.
     \end{itemize}
 \end{itemize}
-Si faccia nuovamente attenzione a due dettagli. Innanzi tutto, stiamo dividendo il gas studiato in tre parti: l'idrogeno, la cui abbondanza in massa è espressa da $X$, l'elio, la cui abbondanza è espressa da $Y$ e gli elementi più pesanti, la cui abbondanza è $Z$. Dunque, non stiamo distinguendo tra gli elementi più pensanti dell'elio, bensì li stiamo accorpando tutti in una stessa famiglia. Questo è lecito poiché le loro abbondanze sono ridotte in confronto ai primi due elementi della tavola periodica. Inoltre, $Z_a$ rappresenta il grado di ionizzazione del gas per un gas totalmente ionizzato, che coincide dunque con il numero di protoni del gas.
+Si faccia nuovamente attenzione a due dettagli. Innanzi tutto, stiamo dividendo il gas studiato in tre parti: l'idrogeno, la cui abbondanza in massa è espressa da $X$, l'elio, la cui abbondanza è espressa da $Y$ e gli elementi più pesanti, la cui abbondanza è $Z$. Dunque, non stiamo distinguendo gli elementi più pensanti dell'elio, bensì li stiamo accorpando tutti in una stessa famiglia. Questo è lecito poiché le loro abbondanze sono ridotte in confronto ai primi due elementi della tavola periodica. Inoltre, $Z_a$ rappresenta il grado di ionizzazione del gas per un gas totalmente ionizzato, che coincide dunque con il numero di protoni del gas.
 
 Tenendo a mente che stiamo distinguendo solamente tre specie di elementi (idrogeno, elio e più pesanti), indicizziamo la specie con l'indice $j$, con $j = 1, \, 2, \, 3$; a costo di essere ridondanti, ribadiamo che $j=1$ si riferisce all'idrogeno, $j=2$ all'elio e $j=3$ a tutti gli altri elementi. A questo punto possiamo calcolare il numero di atomi della specie $j$-esima:
 \begin{equation}\label{eq:numero-atomi-specie}
     N_j = \frac{M_{\textup{tot}, j}}{m_{\textup{atomo}, j}} \simeq \frac{M_{\textup{tot}, j}}{A_j H}
 \end{equation}
-dove $A_j$ è il \emph{numero di massa}, ovvero il numero di nucleoni, pari alla somma dei protoni e dei neutroni. In particolare, se consideriamo l'isotopo più comune dell'idrogeno, il prozio, il suo nucleo è composto solamente da un protone, per cui $A_1 = 1$. Considerando l'elio $4$, il suo nucleo è composto da $2$ protoni e $2$ neutroni, pertanto $A_2 = 4$. Invece per gli elementi più pesanti possiamo considerare che i più stabili in genere hanno un numero di protoni circa uguale al numero di elettroni (come abbiamo visto nel corso di Fisica Nucleare questo non è propriamente vero perché la repulsione coulombiana sfavorisce l'aumento dei protoni, quindi al crescere di A avremo in genere un maggior numero di neutroni; ciò nonostante la variazione non è troppo significativa, quindi possiamo assumere che il numero di protoni e quello di neutroni in genere sia lo stesso). Se consideriamo un gas \emph{totalmente ionizzato}, gli elementi più pesanti avranno $\sim Z_a$ particelle libere (con $Z_a$ il loro numero atomico) e avremo $A_3 \sim 2 Z_a$.
+dove $A_j$ è il \emph{numero di massa}, ovvero il numero di nucleoni, pari alla somma dei protoni e dei neutroni. In particolare, se consideriamo l'isotopo più comune dell'idrogeno, il prozio, il suo nucleo è composto solamente da un protone, per cui $A_1 = 1$. Considerando l'elio $4$, il suo nucleo è composto da $2$ protoni e $2$ neutroni, pertanto $A_2 = 4$. Invece per gli elementi più pesanti possiamo considerare che i più stabili in genere hanno un numero di protoni circa uguale al numero di protoni (la repulsione coulombiana sfavorisce l'aumento dei protoni, quindi al crescere di $A$ avremo in genere un maggior numero di neutroni; ciò nonostante la variazione non è troppo significativa, quindi possiamo assumere che il numero di protoni e quello di neutroni in genere sia lo stesso). Se consideriamo un gas \emph{totalmente ionizzato}, gli elementi più pesanti avranno $\sim Z_a$ particelle libere (con $Z_a$ il loro numero atomico) e avremo $A_3 \sim 2 Z_a$.
 
 Inoltre possiamo scrivere l'abbondanza in massa della specie $j$-esima utilizzando la definizione stessa, ossia: 
 \begin{equation}\label{eq:definizione-abbondanza}
@@ -123,7 +123,7 @@ Ricordiamo che in meccanica quantistica una particella è rappresentabile attrav
 \begin{equation}\label{eq:lunghezza-de-broglie}
     \lambda = \dfrac{h}{\sqrt{2 m \kb T}}
 \end{equation}
-Se la distanza media tra le particelle è molto più grande della lunghezza d'onda ad essere associata allora si può ignorare la natura ondulatoria e applicare le leggi della meccanica classica. Dato un certo volume $V$, la distanza media tra le particelle è tanto più grande quando più piccola è la densità. Si può dimostrare che gli effetti quantistici sono trascurabili se:
+Se la distanza media tra le particelle è molto più grande della lunghezza d'onda di de Broglie (vedi concentrazione quantistica), allora si può ignorare la natura ondulatoria e applicare le leggi della meccanica classica. Dato un certo volume $V$, la distanza media tra le particelle è tanto più grande quando più piccola è la densità. Si può dimostrare che gli effetti quantistici sono trascurabili se:
 \[
 T > 2.4\cdot 10^{-22} \frac{\rho^{2/3}}{m}
 \]
@@ -160,7 +160,7 @@ Il \emph{principio di esclusione di Pauli} afferma che in ciascuna cella dello s
 
 Questi due principi hanno un effetto diretto sulla \emph{distribuzione di velocità (momenti)} delle particelle, e quindi in definitiva sulla dipendenza della pressione dalle proprietà del gas. 
 
-Consideriamo un gas di elettroni in condizioni di bassa densità: potremo trattarlo come gas perfetto e seguirà la distribuzione di Maxwell. Aumentando il numero di elettroni tenendo fissa la temperatura $T$, al curva di Maxwell si abbasserà, fino a un limite in cui non posso più trascurare gli effetti quantistici. In questo caso, il numero di elettroni con quantità di moto compresa tra $p$ e $p + \ud p$, in  un dato volume $V$, non può più essere infinito come nel caso della distribuzione di Maxwell, ma sarà:
+Consideriamo un gas di elettroni in condizioni di bassa densità: potremo trattarlo come gas perfetto e seguirà la distribuzione di Maxwell--Boltzmann. Aumentando il numero di elettroni tenendo fissa la temperatura $T$, la curva di Maxwell--Boltzmann si abbasserà, fino a un limite in cui non si potranno più trascurare gli effetti quantistici. In questo caso, il numero di elettroni con quantità di moto compresa tra $p$ e $p + \ud p$, in  un dato volume $V$, non può più essere infinito come nel caso della distribuzione di Maxwell--Boltzmann, ma sarà:
 \[
 n(p) \ud p \leq \frac{2V}{h^3} \ud p_x \ud p_y \ud p_z
 \]
@@ -260,6 +260,42 @@ con $k_2$ una costante pari a
 k_2 = 1.2 \cdot 10^{15} {\mu_e}^{-4/3}
 \]
 Nuovamente, non c'è dipendenza dalla temperatura e la dipendenza dalla densità è più forte che nel gas ideale~\eqref{eq:gas-ideale}.
+
+\subsection{Richiami di Meccanica Statistica}
+Ripassiamo quanto visto finora utilizzando le notazioni proposte nel corso istituzionale di Meccanica Statistica. Come sappiamo, è necessario distinguere tre tipi di particelle, per ciò che concerne l'occupazione energetica media:
+\begin{description}
+\item[Classiche.] Esse seguono la distribuzione di Maxwell--Boltzmann. Consideriamo particelle di gas perfetto, pertanto esse saranno indistinguibili (cfr. paradosso di Gibbs). Lo spettro energetico è continuo.
+\item[Fermioni.] Esse seguono la distribuzione di Fermi--Dirac, la quale tende a quella di Maxwell--Boltzmann nel limite classico. Lo spettro energetico è discreto con i vincoli del principio di esclusione di Pauli. 
+\item[Bosoni.] Esse seguono la distribuzione di Bose--Einstein, la quale tende a quella di Maxwell--Boltzmann nel limite classico.
+\end{description}
+
+Nel caso delle particelle classiche, utilizzando il formalismo dell'ensamble grancanonico, si può calcolare la funzione di partizione grancanonica utilizzando il fatto che, per particelle indistinguibili, vale:
+\[
+Z(N) \simeq \frac{{Z_1}^N}{N!}
+\]
+con $Z(N)$ funzione di partizione canonica di $N$ particelle di gas perfetto e $Z_1$ funzione di partizione di una particella. Passando per il grande potenziale, è possibile trovare l'occupazione media per livello energetico. Si ottiene la distribuzione di Maxwell--Boltzmann:\
+\begin{equation}
+    \langle n_s  \rangle = e^{\beta(\mu - \epsilon_s)} 
+\end{equation}
+
+Nel caso di particelle quantistiche, invece, si calcola la funzione di partizione canonica sommando su tutti i possibili set di occupazione, utilizzando il vincolo $X=1$ per i fermioni (principio di Pauli) e $X=\infty$ per i bosoni, con $X$ il massimo valore possibile per un numero di occupazione. Sviluppando come sopra, si ottiene, nel primo caso, la distribuzione di Fermi--Dirac:
+\begin{equation}
+    \langle n_s \rangle = \dfrac{1}{e^{\beta(\epsilon_s - \mu)} + 1}
+\end{equation}
+Siamo interessati solamente a questa, poiché vogliamo studiare il comportamento degli elettroni, i quali, a causa del teorema Spin--Statistica, avendo spin semintero, si comportano collettivamente come fermioni.
+
+Come noto, per temperature molto basse, $T \to 0$, la distribuzione di Fermi--Dirac assume la forma di una funzione a gradino di Heaviside, con numero di occupazione pari a $1$ per energie sotto l'energia di fermi ($E_F = \mu(T=0)$) e zero sopra. Da cui si nota subito come la temperatura non possa più essere utilizzata per determinare l'energia del sistema, perché anche a temperature molto basse i fermioni si distribuiscono su livelli energetici sempre più alti a causa delle restrizioni del principio di esclusione. All'aumentare della temperatura la funzione di Fermi si arrotonda, poiché vi sarà energia termica a disposizione per permettere a qualche fermione di depositarsi si un livello energetico superiore alla soglia di Fermi. D'altra parte, per temperature molto alte, che corrispondono a una densità di particelle molto minore della concentrazione quantistica, la distribuzione tende a quella di Maxwell--Boltzmann.
+
+Si ricorda, infatti, che un buon discriminante per determinare se una particella si comporta come classica o quantistica è la concentrazione quantistica. Essa si può trovare calcolando la funzione di partizione di una particella in una scatola cubica di potenziale con condizioni al contorno di annullamento, ed è pari a:
+\begin{equation}\label{eq:concentrazione-quantistica}
+    n_Q = \Bigl( \dfrac{m \kb T}{2 \pi {\hslash}^2}  \Bigr)^\frac{3}{2} \qquad \lambda_\textup{th} = {n_Q}^{-\frac{1}{3}} 
+\end{equation}
+In particolare, se la densità $n$ di particelle è molto minore della concentrazione quantistica, $n \ll n_Q$, o equivalentemente se la distanza media tra due particelle è molto maggiore della lunghezza d'onda di De Broglie, $(V/N)^\frac{1}{3} \gg \lambda_\textup{th}$, le particelle possono essere trattate come classiche e la distribuzione di Maxwell--Boltmann sarà valida.
+
+A questo punto ci si pone il problema di calcolare le pressioni di un gas perfetto e un gas di Fermi in condizione di forte degenerazione ($T \to 0$). Si vuole evidenziare un dettaglio: nonostante le temperature delle stelle siano relativamente elevate, esse possono essere considerate molto piccole rispetto alla \emph{temperatura di Fermi} della struttura, perciò è lecito trattare il gas di elettroni come se fosse a bassissima temperatura. 
+
+Nel caso classico, come ovvio, si ottiene la legge dei gas perfetti. Nel caso quantistico si procede come segue. CONTINUA
+
 
 \subsection{L'equazione in breve}
 L'equazione di stato negli interni stellari~\eqref{eq:equazione-stato} ha tre contributi principali. Analizziamoli celermente.
