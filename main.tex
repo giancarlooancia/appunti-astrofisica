@@ -97,6 +97,14 @@
 \noindent \textit{Prima pubblicazione, Gennaio 2023} % Printing/edition date
 
 %----------------------------------------------------------------------------------------
+%	PREFACE
+%----------------------------------------------------------------------------------------
+
+\newpage
+\thispagestyle{empty}
+\input{prefazione.tex}
+
+%----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 
@@ -107,7 +115,7 @@
 \hypersetup{linkcolor = black}
 \tableofcontents % Print the table of contents itself
 
-%\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
 
 \pagestyle{fancy} % Print headers again
 \hypersetup{linkcolor = ocre}
@@ -116,9 +124,7 @@
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------
 
-%\frontmatter
-%\input{capitoli/cover/cover1.tex}
-%\tableofcontents
+
 %\mainmatter
 \chapterimage{cover/head2.png} % Chapter heading image
 \chapter{Setting the stage}
@@ -135,7 +141,7 @@
 \input{capitoli/emissione/magnitudine.tex}
 \input{capitoli/emissione/colore.tex}
 
-\begin{comment}
+
 \chapterimage{cover/head4.png}
 \chapter{Struttura stellare}
 \input{capitoli/stelle/modelli-stellari.tex}
@@ -151,6 +157,8 @@
 \chapter{Modello di atmosfera stellare}
 \input{capitoli/atmosfera/profondita-ottica.tex}
 \input{capitoli/atmosfera/righe-spettrali.tex}
+
+
 
 \chapterimage{cover/head6.png}
 \chapter{Evoluzione Stellare}
@@ -189,16 +197,5 @@
 \input{capitoli/cosmologia/materia-oscura.tex}
 \input{capitoli/cosmologia/storia-universo.tex}
 \input{capitoli/cosmologia/modello-LCDM.tex}
-%\chapter{Da fare}
-%\input{da-fare.tex}
-
-%\appendix
-%\chapter{Appendici}
-%\input{capitoli/appendici/dati-numerici.tex}
-%\input{capitoli/appendici/unità.tex}
-%\input{capitoli/appendici/conto-trasporto-radiativo.tex}
-
-\end{comment}
-
 
 \end{document}

@@ -101,21 +101,21 @@ dove appaiono i seguenti termini:
     \item[$\rho$] densità di massa del materiale attraversato.
     \item[$I_\nu$] intensità in input.
     \item[$\ud S$] dimensione infinitesima del materiale attraversato.
-    \item[$j_\nu$] coefficiente di emissione (\si{erg.s^{-1}.cm^{-3}.Hz^{-1}-sr^{-1}}).
+    \item[$j_\nu$] coefficiente di emissione [\si{erg.s^{-1}.cm^{-3}.Hz^{-1}-sr^{-1}}].
 \end{description}
 
 In genere si definisce:
-\[
+\begin{equation}
 \alpha_\nu = k_\nu \rho
-\]
+\end{equation}
 e l'equazione~\eqref{eq:trasporto-radiativo} assume la seguente forma:
 \begin{equation}\label{eq:trasporto-radiativo2}
-    \frac{\ud I_\nu}{\ud S} = -\alpha_\nu I_nu + j_\nu
+    \frac{\ud I_\nu}{\ud S} = -\alpha_\nu I_\nu + j_\nu
 \end{equation}
 
-La si può risolvere facilmente in due casi limite. Nel caso si \emph{pura emissione}, corrispondente a $\alpha_\nu = 0$ si ha:
+La si può risolvere facilmente in due casi limite. Nel caso si \emph{pura emissione}, corrispondente a $\alpha_\nu = 0$ ($k_\nu = 0$ - opacità nulla) si ha:
 \[
-    \frac{\ud I_\nu}{\ud S} = j_nu \qquad I_\nu = I_\nu (0) + \int \ud S j_\nu
+    \frac{\ud I_\nu}{\ud S} = j_\nu \qquad I_\nu = I_\nu (0) + \int \ud S j_\nu
 \]
 In questo caso, l'aumento di intensita è pari al coefficiente di emissione integrato lungo la linea di vista.
 
@@ -126,9 +126,9 @@ I_\nu (S) = I_\nu (0) e^{-\int \alpha_\nu \ud S}
 \]
 In questo caso, l'intensità cala come l'esponenziale del coefficiente di assorbimento integrato lungo la linea di vista.
 
-È conveniente introdurre la \emph{profondità ottica} (cfr.~\ref{sec:profondità-ottica}):
+È conveniente introdurre la \emph{profondità ottica} (sarà approfondita successivamente, cfr.~\ref{sec:profondità-ottica}):
 \begin{equation}\label{eq:profondità-ottica}
-        \tau_\nu = \int k_\nu \rho \ud S
+        \tau_\nu = \int k_\nu \rho \ud S = \int \alpha_\nu \ud S
 \end{equation}
 dove si integra lungo il cammino $\ud S$. La profondità ottica in generale dipende anche dalla frequenza ed è un numero puro. 
 
@@ -136,13 +136,13 @@ dove si integra lungo il cammino $\ud S$. La profondità ottica in generale dipe
 \begin{equation}\label{eq:funzione-sorgente}
     S_\nu = \frac{j_\nu}{k_\nu \rho} = \frac{j_\nu}{\alpha_\nu}
 \end{equation}
-Essa esprime il rapporto tra il coefficiente di emissione e quello di assorbimento in termini di $\alpha$ e ha le stesse unità di misura di una intensità specifica.
+Essa esprime il rapporto tra il coefficiente di emissione e quello di assorbimento in termini di $\alpha_\nu$ e ha le stesse unità di misura di una intensità specifica.
 
-Con queste due nuove variabili, l'equazione assume una forma particolarmente semplice:
+Con queste due nuove variabili, l'equazione~\eqref{eq:trasporto-radiativo2} assume una forma particolarmente semplice:
 \begin{equation}\label{eq:trasporto-radiativo3}
     \frac{\ud I_\nu}{\ud \tau_\nu} = -I_\nu + S_\nu
 \end{equation}
-Integriamo l'equazione~\eqref{eq:trasporto-radiativo3}, separando le variabili e riscrivendo l'equazione in una forma più comoda:
+Integriamola, separando le variabili e riscrivendola in una forma più comoda:
 \[
     \ud I_\nu = -I_\nu \ud \tau_\nu  + S_\nu \ud \tau_\nu
 \]
@@ -150,21 +150,18 @@ Integriamo l'equazione~\eqref{eq:trasporto-radiativo3}, separando le variabili e
     \ud I_\nu + I_\nu \ud \tau_\nu  = S_\nu \ud \tau_\nu
 \]
 \[
-    e^{\tau_\nu} (\ud I_nu + I_\nu \ud \tau_\nu)  = e^{\tau_\nu} (S_\nu \ud \tau_\nu)
-\]
-\[
-    d(e^{\tau_\nu} I_\nu) = e^{\tau_\nu} \ud I_\nu + I_\nu e^{\tau_\nu} \ud \tau_\nu
+    e^{\tau_\nu} (\ud I_\nu + I_\nu \ud \tau_\nu)  = e^{\tau_\nu} (S_\nu \ud \tau_\nu)
 \]
 \[
     d(e^{\tau_\nu} I_\nu) = e^{\tau_\nu} S_\nu \ud \tau_\nu
 \]
-Ricordando che la profondità ottica è un integrale tra $0$ e $S$ e al centro è nullo, come limiti inferiori dell'integrazione scelgo $\tau_{\nu_0} = 0$ e $I_{\nu_0}$, corrispondente all'intensità iniziale, prima dell'interazione con la materia. Suppongo, inoltre, che la funzione sorgente $S_\nu$ non varii con $\tau$, ovvero con la distanza.
+Ricordando (cfr.~\ref{sec:profondità-ottica}) che la profondità ottica è un integrale tra $0$ e $S$ e al centro è nulla, come limiti inferiori dell'integrazione scelgo $\tau_{\nu_0} = 0$ e $I_{\nu_0}$, corrispondente all'intensità iniziale, prima dell'interazione con la materia. Suppongo, inoltre, che la funzione sorgente $S_\nu$ non varii con $\tau$, ovvero con la distanza.
 \[
     e^{\tau_\nu} I_\nu - I_{\nu_0} = \int_0^{\tau_\nu} e^{\tau_\nu'} S_\nu \ud \tau_\nu' = S_\nu (e^{\tau_\nu} - 1)
 \]
 Moltiplico ambo i membri per $e^{-\tau_\nu}$
 \[
-    I_\nu (\tau_\nu) - I_{\nu_0} e^{-\tau_\nu} = S_\nu (1-e^{-\tau_\nu})
+    I_\nu - I_{\nu_0} e^{-\tau_\nu} = S_\nu (1-e^{-\tau_\nu})
 \]
 da cui si ottiene:
 \begin{equation}\label{eq:soluzione-trasporto-radiativo}
@@ -190,7 +187,7 @@ Questo corrisponde, ad esempio, a osservare il mezzo interposto da una direzione
 \label{fig:trasporto-radiativo-perpendicolare}
 \end{figure}
 
-Ci si può chiedere come sia fatta la funzione sorgente $S_\nu$, definita tramite eq.~\eqref{eq:funzione-sorgente}. Essa è diversa a seconda del tipo di radiazione, cioè del processo responsabile del fenomeno di radiazione osservato. Tipicamente i processi di emissione vengono raggruppati in processi termici e processi non termici.
+Ci si può chiedere come sia fatta la funzione sorgente $S_\nu$, definita tramite l'eq.~\eqref{eq:funzione-sorgente}. Essa è diversa a seconda del tipo di radiazione, cioè del processo responsabile del fenomeno di radiazione osservato. Tipicamente i processi di emissione vengono raggruppati in processi termici e processi non termici.
 \begin{description}
     \item[Radiazione termica] è emessa da un corpo in equilibrio termico (o termodinamico), in cui tra materia e radiazione avvengono continui processi di emissione e assorbimento di fotoni tali da rendere il tasso di assorbimento uguale al tasso di emissione. Esempi di processi termici sono:
     \begin{itemize}
