@@ -52,9 +52,9 @@ Inoltre, si può ottenere la luminosità bolometrica a partire da quella monocro
 Ci si può ora chiedere quale sia la relazione tra l'intensità specifica e la luminosità.
 
 \subsection{Relazione tra intensità e luminosità}\label{sec:relazione-intensità-luminosità}
-Consideriamo un campo di radiazione isotropo, per cui $I_\nu$ (cfr. par.~\ref{sec:intensità}) è uguale in ogni direzione $\hat{k}$. Questo significa che se considero una superficie infinitesima $\ud A_\perp$\footnote{Il simbolo $\perp$ indica che si sta considerando una superficie tangente alla sfera. }, la quantità di radiazione entrante e uscente da tale superficie è la stessa per ogni superficie. La luminosità (cfr. par.~\ref{sec:luminosità}) della sorgente è la quantità di radiazione \emph{emessa} dalla sorgente nel tempo $\ud t$, cioè la quantità di radiazione che \emph{esce} dalla sorgente stessa, ovvero la quantità di radiazione che \emph{esce da ciascuna superficie $\ud A_\perp$, integrata sulla superficie totale della sorgente}.
+Consideriamo un campo di radiazione isotropo, per cui $I_\nu$ (cfr. par.~\ref{sec:intensità}) è uguale in ogni direzione $\hat{k}$. Questo significa che se considero una superficie infinitesima $\ud A_\perp$\footnote{Il simbolo $\perp$ indica che si sta considerando una superficie tangente alla sfera, ovvero con normale $\hat{k}$, una qualunque direzione radiale.}, con normale $\hat{k}$, la quantità di radiazione entrante e uscente da tale superficie è la stessa per ogni superficie. La luminosità (cfr. par.~\ref{sec:luminosità}) della sorgente è la quantità di radiazione \emph{emessa} dalla sorgente nel tempo $\ud t$, cioè la quantità di radiazione che \emph{esce} dalla sorgente stessa, ovvero la quantità di radiazione che \emph{esce da ciascuna superficie $\ud A_\perp$, integrata sulla superficie totale della sorgente}.
 
-Per ottenere la quantità di radiazione che \emph{esce} da ciascuna superficie infinitesima $\ud A_\perp$, $\ud L_\nu / \ud A_\perp$, bisogna integrare l'intensità della sorgente sull'angolo solido della semisfera \emph{uscente} (cfr. eq~\eqref{eq:intensità} ed eq.~\eqref{eq:def-luminosità-monocromatica}), ovvero, in un sistema di riferimento con asse polare pari alla normale di $\ud A_\perp$ (fig.~\ref{fig:emisfera-uscente}) per $\theta \in [0, \pi/2]$ e $\phi \in [0, 2\pi]$:
+Per ottenere la quantità di radiazione che \emph{esce} da ciascuna superficie infinitesima $\ud A_\perp$, che chiameremo $\ud L_\nu / \ud A_\perp$, bisogna integrare l'intensità della sorgente sull'angolo solido della semisfera \emph{uscente} (cfr. eq~\eqref{eq:intensità} ed eq.~\eqref{eq:def-luminosità-monocromatica}), ovvero, in un sistema di riferimento con asse polare $\hat{k}$ (fig.~\ref{fig:emisfera-uscente}), per $\theta \in [0, \pi/2]$ e $\phi \in [0, 2\pi]$:
 
 \begin{equation}\label{eq:differenziale-luminosità}
     \frac{\ud L_\nu}{\ud A_\perp} = I_\nu \iint \ud \Omega_\textup{uscente} = I_\nu \int_{0}^{\frac{\pi}{2}} \ud \theta \sin{\theta} \int_{0}^{2\pi} \ud \phi
@@ -64,21 +64,21 @@ dove $I_\nu$ è stato portato fuori dagli integrali perché non dipende dagli an
 \begin{figure}
 \centering
 \includegraphics[width=0.2\textwidth]{immagini/emisfera-uscente.png}
-\caption{Calcolo della quantità di radiazione \emph{uscente} da una superficie infinitesima $\ud A$ posta sulla superficie di una stella. La radiazione uscente è quella che attraversa la semisfera uscente che ha come cerchio massimo la circonferenza di $\ud A$. Pertanto, in un sistema di riferimento con asse polare $\hat{k}$, bisogna integrare nell'angolo solido sotteso da $\theta \in [0, \pi/2]$ e $\phi \in [0, 2 \pi]$. Per ottenere tutta la radiazione uscente dalla stella, integro in $\ud A$.}
+\caption{Calcolo della quantità di radiazione \emph{uscente} da una superficie infinitesima $\ud A_\perp$ posta sulla superficie di una stella. La radiazione uscente è quella che attraversa la semisfera uscente che ha come cerchio massimo la circonferenza di $\ud A_\perp$. Pertanto, in un sistema di riferimento con asse polare $\hat{k}$, bisogna integrare nell'angolo solido sotteso da $\theta \in [0, \pi/2]$ e $\phi \in [0, 2 \pi]$. Per ottenere tutta la radiazione uscente dalla stella, integro in $\ud A_\perp$.}
 \label{fig:emisfera-uscente}
 \end{figure}
 
-Per ottenere la luminosità monocromatica totale della sorgente (cfr. eq.~\eqref{eq:def-luminosità-monocromatica}), bisogna integrare la~\eqref{eq:differenziale-luminosità} su tutta la superficie $4\pi R^2$:
+Per ottenere la luminosità monocromatica totale della sorgente (cfr. eq.~\eqref{eq:def-luminosità-monocromatica}), bisogna integrare la~\eqref{eq:differenziale-luminosità} su tutta la superficie $\ud A_\perp$, ovvero integriamo per un'area che va da $0$ a $4\pi R^2$. Ricordando che, in generale $\ud A_\perp = \ud A \cos{\theta}$, come visto in precedenza\footnote{È importante non dimenticare il fattore $\cos{\theta}$, infatti bisogna integrare \emph{sia} in angolo solido \emph{sia} rispetto all'area normale a $\hat{k}$, quindi nel doppio integrale bisogna proiettare l'area generica lungo $\hat{k}$.}, si ha:
 \[
-    L_\nu = \int_{0}^{4\pi R^2} \ud A_\perp \frac{\ud L_\nu}{\ud A} = \int_{0}^{4\pi R^2} \ud A \cos{\theta} \frac{\ud L_\nu}{\ud A} = I_\nu \int_0^{4\pi R^2} \ud A  \int_0^{\frac{\pi}{2}} \ud \theta \sin{\theta} \cos{\theta} \int_0^{2\pi} \ud \phi
+    L_\nu = \int_{0}^{4\pi R^2} \ud A_\perp \frac{\ud L_\nu}{\ud A_\perp} = \int_{0}^{4\pi R^2} \ud A \cos{\theta} \frac{\ud L_\nu}{\ud A_\perp} = I_\nu \int_0^{4\pi R^2} \ud A  \int_0^{\frac{\pi}{2}} \ud \theta \sin{\theta} \cos{\theta} \int_0^{2\pi} \ud \phi
 \]
 Sviluppando i conti si ottiene un'espressione per la luminosità monocromatica:
 \begin{equation}\label{eq:luminosità-monocromatica-intensità}
-    L_\nu = 4 \pi R^2 \pi I_\nu
+    L_\nu = 4 \pi R^2 \pi I_\nu = 4 {\pi}^2 R^2 I_\nu
 \end{equation}
-e integrando su tutte le frequenze si ottiene la luminosità bolometrica (eq.~\eqref{eq:luminosità-bolometrica}):
+e integrando su tutte le frequenze (eq.~\eqref{eq:luminosità-bolometrica}) si ottiene la luminosità bolometrica:
 \begin{equation}\label{eq:luminosità-intensità}
-    L = 4 \pi R^2 \pi I
+    L = 4 \pi R^2 \pi I = 4 {\pi}^2 R^2 I
 \end{equation}
 
 \subsection{L'equazione del trasporto radiativo e le sue soluzioni}\label{sec:trasporto-radiativo}\label{sec:soluzioni-trasporto-radiativo}
