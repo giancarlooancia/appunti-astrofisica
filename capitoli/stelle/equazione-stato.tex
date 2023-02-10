@@ -142,7 +142,7 @@ Come accennato precedentemente, a causa della significativa differenza di massa 
 In particolare, gli effetti quantistici che entrano in causa sono il \emph{principio di indeterminazione di Heisenberg} e il \emph{principio di esclusione di Pauli}.
 
 \subsection{Principio di indeterminazione e di esclusione}\label{sec:principio-indeterminazione}
-Chiamando $\Delta x$, $\Delta y$ e $\Delta z$ le incertezze nella determinazione delle posizioni e $\Delta p_x$, $\Delta p_y$ e $\Delta p_z$ le incertezze nella determinazione dei momenti nello spazio delle fasi, il \emph{principio di indeterminazione} si può scrivere:
+Chiamando $\Delta x$, $\Delta y$ e $\Delta z$ le incertezze nella determinazione delle posizioni e $\Delta p_x$, $\Delta p_y$ e $\Delta p_z$ le incertezze nella determinazione dei momenti nello spazio delle fasi, il \emph{principio di indeterminazione di Heisenberg} si può scrivere:
 \begin{subequations}
 \label{eq:principio-indeterminazione}
 \begin{align}
@@ -151,16 +151,16 @@ Chiamando $\Delta x$, $\Delta y$ e $\Delta z$ le incertezze nella determinazione
 \Delta z \cdot \Delta p_z &\sim \hbar 
 \end{align}
 \end{subequations}
-Questo principio fissa il \emph{volume limite minimo}, una cella, nello spazio delle fasi, pari a:
+Questo principio ha come importante conseguenza quella di fissare il \emph{volume limite minimo} nello spazio delle fasi (ossia quello di una singola cella) pari a:
 \begin{equation}\label{eq:volume-minimo}
 (\Delta x, \Delta y,\Delta z) (\Delta p_x, \Delta p_y, \Delta p_z) \sim h^3
 \end{equation}
 
-Il \emph{principio di esclusione di Pauli} afferma che in ciascuna cella dello spazio delle fasi, definita dall'eq.\eqref{eq:volume-minimo}, possono stare al massimo due particelle, ma rigorosamente con spin opposto.
+Il \emph{principio di esclusione di Pauli} afferma che in ciascuna cella dello spazio delle fasi, definita dall'equazione~\eqref{eq:volume-minimo}, non possono stare più di due fermioni, purché di spin opposto.
 
 Questi due principi hanno un effetto diretto sulla \emph{distribuzione di velocità (momenti)} delle particelle, e quindi in definitiva sulla dipendenza della pressione dalle proprietà del gas. 
 
-Consideriamo un gas di elettroni in condizioni di bassa densità: potremo trattarlo come gas perfetto e seguirà la distribuzione di Maxwell--Boltzmann. Aumentando il numero di elettroni tenendo fissa la temperatura $T$, la curva di Maxwell--Boltzmann si abbasserà, fino a un limite in cui non si potranno più trascurare gli effetti quantistici. In questo caso, il numero di elettroni con quantità di moto compresa tra $p$ e $p + \ud p$, in  un dato volume $V$, non può più essere infinito come nel caso della distribuzione di Maxwell--Boltzmann, ma sarà:
+Consideriamo un gas di elettroni in condizioni di bassa densità: potremo trattarlo come gas perfetto e seguirà la distribuzione di Maxwell. Aumentando il numero di elettroni tenendo fissa la temperatura $T$, al curva di Maxwell si abbasserà, fino a un limite in cui non posso più trascurare gli effetti quantistici. In questo caso, il numero di elettroni con quantità di moto compresa tra $p$ e $p + \ud p$, in  un dato volume $V$, non può più essere infinito come nel caso della distribuzione di Maxwell, ma sarà:
 \[
 n(p) \ud p \leq \frac{2V}{h^3} \ud p_x \ud p_y \ud p_z
 \]
@@ -192,7 +192,7 @@ Sostituendo si trova la \emph{distribuzione di Fermi-Dirac}:
 \begin{equation}\label{eq:fermi-dirac}
     N_p \ud p = \frac{8 \pi}{h^3} p^2 \ud p
 \end{equation}
-Si noti come essa \emph{non} dipenda da T. Per evidenziare l'emersione del comportamento quantistico oltre la soglia di Fermi, si faccia riferimento alla figura~\ref{fig:distribuzione-fermi}, in cui è rappresentato l'indice ci occupazione dei livelli energetici $\Pi(p)$ in funzione di $p$.
+Si noti come essa \emph{non} dipenda da T. Per evidenziare l'emergenza del comportamento quantistico oltre la soglia di Fermi, si faccia riferimento alla figura~\ref{fig:distribuzione-fermi}, in cui è rappresentato l'indice ci occupazione dei livelli energetici $\Pi(p)$ in funzione di $p$.
 
 \begin{figure}
 \centering
@@ -201,7 +201,7 @@ Si noti come essa \emph{non} dipenda da T. Per evidenziare l'emersione del compo
 \label{fig:distribuzione-fermi}
 \end{figure}
 
-Integrando l'equazione~\eqref{eq:fermi-dirac} possiamo ottenere relazioni importanti in funzione del momento di Fermi. Si faccia attenzione al fatto che il massimo momento possibile è $p_0$, ovvero il momento di Fermi:
+Integrando l'equazione~\eqref{eq:fermi-dirac} possiamo ottenere relazioni importanti in funzione del momento di Fermi. Si faccia attenzione al fatto che il massimo momento possibile è $p_0$, ovvero il momento di Fermi, quindi l'integrale si fermerà a questo valore:
 \[
 N_e = \int_0^{p_0} \frac{8 \pi}{h^3} p^3 \ud p = \frac{8\pi}{3h^3} {p_0}^3
 \]
@@ -221,18 +221,19 @@ Arrivati a questo punto, abbiamo tutti gli strumenti necessari per il calcolo de
 \end{equation}
 e in generale bisogna distinguere tre casi:
 \begin{description}
-    \item[Gas perfetto] In questo caso la distribuzione di velocità da utilizzare è quella di Maxwell-Boltzmann. Integrando la~\eqref{eq:pressione-statistica} si ottiene la legge dei gas perfetti~\eqref{eq:gas-ideale}, in cui $\mu = \mu_e$.
-    \item[Gas degenere non relativistico] La distribuzione di velocità è quella di Fermi Dirac. Si utilizza l'espressione classica per l'impulso, $p=mv$.
-    \item[Gas degenere relativistico] La distribuzione di velocità è ancora quella di Fermi-Dirac, tuttavia si utilizza l'espressione relativistica per l'impulso, $p= \frac{m_e v}{\sqrt{1- (\frac{v}{c})^2}}$
+    \item[Gas perfetto:] in questo caso la distribuzione di velocità da utilizzare è quella di Maxwell-Boltzmann. Integrando la~\eqref{eq:pressione-statistica} si ottiene la legge dei gas perfetti~\eqref{eq:gas-ideale}, in cui $\mu = \mu_e$.
+    \item[Gas degenere non relativistico:] la distribuzione di velocità è quella di Fermi Dirac. Si utilizza l'espressione classica per l'impulso, $p=mv$.
+    \item[Gas degenere relativistico:] la distribuzione di velocità è ancora quella di Fermi-Dirac, tuttavia si utilizza l'espressione relativistica per l'impulso, $p= \frac{m_e v}{\sqrt{1- (\frac{v}{c})^2}}$
 \end{description}
+
 Vediamo cosa si ottiene negli ultimi due casi.
 
-\paragraph{Caso non relativistico}
+\subsubsection{Caso non relativistico}
 In questo caso $p_0 \ll m_e c$ quindi possiamo scrivere $p=mv$ e integrare la~\eqref{eq:pressione-statistica} utilizzando la distribuzione di Fermi-Dirac~\eqref{eq:fermi-dirac}. Si ottiene:
 \[
 P = \dfrac{8\pi}{3h^3m} \int_0^{p_0} p^4 \ud p = \dfrac{8\pi}{3h^3m}\dfrac{{p_0}^5}{5}
 \]
-e sostituendo l'espressione per $p_0$ trovata precedentemente~\refeq{eq:relazione-momento-fermi-densità} otteniamo
+e sostituendo l'espressione per $p_0$ trovata precedentemente~\eqref{eq:relazione-momento-fermi-densità} otteniamo
 \begin{equation}\label{eq:pressione-degenerazione-non-relativistica}
     P = k_1 \rho^{5/3}
 \end{equation}
@@ -240,9 +241,9 @@ dove $k_1$ è una costante pari a:
 \[
 k_1 = 10^{13} {\mu_e}^{-5/3}
 \]
-Si noti come la pressione \emph{non} dipenda dalla temperatura. Questo fa sì che \emph{non} ci sia termoregolazione. Inoltre, la dipendenza dalla densità è maggiore rispetto che al gas perfetto (eq.~\eqref{eq:gas-ideale}).
+Si noti come la pressione \emph{non} dipenda dalla temperatura. Questo fa sì che \emph{non} ci sia termoregolazione. Inoltre, la dipendenza dalla densità è maggiore rispetto che al gas perfetto (equazione~\eqref{eq:gas-ideale}).
 
-\paragraph{Caso relativistico}
+\subsubsection{Caso relativistico}
 In questo caso si ha $p_0 \sim m_e c$ e bisogna utilizzare l'espressione relativistica dell'impulso:
 \[
 p= \dfrac{m_e v}{\sqrt{1- (\frac{v}{c})^2}}
@@ -261,102 +262,6 @@ k_2 = 1.2 \cdot 10^{15} {\mu_e}^{-4/3}
 \]
 Nuovamente, non c'è dipendenza dalla temperatura e la dipendenza dalla densità è più forte che nel gas ideale~\eqref{eq:gas-ideale}.
 
-\subsection{Richiami di Meccanica Statistica}
-Ripassiamo quanto visto finora utilizzando le notazioni proposte nel corso istituzionale di Meccanica Statistica. Come sappiamo, per ciò che concerne l'occupazione energetica media è necessario distinguere tre tipi di particelle:
-\begin{description}
-\item[Classiche.] Esse seguono la distribuzione di Maxwell--Boltzmann. Consideriamo particelle di gas perfetto, pertanto esse saranno indistinguibili (cfr. paradosso di Gibbs). Lo spettro energetico è continuo.
-\item[Fermioni.] Esse seguono la distribuzione di Fermi--Dirac, la quale tende a quella di Maxwell--Boltzmann nel limite classico. Lo spettro energetico è discreto con i vincoli del principio di esclusione di Pauli. 
-\item[Bosoni.] Esse seguono la distribuzione di Bose--Einstein, la quale tende a quella di Maxwell--Boltzmann nel limite classico.
-\end{description}
-
-Nel caso delle particelle classiche, utilizzando il formalismo dell'ensamble grancanonico, si può calcolare la funzione di partizione grancanonica utilizzando il fatto che, per particelle indistinguibili, vale:
-\[
-Z(N) \simeq \frac{{Z_1}^N}{N!}
-\]
-con $Z(N)$ funzione di partizione canonica di $N$ particelle di gas perfetto e $Z_1$ funzione di partizione di una particella. Passando per il grande potenziale, è possibile trovare l'occupazione media per livello energetico. Si ottiene la distribuzione di Maxwell--Boltzmann:\
-\begin{equation}
-    \langle n_s  \rangle = e^{\beta(\mu - \epsilon_s)} 
-\end{equation}
-
-Nel caso di particelle quantistiche, invece, si calcola la funzione di partizione canonica sommando su tutti i possibili set di occupazione, utilizzando il vincolo $X=1$ per i fermioni (principio di Pauli) e $X=\infty$ per i bosoni, con $X$ il massimo valore possibile per un numero di occupazione. Sviluppando come sopra, si ottiene, nel primo caso, la distribuzione di Fermi--Dirac:
-\begin{equation}
-    \langle n_s \rangle = \dfrac{1}{e^{\beta(\epsilon_s - \mu)} + 1}
-\end{equation}
-Siamo interessati solamente a questa, poiché vogliamo studiare il comportamento degli elettroni, i quali, a causa del teorema Spin--Statistica, avendo spin semintero, si comportano collettivamente come fermioni.
-
-Come noto, per temperature molto basse, $T \to 0$, la distribuzione di Fermi--Dirac assume la forma di una funzione a gradino di Heaviside, con numero di occupazione pari a $1$ per energie sotto l'energia di fermi ($\epsilon_F = \mu(T=0)$) e zero sopra. Si nota subito come la temperatura non possa più essere utilizzata per determinare l'energia del sistema, perché anche a temperature molto basse i fermioni si distribuiscono su livelli energetici sempre più alti a causa delle restrizioni del principio di esclusione. All'aumentare della temperatura la funzione di Fermi si arrotonda, poiché vi sarà energia termica a disposizione per permettere a qualche fermione di depositarsi su un livello energetico superiore alla soglia di Fermi. D'altra parte, per temperature molto alte, che corrispondono a una densità di particelle molto minore della concentrazione quantistica, la distribuzione tende a quella di Maxwell--Boltzmann.
-
-Si ricorda, infatti, che un buon discriminante per determinare se una particella si comporta come classica o quantistica è la concentrazione quantistica. Essa si può trovare calcolando la funzione di partizione di una particella in una scatola cubica di potenziale con condizioni al contorno di annullamento, ed è pari a:
-\begin{equation}\label{eq:concentrazione-quantistica}
-    n_Q = \Bigl( \dfrac{m \kb T}{2 \pi {\hslash}^2}  \Bigr)^\frac{3}{2}, \qquad \lambda_\textup{th} = {n_Q}^{-\frac{1}{3}} 
-\end{equation}
-In particolare, se la densità $n$ di particelle è molto minore della concentrazione quantistica, $n \ll n_Q$, o equivalentemente se la distanza media tra due particelle è molto maggiore della lunghezza d'onda di De Broglie, $(V/N)^\frac{1}{3} \gg \lambda_\textup{th}$, le particelle possono essere trattate come classiche e la distribuzione di Maxwell--Boltmann sarà valida.
-
-A questo punto ci si pone il problema di calcolare le pressioni di un gas perfetto e un gas di Fermi in condizione di forte degenerazione ($T \to 0$). Si vuole evidenziare un dettaglio: nonostante le temperature delle stelle siano relativamente elevate, esse possono essere considerate molto piccole rispetto alla \emph{temperatura di Fermi} della struttura, perciò è lecito trattare il gas di elettroni come se fosse a bassissima temperatura. 
-
-Nel caso classico, come ovvio, si ottiene la legge dei gas perfetti. Nel caso quantistico si procede come segue. Prima di tutto, abbiamo necessità dell'espressione per la densità di stati, ovvero il numero di stati per unità di energia. Essa si può trovare risolvendo l'equazione di Schroedinger di una particella in una scatola di potenziale con condizioni di annullamento per trovare gli autovalori energetici. Siccome le autofunzioni dell'energia saranno proporzionali a dei seni, si imporrà che le pulsazioni debbano essere positive, da cui i numeri quantici dell'energia strettamente positivi. In particolare, si trova uno spettro energetico pari a:
-
-\begin{equation}
-    E_{n_x, \, n_y, \, n_z} = \dfrac{{\pi}^2 \hslash^2}{2mL^2} ({n_x}^2 + {n_y}^2 + {n_z}^2)
-\end{equation}
-
-Ora, per trovare la densità di stati ci metteremo nel k--spazio (lo spazio tridimensionale di versori $k_x$, $k_y$ e $k_z$), ricordando la condizione di quantizzazione del vettore d'onda derivante dall'annullamento della funzione d'onda sulle pareti della scatola, ovvero:
-
-\begin{equation}
-    E = \dfrac{k^2 \hslash^2}{2m}, \qquad \Vec{k} = \frac{\pi}{L} (n_x, n_y, n_z)
-\end{equation}
-
-Fissare un determinato valore di $k$ equivale a fissare l'impulso $p$, ovvero l'energia $E$, e ciò corrisponde a individuare un'ottante sferico nel k--spazio (a causa della condizione per cui $n_x, \, n_y, \, n_z > 0$). Dividendo il differenziale di ottante sferico $\frac{1}{8} 4\pi k^2 \ud k$ per il volume all'interno del quale è presente uno stato, equivalente al volume elementare $(\pi/L)^3$, si ottiene immediatamente la densità di stati, pari a:
-
-\begin{equation}
-    g(E) = \dfrac{\ud N}{\ud E} = \dfrac{g_s V }{4 {\pi}^2} \Bigl( \dfrac{2m}{\hslash^2} \Bigr)^\frac{3}{2} \sqrt{E}
-\end{equation}
-con $g_s$ la degenerazione di spin, $V$ il volume della scatola e $m$ la massa della particella.
-
-Manca un ultimo ingrediente, ovvero il concetto di media termica. Ricordiamo che se $y(E)$ è una generica funzione dell'energia, conoscendo l'occupazione media per livello energetico $n(E)$, pari alla distribuzione di Maxwell--Boltzmann per particelle classiche o di Fermi--Dirac per fermioni, è possibile calcolare la media della funzione come:
-
-\begin{equation}
-    \langle y(E) \rangle = \dfrac{\sum_{E} n(E) y(E)}{\sum_E n(E)} = \frac{1}{N} \sum_{E} n(E) y(E) \to \frac{1}{N} \int_{0}^\infty \ud E \, n(E) \, g(E) \, y(E)
-\end{equation}
-dove, si faccia attenzione, la media è riferita alla singola particella, pertanto bisognerà moltiplicare per $N$ per ottenere la media riferita al sistema di particelle.
-
-Per quanto detto precedentemente, gli elettroni in una stella possono essere trattati come un gas altamente degenere a causa dell'elevata temperatura di Fermi. Pertanto, possiamo calcolare in maniera molto semplice l'energia di Fermi supponendo di essere a $T=0$, condizione in cui la distribuzione di Fermi--Dirac è una distribuzione a scalino. Utilizzando la media termica per esprimere il numero medio di particelle abbiamo:
-
-\[
-N = \int_{0}^\infty \ud E \, g(E) \, n(E)
-\]
-
-Sostituendo tutti i valori ricordati sopra e sviluppando il conto, si può trovare l'energia di Fermi, corrispondente al potenziale chimico calcolato a $T=0$, trovando:
-
-\begin{equation}\label{eq:energia-di-fermi}
-    \mu(T=0) = \epsilon_F = \dfrac{\hslash^2}{2m} \Bigl( \dfrac{6 {\pi}^2 N}{g_s V} \Bigr) ^ \frac{2}{3}
- \end{equation}
-
- In maniera analoga si può calcolare l'energia interna usando nuovamente la definizione di media termica. Sviluppando i conti si trova:
-
- \begin{equation}\label{eq:energia-interna-di-fermi}
-    U = \int_0^\infty \ud E \, g(E) \, E \, n(E) = \frac{3}{5} N \epsilon_F
- \end{equation}
-
- A questo punto si può procedere nel calcolo della pressione di un gas di Fermi in condizione di forte degenerazione utilizzando due risultati noti per il grande potenziale $\Phi$ del sistema grancanonico (si rimanda al Kennett per ulteriori dettagli):
-
- \[
-    \Phi = PV, \qquad \Phi = \frac{2}{3} U
- \]
-da cui è immediato trovare il valore della pressione di degenerazione, utilizzando le eq.~\eqref{eq:energia-di-fermi} e~\eqref{eq:energia-interna-di-fermi}. Si ottiene:
-
-\begin{equation}\label{eq:pressione-degenerazione-kennett}
-    P = \frac{2}{3} \frac{U}{V} = \frac{2}{5} \frac{N}{V} \epsilon_F
-\end{equation}
-
-Infine, riconosciamo che la densità del gas è proporzionale al numero di particelle, $\rho \propto N$, e siccome nell'espressione precedente abbiamo un termine $\propto N$ derivante dall'espressione dell'energia~\eqref{eq:energia-interna-di-fermi} e un termine $\propto N^\frac{2}{3}$ derivante dall'energia di Fermi~\eqref{eq:energia-di-fermi}, troviamo che la pressione di degenerazione deve essere proporzionale a $N^\frac{5}{3} \propto \rho^\frac{5}{3}$, da cui si ottiene la formula dell'equazione di stato:
-
-\[
-  P = k_1 \rho^\frac{5}{3}  
-\]
-
-Tralasciando il caso non relativistico, rivediamo in breve tutti i termini dell'equazione di stato.
-
 \subsection{L'equazione in breve}
 L'equazione di stato negli interni stellari~\eqref{eq:equazione-stato} ha tre contributi principali. Analizziamoli celermente.
 
@@ -365,7 +270,7 @@ Il termine:
 \[
 P = \dfrac{aT^4}{3}
 \]
-rappresenta il contributo della pressione di radiazione per un corpo nero, secondo la eq.~\eqref{eq:pressione-radiazione} ottenuta integrando la distribuzione di Planck~\refeq{eq:corpo-nero}. È il contributo dei fotoni che compongono il gas stellare, i quali hanno un impulso e dunque esercitano una pressione.
+rappresenta il contributo della pressione di radiazione per un corpo nero, secondo la eq.~\eqref{eq:pressione-radiazione} ottenuta integrando la distribuzione di Planck~\ref{eq:corpo-nero}. È il contributo dei fotoni che compongono il gas stellare, i quali hanno un impulso e dunque esercitano una pressione.
 
 \paragraph{Pressione degli ioni}
 Il termine:
