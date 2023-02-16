@@ -35,13 +35,13 @@ Il gradiente di temperatura ha un impatto cruciale sul meccanismo preponderante 
 \subsection{Meccanismi di trasporto di energia}
 I tre meccanismi di trasporto in una stella sono il \emph{trasporto radiativo}, \emph{convettivo} e \emph{conduttivo}. Di seguito ne sono elencate le principali proprietà:
 \begin{description}
-    \item[Trasporto conduttivo:] I principali responsabili di questo meccanismo sono gli \emph{elettroni} ed è efficiente solo se il gas è \emph{degenere}. Infatti, in condizione di non degenerazione, ovvero se il gas è perfetto, il libero cammino medio è molto piccolo e un elettrone cede subito energia. Come visto, nel caso di un gas degenere (par.~\ref{sec:principio-indeterminazione}) le celle dello spazio delle fasi sono impacchettati in modo che i livelli energetici più bassi sono pieni, quindi gli elettroni percorrono una grande distanza prima di cedere energia (la quale deve essere di un ordine pari al primo livello energetico libero, che tendenzialmente sarà alto). In questo caso il trasporto conduttivo è efficiente e in questo modo è possibile trasportare l'energia dall'interno verso l'esterno. Tuttavia, questo meccanismo di trasporto non è quello preponderante.
+    \item[Trasporto conduttivo:] I principali responsabili di questo meccanismo sono gli \emph{elettroni} ed è efficiente solo se il gas è \emph{degenere}. Infatti, in condizione di non degenerazione, ovvero se il gas è perfetto, il libero cammino medio è molto piccolo e un elettrone cede subito energia. D'altra parte, in condizioni di degenerazione è il \emph{Pauli blocking} a determinare un moto quasi libero degli elettroni all'interno del gas: affinché possa avvenire un urto tra particelle, queste devono acquisire un impulso e un'energia tali da potersi depositare nel primo livello energetico libero, più alto del ground state a causa del comportamento fermionico del gas. Pertanto, gli urti saranno trascurabili e le particelle si possono considerare libere. In questo caso il trasporto conduttivo è efficiente e in questo modo è possibile trasportare l'energia dall'interno verso l'esterno. Tuttavia, questo meccanismo di trasporto non è quello preponderante.
     \item[Trasporto radiativo:] Esso è dovuto alla radiazione trasportata dai \emph{fotoni}.
     \item[Trasporto convettivo:] Con la convezione ho un rimescolamento del \emph{gas} e dunque di porzioni di gas con composizioni chimiche diversa. Siccome la struttura chimica è cruciale per stabilire la struttura stellare e la sua evoluzione, è importante capire se è in atto questo meccanismo di trasporto energetico.
 \end{description}
 
 \subsection{Criterio di Schwarzschild}
-Come evidenziato nel paragrafo precedente, stabilire se sia in corso un meccanismo di convezione è importante per realizzare dei corretti modelli della struttura stellare e dunque per capire correttamente l'evoluzione di una stella. Come discriminante si può utilizzare il \emph{criterio di Schwarzschild} (equazione~\eqref{eq:criterio-schwarzscild}). Semplicemente si tratta di un confronto tra il \emph{gradiente radiativo} di temperatura e un valore di riferimento chiamato \emph{gradiente adiabatico}. In particolare, nelle regioni in cui il gradiente radiativo è maggiore del gradiente adiabatico, è in corso la convezione, come stabilito dalla~\eqref{eq:criterio-schwarzscild}. Il gradiente adiabatico dipende dai calori specifici del gas e si può scrivere:
+Come evidenziato nel paragrafo precedente, stabilire se sia in corso un meccanismo di convezione è importante per realizzare dei corretti modelli della struttura stellare e dunque per capire correttamente l'evoluzione di una stella. Come discriminante si può utilizzare il \emph{criterio di Schwarzschild}~\eqref{eq:criterio-schwarzscild}. Esso si basa sul confronto tra il \emph{gradiente radiativo} di temperatura e un valore di riferimento chiamato \emph{gradiente adiabatico}. In particolare, nelle regioni in cui il gradiente radiativo è maggiore del gradiente adiabatico, è in corso la convezione, come stabilito dalla~\eqref{eq:criterio-schwarzscild}. Il gradiente adiabatico dipende dai calori specifici del gas e si può scrivere:
 \begin{equation}\label{eq:gradiente-adiabatico}
     \dfrac{\ud T}{\ud r}\Big|_\textup{ad} = \Bigl(1- \frac{1}{\gamma}\Bigr) \dfrac{T}{P} \dfrac{\ud P}{\ud r}
 \end{equation}
@@ -53,11 +53,11 @@ dove
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{immagini/criterio-schwarzscild.png}
-\caption{Raffigurazione del criterio di Schwarzscild. Se la bolla si sposta dalla posizione $1$ e $2$, può avvenire la convezione solamente se ${\rho_2}^* < \rho_2$. In caso contrario siamo in presenza di equilibrio stabile e la bolla viene respinta verso la posizione iniziale.}
+\caption{Raffigurazione del criterio di Schwarzscild. Se la bolla si sposta dalla posizione $1$ a $2$, può avvenire la convezione solamente se ${\rho_2}^* < \rho_2$. In caso contrario siamo in presenza di equilibrio stabile e la bolla viene respinta verso la posizione iniziale.}
 \label{fig:criterio-schwarzscild}
 \end{figure}
 
-Per capire il criterio~\eqref{eq:criterio-schwarzscild} consideriamo (figura~\ref{fig:criterio-schwarzscild}) una bolla di gas in una posizione $1$ a distanza $r$ rispetto al centro, di densità ${\rho_1}^*$ e pressione interna ${P_1}^*$. Siano $\rho_1$ e $P_1$ rispettivamente la densità e la pressione dell'ambiente circostante la bolla in quella posizione. Immagino che essa si sposti in una posizione $2$ a distanza $r + \ud r$ dal centro, avendo una nuova densità ${\rho_2}^*$ e una nuova pressione interna ${P_2}^*$. Analogamente a prima, siano $\rho_2$ e $P_2$ rispettivamente la densità e la pressione dell'ambiente circostante la bolla in quella posizione. Ho convezione nella stella solo se l'equilibrio è instabile, perché in caso di equilibrio stabile la bolla tenderebbe a tornare nella posizione originaria $1$ e non sarebbe possibile lo spostamento di porzioni di gas nella stella. La condizione di equilibrio dipende dal rapporto della densità interna della bolla nel secondo caso, ${\rho_2}^*$, e la densità del gas circostante, $\rho_2$. In particolare:
+Per capire il criterio~\eqref{eq:criterio-schwarzscild} consideriamo (fig.~\ref{fig:criterio-schwarzscild}) una bolla di gas in una posizione $1$ a distanza $r$ rispetto al centro, di densità ${\rho_1}^*$ e pressione interna ${P_1}^*$. Siano $\rho_1$ e $P_1$ rispettivamente la densità e la pressione dell'ambiente circostante la bolla in quella posizione. Immagino che essa si sposti in una posizione $2$ a distanza $r + \ud r$ dal centro, avendo una nuova densità ${\rho_2}^*$ e una nuova pressione interna ${P_2}^*$. Analogamente a prima, siano $\rho_2$ e $P_2$ rispettivamente la densità e la pressione dell'ambiente circostante la bolla in quella posizione. Ho convezione nella stella solo se l'equilibrio è instabile, perché in caso di equilibrio stabile la bolla tenderebbe a tornare nella posizione originaria $1$ e non sarebbe possibile lo spostamento di porzioni di gas nella stella. La condizione di equilibrio dipende dal rapporto della densità interna della bolla nel secondo caso, ${\rho_2}^*$, e la densità del gas circostante, $\rho_2$. In particolare:
 \begin{subequations}
 \label{eq:relazioni-densità-schwarzscild}
 \begin{align}
@@ -90,16 +90,12 @@ si faccia attenzione al fatto che nel criterio di Schwarzscild~\eqref{eq:criteri
 \paragraph{Convezione impossibile}
 Nel caso illustrato nella figura~\ref{fig:criterio-schwarzscild-gas-perfetto2} la convezione \emph{non} è possibile, infatti in quel caso si ha:
 \[
-abs*{\dfrac{\ud T}{\ud r}}_\textup{rad} < \abs*{\dfrac{\ud T}{\ud r}}_\textup{ad}
+\abs*{\dfrac{\ud T}{\ud r}}_\textup{rad} < \abs*{\dfrac{\ud T}{\ud r}}_\textup{ad}
 \]
 In particolare, la bolla di gas di sposta da $r_0$ fino a $r_0 + \ud r$ e nella posizione $r_0 + \ud r$ possiede una temperatura (curva rossa -- profilo adiabatico) minore dell'ambiente circostante (curva blu -- profilo radiativo). Per un gas perfetto, secondo la ~\eqref{eq:gas-ideale}, a fissata pressione, a una minore temperatura corrisponde una densità più alta. Quindi la bolla possiede una densità più alta dell'ambiente circostante e viene respinta verso la posizione iniziale a $r_0$.
 
-
-Si faccia riferimento alla figura
-Si faccia riferimento alla figura~\ref{fig:criterio-schwarzscild-gas-perfetto2}
-
 \subsection{Gradiente di pressione e scala logaritmica}
-Il criterio di Schwarzscild è spesso scritto usando il gradiente di temperatura riferito alla \emph{pressione} invece che al raggio e in scala logaritmica. Questo perché la temperatura è intimamente connessa con la pressione.
+Il criterio di Schwarzscild è spesso scritto usando il gradiente di temperatura riferito alla \emph{pressione} invece che al raggio, e in scala logaritmica. Questo perché la temperatura è intimamente connessa con la pressione.
 \begin{equation}
     \dfrac{\ud T}{\ud P} \dfrac{P}{T} = \dfrac{\ud \log T}{\ud \log P} \equiv \nabla
 \end{equation}
@@ -111,7 +107,7 @@ da cui:
 \begin{equation}
     \nabla_\textup{ad} = \Bigl(1- \frac{1}{\gamma}\Bigr)
 \end{equation}
-che è semplicemente un numero. In particolare, con $\gamma = 5/3$ si ottiene $\nabla_textup{ad} = 0.4$ ed è possibile riscrivere il criterio di Schwarzscild~\eqref{eq:criterio-schwarzscild} nella seguente materia:
+che è semplicemente un numero. In particolare, con $\gamma = 5/3$ si ottiene $\nabla_\textup{ad} = 0.4$ ed è possibile riscrivere il criterio di Schwarzscild~\eqref{eq:criterio-schwarzscild} nella seguente materia:
 \begin{equation}\label{eq:criterio-schwarzscild-nabla}
     \text{se} \quad \nabla_\textup{rad} > \nabla_\textup{ad} \implies \text{c'è convezione.}
 \end{equation}

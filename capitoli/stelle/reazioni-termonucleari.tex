@@ -9,7 +9,7 @@ L'equazione di produzione di energia attraverso \emph{reazioni termonucleari} ap
     \epsilon_{3\alpha} = \epsilon_3 \rho^2 Y^3 T_8^\gamma \quad \gamma \in [20 - 30] \\
     \end{cases}
 \end{equation}
-È dapprima necessario introdurre dei concetti di base sulla reazioni termonucleari.
+È dapprima necessario introdurre dei concetti di base sulle reazioni termonucleari.
 
 \subsection{Ripasso di fisica nucleare}
 \paragraph{Numero atomico e numero di massa}
@@ -46,7 +46,6 @@ Consideriamo l'\emph{energia di legame media per nucleone}, plottata in fig.~\re
     \item ci sono configurazioni nucleari particolarmente stabili quali \ce{^4He}, \ce{^{12}C}, \ce{^{16}O} \dots
     \item a parte queste eccezioni, l’energia di legame media per nucleone, $E/A$, ha un andamento regolare. Aumenta rapidamente con il numero di nucleoni fino ad un valore dell’ordine degli $\SI{8}{Mev}$ per poi diminuire assai lentamente (\emph{proprietà di saturazione}).
     \item i nuclei più stabili sono il \ce{^{56}Fe} e il \ce{^{62}Ni}. Ciò significa che i nuclei pesanti alla sua destra possono raggiungere configurazioni più stabili ($B/A$ più elevato) diminuendo il numero di nucleoni $A$, ovvero frazionandosi in nuclei più piccoli. Mentre i nuclei leggeri alla sua sinistra possono raggiungere configurazioni più stabili ($B/A$ più elevato) aumentando $A$, ovvero aggregandosi in nuclei più grandi. Detto in altri termini ciò significa che le reazioni di fissione dei nuclei pesanti e quelle di fusione dei nuclei leggeri sono esoenergetiche ovvero producono energia qualora si sia in grado di innescarle.
-    \item dal punto precedente consegue che le reazioni di \emph{fusione dei nuclei leggeri} e \emph{fissione dei nuclei pesanti} costituiscono la doppia opportunità offerta dalla fisica nucleare per la produzione di energia.
 \end{itemize}
 
 \paragraph{Barriera di potenziale ed effetto tunnel}
@@ -90,7 +89,7 @@ Facciamo una stima dei contributi energetici. Il neutrino $\nu$ porta un contrib
     E_\textup{PPI} = \SI{26.2}{MeV} = \SI{4.2e-5}{erg}
 \end{equation}
 
-Senza scendere troppo nei dettagli, evidenziamo che il \emph{tempo scala} della reazione~\ref{re:pp1} è $t_1 = \SI{1.4e9}{yr}$, il tempo scala della reazione~\ref{re:pp2} è $t_2 = \SI{6}{s}$ e il tempo scala della reazione~\ref{re:pp3} è $t_3 = \SI{e6}{yr}$. Dunque, ricordando che la \emph{probabilità} che avvenga la reazione è proporzionale all'inverso del tempo scala, possiamo stabilire che la prima reazione è molto improbabile che avvenga, mentre la seconda è molto probabile. In particolare, concentriamoci sulla prima reazione (~\ref{re:pp1}). Essa trasforma due protoni liberi (\ce{H}) in un nucleo costituito da un protone e un neutrone (\ce{H^2}). Significa che uno dei due protoni si è trasformato in neutrone. Quindi, affinché la reazione possa avvenire, è necessario che ci sia un \emph{decadimento $\beta$}, espresso dalla seguente equazione:
+Senza scendere troppo nei dettagli, evidenziamo che il \emph{tempo scala} della reazione~\ref{re:pp1} è $t_1 = \SI{1.4e9}{yr}$, il tempo scala della reazione~\ref{re:pp2} è $t_2 = \SI{6}{s}$ e il tempo scala della reazione~\ref{re:pp3} è $t_3 = \SI{e6}{yr}$. Dunque, ricordando che la \emph{probabilità} che avvenga la reazione è proporzionale all'inverso del tempo scala, possiamo stabilire che la prima reazione è molto improbabile che avvenga, mentre la seconda è molto probabile. In particolare, concentriamoci sulla prima reazione (~\ref{re:pp1}). Essa trasforma due protoni liberi (\ce{H}) in un nucleo costituito da un protone e un neutrone (\ce{H^2}). Significa che uno dei due protoni si è trasformato in neutrone. Quindi, affinché la reazione possa avvenire, è necessario che ci sia un \emph{decadimento $\beta^+$}, espresso dalla seguente equazione:
 \reaction[re:decadimento-beta+]{p^+ -> n + e^+ + $\nu$}
 Tuttavia, il decadimento $\beta^+$ per un protone libero è essenzialmente impossibile, poiché la massa del protone è minore della massa del neutrone (eq.~\eqref{eq:difetto-massa}). Nonostante ciò, nel nucleo delle stelle tale reazione può avvenire poiché ci sono tantissimi protoni, dunque anche se la probabilità è bassissima, questa è compensata dall'elevato numero. 
 
@@ -216,14 +215,15 @@ La catena può proseguire in questo moto, tuttavia non scendiamo nei dettagli. I
 Affinché le reazioni di cattura neutronica possano avvenire, è necessario che ci siano neutroni liberi che possano essere catturati, tuttavia, per il decadimento $\beta^-$ (\ref{re:decadimento-beta-}), il quale è molto veloce e probabile, un neutrone tende a decadere in protone.  Le principali sorgenti di neutroni per i processi s sono i processi $\alpha$ (par.~\ref{sec:cattura-alpha}), i quali avvengono nel \emph{ramo asintotico delle giganti}, come vedremo in seguito. Per i processi r, invece, la fonte principale di neutroni liberi è la fotodisintegrazione del ferro, che avviene a temperature alte durante l'esplosione di una supernova di tipo II, di cui parleremo successivamente. 
 
 \subsection{Tasso di produzione di energia}
-I processi visti finora, riassunti in tab.~\ref{tab:processi-produzione-energia} e i cui prodotti sono raffigurati in fig.~\ref{fig:processi-produzione-energia}, rappresentano la fonte principale di energia in una stella. Ci proponiamo ora di calcolare il \emph{tasso di produzione di energia} $\epsilon$ per una stella, ovvero l'energia prodotta per unità di massa e unità di tempo. 
 
-\begin{figure}
+\begin{figure}[tb]
     \centering
     \includegraphics[width=0.5\textwidth]{immagini/processi-produzione-energia.png}
     \caption{Abbondanze degli elementi divise per i processi che li hanno generati in maniera preponderante.}
     \label{fig:processi-produzione-energia}
 \end{figure}
+
+I processi visti finora, riassunti in tab.~\ref{tab:processi-produzione-energia} e i cui prodotti sono raffigurati in fig.~\ref{fig:processi-produzione-energia}, rappresentano la fonte principale di energia in una stella. Ci proponiamo ora di calcolare il \emph{tasso di produzione di energia} $\epsilon$ per una stella, ovvero l'energia prodotta per unità di massa e unità di tempo. 
 
 \begin{table}
 \caption{Principali reazioni nucleari.}
@@ -265,7 +265,7 @@ In un modello stellare si esprime $\epsilon$ in maniera approssimata, in base al
 \epsilon_{3\alpha} &= \epsilon_3 \rho^2 Y^3 {T_8}^{\nu_{3\alpha}} \qquad \qquad \nu_{3 \alpha} \in [20 - 30] \label{eq:energia-3A}
 \end{align}
 \end{subequations}
-dove $T_6$ significa che la temperatura è espressa in unità di $\SI{e6}{K}$, mentre $T_8$ significa che la temperatura è espressa in unità di $\SI{e8}{K}$. $X$ è l'abbondanza dell'idrogeno, $Y$ l'abbondanza dell'elio e $X_\textup{CN}$ l'abbondanza di carbonio e azoto. Si noti la mostruosa dipendenza dalla temperatura delle~\eqref{eq:energia-reazioni-termonucleari}, il che evidenzia che reazioni termonucleari stabili possono avvenire solamente in ambienti termo-regolati, ovvero in cui il gas può essere considerato perfetto. Infatti, in ambienti degeneri, in cui la pressione non dipende dalla temperatura, siccome piccole variazioni di energia producono una variazione enorme della creazione di energia, la struttura può esplodere. Come si può notare, queste sono le espressioni che compaiono nell'equazione~\eqref{eq:reazioni-termonucleari}. 
+dove $T_6$ significa che la temperatura è espressa in unità di $\SI{e6}{K}$, mentre $T_8$ significa che la temperatura è espressa in unità di $\SI{e8}{K}$. $X$ è l'abbondanza dell'idrogeno, $Y$ l'abbondanza dell'elio e $X_\textup{CN}$ l'abbondanza di carbonio e azoto. Si noti la mostruosa dipendenza dalla temperatura delle~\eqref{eq:energia-reazioni-termonucleari}, il che evidenzia che reazioni termonucleari stabili possono avvenire solamente in ambienti termo-regolati, ovvero in cui il gas può essere considerato perfetto. Infatti, in ambienti degeneri, in cui la pressione non dipende dalla temperatura, la struttura può esplodere.
 
 \section{Riassunto sul modello stellare.}
 Con le 7 equazioni presentate nel par.~\ref{sec:modelli-stellari} abbiamo un sistema di 7 equazioni in 7 incognite per descrivere la struttura di una stella. In particolare, le incognite sono:
@@ -274,7 +274,7 @@ Con le 7 equazioni presentate nel par.~\ref{sec:modelli-stellari} abbiamo un sis
     \item La massa $M$
     \item La densità $\rho$
     \item La luminosità $L$
-    \item L'opacitk $\kappa$
+    \item L'opacità $\kappa$
     \item Il tasso di produzione di energia $\epsilon$
 \end{itemize}
 Queste equazioni descrivono l'interno stellare di una stella , dandomi in output la sua \emph{luminosità}. L'altro parametro di cui ho bisogno è la \emph{temperatura superficiale} della stella. Per ottenerla ho bisogno di un modello della sua atmosfera.

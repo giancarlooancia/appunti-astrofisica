@@ -6,11 +6,11 @@ L'\emph{equazione del bilancio energetico} esprime l'energia che emerge da ogni 
 dove $L(r)$ è la luminosità emergente dalla sfera di raggio $r$ e $\epsilon$ l'energia prodotta da ogni shell per unità di tempo e di massa, $[\epsilon] = \si{erg.s^{-1}.g^{-1}}$.
 
 \subsection{Ricavare l'equazione}
-È semplice ricavare tale equazione. consideriamo, infatti, l'usuale guscio di gas a una distanza $r$ dal centro.. Sia $L(r)$ la luminosità emergente dalla porzione di stella delimitata dal guscio a raggio $r$ e analogamente per $L(r + \ud r)$. Possiamo scrivere:
+È semplice ricavare tale equazione. Consideriamo, infatti, l'usuale guscio di gas a una distanza $r$ dal centro. Sia $L(r)$ la luminosità emergente dalla porzione di stella delimitata dal guscio di raggio $r$ e analogamente per $L(r + \ud r)$. Possiamo scrivere:
 \[
 L(r + \ud r) - L(r) = \ud L(r) = 4 \pi \rho r^2 \ud r \epsilon
 \]
-dove $4 \pi \rho r^2 \ud r$ rappresenta la massa del guscio di sfera tra $r$ e $r + \ud r$ e $\epsilon$ è l'energia prodotta da ogni guscio per unità di tempo e di massa. Attenzione, \emph{non} si tratta dell'energia radiata dalla stella. In questo modo si riottiene la definizione di luminosità (par.~\ref{sec:luminosità}).
+dove $4 \pi \rho r^2 \ud r$ rappresenta la massa del guscio di sfera tra $r$ e $r + \ud r$ e $\epsilon$ è l'energia prodotta da ogni guscio per unità di tempo e di massa. Attenzione, \emph{non} si tratta dell'energia totale irradiata dalla stella. Moltiplicando le due quantità sopra si ottiene l'energia per unità di tempo, ovvero la luminosità (par.~\ref{sec:luminosità}).
 
 Consideriamo un tipico profilo di luminosità radiale per una stella (fig.~\ref{fig:profilo-luminosità-sole}): la luminosità varia con $r$ sono in una regione ristretta della stella, corrispondente al suo centro, poi verso l'esterno diventa costante. All'esterno, secondo la eq.~\eqref{eq:bilancio-energetico} vale $\epsilon = 0$ e questo ci dice che tutta l'energia viene prodotta nelle regioni interne, come ci aspettiamo dal fatto che le reazioni termonucleari hanno bisogno di una elevata temperatura per poter avvenire. Tuttavia, le reazioni termonucleari \emph{non} sono le uniche a poter contribuire all'energia, in particolare anche la \emph{contrazione gravitazionale} può produrre energia, e tale contributo non è incluso nell'eq.~\eqref{eq:bilancio-energetico}. Per capire come la contrazione gravitazionale possa contribuire all'energia, bisogna far riferimento al \emph{teorema del viriale}.
 
@@ -22,7 +22,7 @@ Consideriamo un tipico profilo di luminosità radiale per una stella (fig.~\ref{
 \end{figure}
 
 \subsection{Teorema del viriale}
-Per ogni sistema in equilibrio di particelle auto-gravitanti, come nel caso delle strutture stellari, vale il \emph{teorema del viriale}:
+Per ogni sistema in equilibrio di particelle auto--gravitanti, come nel caso delle strutture stellari, vale il \emph{teorema del viriale}:
 \begin{equation}\label{eq:teorema-viriale}
     2K + \Omega = 0
 \end{equation}
@@ -36,7 +36,7 @@ Le due relazioni considerate precedentemente:
 \begin{equation}\label{eq:viriale-differenziale}
 \ud U = \frac{\ud \Omega}{2} \qquad \ud K = - \frac{\ud \Omega}{2}
 \end{equation}
-mostrano che in ogni contrazione ($\ud \Omega$) \emph{metà} dell'energia è \emph{emessa} e \emph{metà} dell'energia è usata per incrementare la temperatura del caso. Possiamo riformulare quanto detto in un altro modo: ogni perdita di energia totale $\ud U$ dovuta a emissioni genera una contrazione del sistema, che produce anche un incremento della temperatura interna.
+mostrano che in ogni contrazione ($\ud \Omega$) \emph{metà} dell'energia è \emph{emessa} e \emph{metà} dell'energia è usata per incrementare la temperatura. Possiamo riformulare quanto detto in un altro modo: ogni perdita di energia totale $\ud U$ dovuta a emissioni genera una contrazione del sistema, che produce anche un incremento della temperatura interna.
 
 Come stimare il contributo della contrazione gravitazionale alla luminosità di una stella? Se fosse elevato andrebbe corretta l'eq.~\eqref{eq:bilancio-energetico}. Per capirlo utilizziamo la~\eqref{eq:viriale-differenziale} per scrivere
 \[
@@ -50,7 +50,7 @@ A questo punto consideriamo un tempo caratteristico $t^*$ approssimando $L$ con 
 \[
 \Bar{L} \cdot t^* = \frac{1}{2} \frac{GM^2}{R}
 \]
-dove abbiamo sostituito $\Omega$ con l'espressione del potenziale gravitazionale. Quindi abbiamo trovato il così detto \emph{tempo di Kelvin-Helmoltz}:
+dove abbiamo sostituito $\Omega$ con l'espressione del potenziale gravitazionale. Abbiamo trovato il così detto \emph{tempo di Kelvin-Helmoltz}:
 \begin{equation}\label{eq:tempo-kelvin-helmoltz}
     t^* = \dfrac{GM^2}{2LR}
 \end{equation}
