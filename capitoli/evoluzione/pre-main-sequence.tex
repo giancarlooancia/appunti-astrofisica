@@ -1,6 +1,6 @@
 \section{Pre Main Sequence}\label{sec:pre-main-sequence}
 
-La fase di pre-MS (pre main sequence) è quella in cui si va a formare una stella, partendo dalla contrazione di una nube di gas. Per far si che questa si formi, però, è necessario che siano presenti determinate condizioni. Sia $m$ la massa di una particella d'Idrogeno ai margini della nube gassosa (possibilmente una molecola di $H_2$) e si indichi con $R$ la distanza di questa dal centro. Al fine di osservare la formazione di una stella è necessario che l'attrazione gravitazionale agente sulla particella, dal resto della nube, sia maggiore rispetto alla pressione esercitata dal gas su di essa, imponiamo quindi l'equazione~\refeq{eq:1}
+La fase di pre-MS (pre main sequence) è quella in cui si va a formare una stella, partendo dalla contrazione di una nube di gas. Per far si che questa si formi, però, è necessario che siano presenti determinate condizioni. Sia $m$ la massa di una particella d'Idrogeno ai margini della nube gassosa (possibilmente una molecola di $H_2$) e si indichi con $R$ la distanza di questa dal centro. Al fine di osservare la formazione di una stella è necessario che l'attrazione gravitazionale agente sulla particella, dal resto della nube, sia maggiore rispetto alla pressione esercitata dal gas su di essa, imponiamo quindi l'equazione~\eqref{eq:1}
 \begin{equation}
     G \frac{M m}{R} \geq k_B T
     \label{eq:1}
@@ -17,12 +17,12 @@ allora possiamo esplicitare la dipendenza del raggio da alcune caratteristiche d
     R = \sqrt[3]{\frac{3}{4\pi} \frac{M}{\rho}}
     \label{eq:2}
 \end{equation}
-Inserendo l'equazione~\refeq{eq:2} nella (\refeq{eq:1}), si ottiene la relazione in cui compaiono le varie caratteristiche del gas, imponendo le condizioni che permettono la formazione di una stella.
+Inserendo l'equazione~\eqref{eq:2} nella~\eqref{eq:1}, si ottiene la relazione in cui compaiono le varie caratteristiche del gas, imponendo le condizioni che permettono la formazione di una stella.
 \begin{equation}
     M^{\frac{2}{3}} \geq \frac{k_B T}{G m} \sqrt[3]{\frac{3}{4\pi} \frac{1}{\rho}}
     \label{eq:3}
 \end{equation}
-Sia $a = \sqrt{\frac{3}{4\pi}}\frac{k_B}{G m} \sim \SI{e16}{g.K^{-1}.cm^{-1}}$ una costante, allora si riscrive la relazione~\refeq{eq:3} nella forma dell'equazione~\refeq{eq:jeans}.
+Sia $a = \sqrt{\frac{3}{4\pi}}\frac{k_B}{G m} \sim \SI{e16}{g.K^{-1}.cm^{-1}}$ una costante, allora si riscrive la relazione~\eqref{eq:3} nella forma dell'equazione~\eqref{eq:jeans}.
 \begin{equation}
     M \geq a^{\frac{3}{2}} T^{\frac{3}{2}} \rho^{-\frac{1}{2}}
 \label{eq:jeans}
@@ -39,7 +39,7 @@ Si consideri ora di essere in condizioni interstellari ($T = \SI{10}{K}$ e $ \ba
     \item[Inquinamento]di una stella, ovvero i tipi di elementi chimici che essa rilascia nell'universo nelle ultime fasi della propria vita.
 \end{description}
 
-Essendo la IMF una funzione di natura empirica, le sue caratteristiche non sono ancora ben conosciute. Questo significa che non è ben chiaro quale sia la forma di tale funzione e nemmeno se valga in maniera universale. Ovvero se sia indipendente dal tempo, caratteristiche della nube o, addirittura, dalla posizione nello spazio. Un'ipotesi del suo andamento vuole che questa prenda la forma dell'equazione~\refeq{eq:IMF},
+Essendo la IMF una funzione di natura empirica, le sue caratteristiche non sono ancora ben conosciute. Questo significa che non è ben chiaro quale sia la forma di tale funzione e nemmeno se valga in maniera universale. Ovvero se sia indipendente dal tempo, caratteristiche della nube o, addirittura, dalla posizione nello spazio. Un'ipotesi del suo andamento vuole che questa prenda la forma dell'equazione~\eqref{eq:IMF},
 \begin{equation}
     \Psi(M) = k M^{-s}
     \label{eq:IMF}
@@ -55,7 +55,7 @@ Si osserva che se il modello dovesse avere questa forma, allora la percentuale d
 \end{figure}
 \subsection{Protostelle e Teorema di Hayashi}
 
-Data ora una nube di gas non uniforme, questa si inizierà a frammentare verso le varie buche di potenziale gravitazionale, in cui se la massa  soddisfa il criterio di Jeans (\refeq{eq:jeans}), allora si innescherà il collasso, producendo un oggetto che verrà definito con il termine \textit{Protostella}. Quando la contrazione innesca le reazioni termonucleari, generando un equilibrio idrostatico tra pressione gravitazionale e pressione di radiazione, la stella sarà completamente convettiva. Questo stato può essere rappresentato nel diagramma H-R come un punto della \textit{traccia di Hayashi}. Si tratta di una linea nel piano H-R che, data una stella con una determinata composizione chimica, mostra al variare della massa un punto del diagramma in cui questa è in equilibrio idrostatico e completamente convettiva. Tale curva quindi mostra una famiglia di stelle con la stessa composizione chimica, ma differente massa iniziale.
+Data ora una nube di gas non uniforme, questa si inizierà a frammentare verso le varie buche di potenziale gravitazionale, in cui se la massa  soddisfa il criterio di Jeans (\eqref{eq:jeans}), allora si innescherà il collasso, producendo un oggetto che verrà definito con il termine \textit{Protostella}. Quando la contrazione innesca le reazioni termonucleari, generando un equilibrio idrostatico tra pressione gravitazionale e pressione di radiazione, la stella sarà completamente convettiva. Questo stato può essere rappresentato nel diagramma H-R come un punto della \textit{traccia di Hayashi}. Si tratta di una linea nel piano H-R che, data una stella con una determinata composizione chimica, mostra al variare della massa un punto del diagramma in cui questa è in equilibrio idrostatico e completamente convettiva. Tale curva quindi mostra una famiglia di stelle con la stessa composizione chimica, ma differente massa iniziale.
 
 Il teorema di Hayashi afferma, inoltre, che fissata la composizione chimica e la massa di una stella, esiste una regione del piano H-R dove non è possibile realizzare modelli stellari in equilibrio idrostatico, la cui traccia di Hayashi funge da bordo. In figura~\ref{fig:hay} è mostrata la zona in questione colorata in rosso, mentre in verde si ha la regione che permette di avere modelli stabili, parzialmente convettivi. La validità di questo teorema è generale,  continua quindi a valere per ogni punto dell'evoluzione stellare, in modelli convettivi e non.
 
