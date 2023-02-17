@@ -5,7 +5,7 @@ L'\emph{indice di colore} è la differenza tra le magnitudini misurate in due di
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{immagini/filtri-fotometrici.png}
-\caption{Osservazione di due spettri diversi con due filtri, uno blu (B) e uno rosso (R). In verde sono rappresentati gli spettri analizzati e le curve in blu e rosso sono rispettivamente le curve di trasmissione del filtro blu e rosso. Le zone evidenziate rappresentano il flusso misurato. Si nota che a sinistra vale $F_B > F_V$ mentre a destra $F_B < F_V$. Ciò evidenzia come il flusso misurato dipende sia dallo spettro della sorgente che dal filtro utilizzato.}
+\caption{Osservazione di due spettri diversi con due filtri, uno blu (B) e uno rosso (V). In verde sono rappresentati gli spettri analizzati e le curve in blu e rosso sono rispettivamente le curve di trasmissione del filtro blu e rosso. Le zone evidenziate rappresentano il flusso misurato. Si nota che a sinistra vale $F_B > F_V$ mentre a destra $F_B < F_V$. Ciò evidenzia come il flusso misurato dipende sia dallo spettro della sorgente che dal filtro utilizzato.}
 \label{fig:filtri-fotometrici}
 \end{figure}
 
@@ -16,7 +16,7 @@ Ricordando l'equazione~\eqref{eq:relazione-magnitudine-apparente-flusso}, si pu�
 \[
     m_V = -2.5 \log F_V + \textup{const}
 \]
-dove $m_B$ e $m_V$ sono le magnitudini apparenti rispettivamente in filtro blu e filtro rosso (analogo per i flussi misurati $F_B$ e $F_V$). Si definisce \emph{colore} la differenza tra la magnitudine misurata col filtro più blu e la magnitudine misurata col filtro più rosso:
+dove $m_B$ e $m_V$\footnote{il pedice V sta per \emph{vermillion}.} sono le magnitudini apparenti rispettivamente in filtro blu e filtro rosso (analogo per i flussi misurati $F_B$ e $F_V$). Si definisce \emph{colore} la differenza tra la magnitudine misurata col filtro più blu e la magnitudine misurata col filtro più rosso:
 \begin{equation}\label{eq:colore}
     m_B - m_V \equiv B-V
 \end{equation}
@@ -37,7 +37,7 @@ $>0$ & $m_B > m_V$ & $F_B < F_V$ \\
 \end{tabular}
 \end{table}
 
-Ovviamente, cambiando i filtri, cambia anche la denominazione del colore. Si tenga inoltre in considerazione che il colore \emph{non} dipende dalla distanza, poiché usando le equazioni~\eqref{eq:relazione-magnitudine-apparente-flusso} e~\eqref{eq:flusso} si ottiene che la differenza tra le magnitudini apparenti e le magnitudini assolute è uguale:
+Ovviamente, cambiando i filtri, cambia anche la denominazione del colore. Si tenga inoltre in considerazione che il colore \emph{non} dipende dalla distanza, infatti sto considerando la stessa stella, pertanto nella~\eqref{eq:relazione-magnitudine-apparente-flusso} dovremo considerare la stessa distanza per il flusso~\eqref{eq:flusso}. Da ciò è immediato che la differenza tra le magnitudini apparenti e le magnitudini assolute è uguale:
 \begin{equation}\label{eq:differenza-magnitudini-apparente-assoluta}
     m_B-m_V = M_B-M_V
 \end{equation}
@@ -49,7 +49,7 @@ Ci si può chiedere quale sia la ragione fisica alla base del diverso colore del
 \]
 da cui, attraverso la relazione~\eqref{eq:magnitudine-assoluta-luminosità}, usando~\eqref{eq:differenza-magnitudini-apparente-assoluta}, si ottiene
 \[
-    m_{\lambda 1} - m_{\lambda 2} = M_{\lambda 1} - M_{\lambda 2} = -2.5 \log\frac{L_{\lambda 1}}{L_{\lambda 2}} + \textup{const} = -2.5 \log\frac{B_{\lambda 1}(T)}{B_{\lambda 2}(T)} + \textup{const}
+    m_{\lambda 1} - m_{\lambda 2} = M_{\lambda 1} - M_{\lambda 2} = -2.5 \log\frac{L_{\lambda 1}}{L_{\lambda 2}} = -2.5 \log\frac{B_{\lambda 1}(T)}{B_{\lambda 2}(T)}
 \]
 da cui si può inferire che, nel limite di validità dell'approssimazione della stella come corpo nero, il colore dipende solamente dalla temperatura.
 
