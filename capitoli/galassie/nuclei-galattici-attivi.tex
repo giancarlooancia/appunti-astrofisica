@@ -4,7 +4,7 @@ La radiazione che riceviamo dalle galassie è principalmente dovuta alle stelle.
 \begin{figure}
     \centering
     \includegraphics[width = 0.4\textwidth]{immagini/hercules-a.png}
-    \caption{Galassia Hercules A (visibile e banda radio). \\ Da notare alcune stelle con la X di luce: sono stelle della NOSTRA galassia.}
+    \caption{Galassia Hercules A (visibile e banda radio). Da notare alcune stelle con la X di luce: sono stelle della NOSTRA galassia.}
     \label{fig:hercules-a}
 \end{figure}
 
@@ -29,17 +29,17 @@ Una tassonomia semplificata degli AGN può essere fatta in due modi:
 \begin{itemize}
     \item Divisione in base allo spettro: indichiamo con AGN di Tipo 1 quelli che hanno linee di emissione sia larghe che strette e con AGN di Tipo 2 quelli che hanno solo linee di emissione strette.
     \item Divisione a seconda dell'emissione in banda radio: 
-    \begin{equation*}
-        \frac{F_\textup{radio}}{F_\textup{ott}} << 1 \quad \rightarrow \quad \text{RADIO QUIET (Quasars, QSOs, Sayfert galaxies)}
-    \end{equation*}
-    \begin{equation*}
-        \frac{F_\textup{radio}}{F_\textup{ott}} >> 1 \quad \rightarrow \quad \text{RADIO LOUD (Quasars, QSOs, radio galaxies, BL Lac)}
-    \end{equation*}
-\end{itemize}
-
+    \begin{subequations}
+        \begin{align}
+            \frac{F_\textup{radio}}{F_\textup{ott}} &<< 1 \quad \rightarrow \quad \text{RADIO QUIET (Quasars, QSOs, Sayfert galaxies)} \notag \\
+            \frac{F_\textup{radio}}{F_\textup{ott}} &>> 1 \quad \rightarrow \quad \text{RADIO LOUD (Quasars, QSOs, radio galaxies, BL Lac)} \notag
+        \end{align}
+    \end{subequations}
+    \end{itemize}
+    
 \subsection{Tipi di AGN}
 \subsubsection{Quasars e QSOs}
-Indichiamo con \emph{quasar} (che sta per "quasi-stellar" radio source) un oggetto sorgente di onde radio a distaze cosmologiche, con morfologia puntiforme (quindi simile a una stella) nella banda ottica. 
+Indichiamo con \emph{quasar} (che sta per "quasi-stellar" radio source) un oggetto sorgente di onde radio a distanze cosmologiche, con morfologia puntiforme (quindi simile a una stella) nella banda ottica. 
 
 Indichiamo con \emph{QSOs} (che sta per "quasi-stellar" object) una sorgente di radiazione a distanze cosmologiche che ha morfologia puntiforme (quindi simile a una stella) nella banda ottica, ma con emissione in banda radio nulla o molto debole.
 
@@ -139,14 +139,14 @@ Allora l'energia irradiata da un AGN è data da:
 Assumendo $\eta = 0.1$, $\tau \sim 10^7-10^9 \;\si{yrs}$, $L \sim 10^{46} \;\si{erg}/\si{s}$ otteniamo una massa del buco nero$M_\textup{BH} \sim 10^7-10^9 \;\si{\solarmass}$, il che lo rende quindi un buco nero supermassiccio; vediamo perchè possiamo giungere a questi dati e a questa conclusione.
 
 \subsubsection{Luminosità di Eddington}
-Dall'equazione~\refeq{eq:luminosità-agn} vediamo che la luminosità non può crescere a piacere ma è presente un limite superiore. Questo è dovuto a una serie di step del processo:
+Dall'equazione~\eqref{eq:luminosità-agn} vediamo che la luminosità non può crescere a piacere ma è presente un limite superiore. Questo è dovuto a una serie di step del processo:
 \begin{itemize}
     \item La forza gravitazionale agisce principalmente sui protoni (perchè hanno massa molto maggiore degli elettroni), attraendoli verso il buco nero centrale.
     \item Questo produce una pressione di radiazione che invece agisce principalmente sugli elettroni, avendo questi una sezione trasversale più larga ($\propto (m_p/m_e)^2$).
     \item La pressione di radiazione separa le cariche e quindi si genera un campo elettrico che si oppone a gravità e pressione di radiazione rallentando l'accelerazione elettronica.
     \item Dopo che la luminosità irradiata da un certo corpo diminuisce, ovvero il campo elettrico risulta più forte della pressione verso l'esterno, allora il precedente meccanismo ricomincia (ossia la luminosità torna ad aumentare perchè riprende l'accrescimento del buco nero).
 \end{itemize}
-Sono tutti processi periodici, quindi la luminosità aumenta per poi diminuire e poi aumentare nuovamente. Il limite superiore raggiunto dalla luminosità prende il nome di \emph{luminosità di Eddington} ($L_{Edd}$). Al fine di calcolare il valore del limite superiore per un AGN, facciamo l'assunzione di un accrescimento sferico (anche se è un’approssimazione rozza perché avevamo visto che l’accrescimento avveniva su disco) e supponiamo ci sia una caduta radiale di idrogeno ionizzato verso il buco nero (tanto l'idrogeno è materiale più presente nell universo). La pressione di radiazione è data dal flusso radiativo diviso la velocità della luce, quindi possiamo calcolare la forza che agisce sul singolo elettrone (ossia la forza che allontana il singolo elettrone dal buco nero) come ($\sigma_T = 6.65 \cdot 10^{-25} \;\si{cm^{-2}}$ è la sezione trasversale di Thomson):
+Sono tutti processi periodici, quindi la luminosità aumenta per poi diminuire e poi aumentare nuovamente. Il limite superiore raggiunto dalla luminosità prende il nome di \emph{luminosità di Eddington} ($L_\textup{Edd}$). Al fine di calcolare il valore del limite superiore per un AGN, facciamo l'assunzione di un accrescimento sferico (anche se è un’approssimazione rozza perché avevamo visto che l’accrescimento avveniva su disco) e supponiamo ci sia una caduta radiale di idrogeno ionizzato verso il buco nero (tanto l'idrogeno è materiale più presente nell universo). La pressione di radiazione è data dal flusso radiativo diviso la velocità della luce, quindi possiamo calcolare la forza che agisce sul singolo elettrone (ossia la forza che allontana il singolo elettrone dal buco nero) come ($\sigma_T = 6.65 \cdot 10^{-25} \;\si{cm^{-2}}$ è la sezione trasversale di Thomson):
 \begin{equation*}
     F_\textup{rad} = \frac{L\sigma_T}{4\pi R^2 c}
 \end{equation*}
