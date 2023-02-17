@@ -14,7 +14,7 @@ Infine è importante notare che, nonostante gli ammassi siano formati principalm
 \subsection{Intra-Cluster Medium}\label{sec:intra-cluster-medium}
 Il gas caldo diffuso precedentemente citato prende il nome di Intra--Cluster Medium o ICM. Esso possiede in media una massa di $10^{14}\, \si{\solarmass}$ ed emette una luminosità di $10^{43}$--$\SI{e46}{erg.s^{-1}}$ principalmente emessa sotto forma di raggi X come è prevedibile ricordando la legge di Wien
 \begin{equation}
-    \lambda = \frac{b}{T}                                         \qquad b \approx \num{2.9e-3} \si{m.K} 
+    \lambda = \frac{b}{T} \qquad b \approx \num{2.9e-3} \si{m.K} 
 \end{equation}
 e inserendo come temperatura T$\sim 10^7$--$\SI{e8}{K}$.
 Comparando le immagini~\ref{fig:visible-icm} e~\ref{fig:icm}, le quali raffigurano uno stesso ammasso rispettivamente nel visibile e in banda X, si noti come l'ICM sia visibile solo tramite osservazioni in banda X.
@@ -22,17 +22,17 @@ Sebbene possieda un’elevata temperatura, la bassa densità del gas non permett
 La metallicità dell’ICM è particolarmente elevata, è circa pari al $30\%$ di quella solare e questo indica al fatto che non si tratta di un gas primordiale, ma di un composto arricchito da precedenti fenomeni astrofisici.
 \begin{figure}
     \centering
-    \includegraphics[width = 0.5\textwidth]{immagini/visible-icm.png}
+    \includegraphics[width = 0.4\textwidth]{immagini/visible-icm.png}
     \caption{L'ammasso MACS J$1149.6+2223$ osservato nel visibile}
     \label{fig:visible-icm}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width = 0.5\textwidth]{immagini/icm.png}
+    \includegraphics[width = 0.4\textwidth]{immagini/icm.png}
     \caption{L'ammasso MACS J$1149.6+2223$ osservato in banda X, in blu l'ICM}
     \label{fig:icm}
 \end{figure}
-Data l’elevata temperatura del gas gli atomi vengono quasi interamente ionizzati dando così vita ad uno stato di plasma molto caldo (si pensi che sono presenti atomi ionizzati Fe$^{25+}$).
+Data l’elevata temperatura del gas gli atomi vengono quasi interamente ionizzati dando così vita a uno stato di plasma molto caldo (si pensi che sono presenti atomi ionizzati Fe$^{25+}$).
 
 \subsubsection{Radiazione di frenamento o Bremsstrahlung}\label{sec:bremsstrahlung}
 Un fenomeno di notevole importanza che caratterizza l'ICM è l'emissione di radiazione tramite frenamento o \emph{bremsstrahlung}. 
@@ -46,48 +46,46 @@ Inoltre il gas viene ipotizzato ideale.
 
 \noindent Partendo dall’equazione di equilibrio idrostatico in un potenziale sferico: 
 \begin{equation} 
-    \frac{dP}{dr} = - \frac{GM(r)}{r^2} \rho(r) 
+    \frac{\ud P}{\ud r} = - \frac{GM(r)}{r^2} \rho(r) 
 \end{equation}
 si ricava:
 \begin{equation}\label{eq:equilibrio-idrostatico-2}
-M(r) = - \frac{r^2}{G \rho(r)} \frac{dP}{dr}
+M(r) = - \frac{r^2}{G \rho(r)} \frac{\ud P}{\ud r}
 \end{equation}
 Ricordando l'espressione della pressione per gas ideale
-\begin{equation} \label{eq:pressione-gas-ideale}
-    P = \frac{k\rho T}{\mu H} \implies \frac{dP}{dr} = \frac{k}{\mu H}\Bigl[ T\frac{d\rho}{dr}+\rho \frac{dT}{dr}\Bigr]
+\begin{equation} \label{eq:pressione-gas-ideale-2}
+    P = \frac{k\rho T}{\mu H} \implies \frac{\ud P}{\ud r} = \frac{k}{\mu H}\Bigl[ T\frac{d\rho}{\ud r}+\rho \frac{\ud T}{\ud r}\Bigr]
 \end{equation}
-e sostituendo la~\ref{eq:pressione-gas-ideale} nella~\ref{eq:equilibrio-idrostatico-2} si ottiene:
+e sostituendo la~\ref{eq:pressione-gas-ideale-2} nella~\ref{eq:equilibrio-idrostatico-2} si ottiene:
 \begin{equation}
-    M(r) = \frac{k\,r^2\,T}{G\,\mu\,H}\Bigl[-\frac{d\:\ln{\rho(r)}}{d\:\ln{r}} - \frac{d\:\ln{T(r)}}{d\:\ln{r}}\Bigr]
+    M(r) = \frac{k r^2 T}{G \mu H}\Bigl[-\frac{\ud \ln{\rho(r)}}{\ud\ln{r}} - \frac{\ud \ln{T(r)}}{\ud \ln{r}}\Bigr]
 \end{equation}
 
-Quindi dalla misurazione dei profili di temperatura $T(r)$ e di densità $\rho(r)$ del gas (ottenibili dagli spettri di raggi X) si può stimare la massa totale $M$. 
-
-\noindent N.B. è lo stesso metodo che viene utilizzato con le galassie ellittiche (\ref{sec:materia-oscura-ellittiche}), anch’esse forti emettitrici di raggi X.
+Quindi dalla misurazione dei profili di temperatura $T(r)$ e di densità $\rho(r)$ del gas (ottenibili dagli spettri di raggi X) si può stimare la massa totale $M$. N.B. è lo stesso metodo che viene utilizzato con le galassie ellittiche (\ref{sec:materia-oscura-ellittiche}), anch’esse forti emettitrici di raggi X.
 
 Questo metodo indiretto di misurazione della massa presenta sia dei vantaggi sia degli svantaggi rispetto a metodi alternativi.
 
-\subsubsection{\textbf{Vantaggi:}} 
+\paragraph*{Vantaggi:}
 \begin{itemize}
     \item Se si volesse stimare la massa tramite uno studio cinematico con l'utilizzo del teorema del viriale (vedi eq.~\ref{eq:teorema-viriale}), si dovrebbe richiedere l'isotropia della distribuzione delle velocità dell'ammasso. Tale richiesta non viene soddisfatta in molti casi. 
     \item La massa potrebbe essere stimata tramite il fenomeno di lente gravitazionale (fig.~\ref{fig:lensing}): tale metodo è però svantaggioso in quanto affinché tale effetto sia misurabile si ha bisogno della presenza di altri oggetti astronomici sullo sfondo dell’ammasso, non sempre disponibili.
 \end{itemize} 
 
-\begin{figure}
+\begin{figure}[htb]
     \centering
-    \includegraphics[width = 0.5\textwidth]{immagini/lensing.png}
+    \includegraphics[width = 0.3\textwidth]{immagini/lensing.png}
     \caption{Nell'immagine sono ben visibili i fenomeni di deformazione gravitazionale}
     \label{fig:lensing}
 \end{figure}
 
-\subsubsection{\textbf{Svantaggi:}} 
+\paragraph*{Svantaggi:}
 \begin{itemize}
     \item Determinare i valori di $\rho(r)$ e $T(r)$ tramite la radiazione ricevuta non è sempre fattibile, in quanto, con l’aumentare della distanza, il segnale ricevuto risulta sempre più debole. 
     \item L’ipotesi di simmetria sferica risulta valida solo per ammassi \emph{well relaxed} (un esempio in figura~\ref{fig:well-relaxed-cluster}), ovvero quegli ammassi non sottoposti a rilevanti squilibri dinamici e termici, e dove lo spettro di radiazione è regolare (è richiesto un ICM in equilibrio idrostatico).
 \end{itemize}
-\begin{figure}
+\begin{figure}[htb]
     \centering
-    \includegraphics[width = 0.5\textwidth]{immagini/relaxed-cluster.png}
+    \includegraphics[width = 0.4\textwidth]{immagini/relaxed-cluster.png}
     \caption{Immagine di Abell 383, un esempio di ammasso well-relaxed}
     \label{fig:well-relaxed-cluster}
 \end{figure}
