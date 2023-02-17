@@ -1,13 +1,13 @@
 \section{Ammassi di galassie}\label{sec:ammassi-di-galassie}
 In analogia con i gruppi, si riportano di seguito le caratteristiche che accomunano la maggior parte degli ammassi di galassie.
 
-\noindent Il numero di galassie contenute è notevolmente maggiore al caso dei gruppi galattici, infatti contano circa $100$/$1000$ elementi. Le galassie contenute sono principalmente ellittiche e l’estensione radiale è compresa fra $1$ e $10$ $\si{Mpc}$.
+Il numero di galassie contenute è notevolmente maggiore al caso dei gruppi galattici, infatti contano circa $100$/$1000$ elementi. Le galassie contenute sono principalmente ellittiche e l’estensione radiale è compresa fra $1$ e $10$ $\si{Mpc}$.
 La massa totale è di $10^{14}$--$10^{15}\, \si{\solarmass}$, mentre la dispersione di velocità è dell'ordine di $\SI{1000}{km.s^{-1}}$; si misurano dunque velocità maggiori rispetto a quelle dei gruppi.
 Il rapporto massa--luce M/L varia in media da $100$ a $300$, valori molto simili a quelli che si misurano per i gruppi.
 
-\noindent Una particolarità degli ammassi è che spesso, nel centro di essi, è presente una galassia molto massiccia e luminosa, detta “Brightest Cluster Galaxy” o “BCG” (si veda~\ref{sec:brightest-cluster-galaxy}).
+Una particolarità degli ammassi è che spesso, nel centro di essi, è presente una galassia molto massiccia e luminosa, detta “Brightest Cluster Galaxy” o “BCG” (si veda par.~\ref{sec:brightest-cluster-galaxy}).
 Data l’elevata massa essi spesso fungono da lenti gravitazionali per altre galassie e \emph{QSO's} (Quasi-Stellar Objects) che si trovano dietro l’ammasso stesso.
-Infine è importante notare che, nonostante gli ammassi siano formati principalmente da galassie, la materia galattica costituisce solo il $5\%$ della massa complessiva di essi, il gas caldo diffuso presente (cap.~\ref{sec:intra-cluster-medium}) ne costituisce il $15\%$, mentre il restante $80\%$ è opera della materia oscura.
+Infine, è importante notare che, nonostante gli ammassi siano formati principalmente da galassie, la materia galattica costituisce solo il $5\%$ della massa complessiva di essi, il gas caldo diffuso presente (par.~\ref{sec:intra-cluster-medium}) ne costituisce il $15\%$, mentre il restante $80\%$ è opera della materia oscura.
 
 %serie di immagini con ammassi a diverse bande elettromagnetiche
 
@@ -17,21 +17,20 @@ Il gas caldo diffuso precedentemente citato prende il nome di Intra--Cluster Med
     \lambda = \frac{b}{T} \qquad b \approx \num{2.9e-3} \si{m.K} 
 \end{equation}
 e inserendo come temperatura T$\sim 10^7$--$\SI{e8}{K}$.
-Comparando le immagini~\ref{fig:visible-icm} e~\ref{fig:icm}, le quali raffigurano uno stesso ammasso rispettivamente nel visibile e in banda X, si noti come l'ICM sia visibile solo tramite osservazioni in banda X.
+Comparando le immagini~\ref{fig:visible-icm} e~\ref{fig:X-icm}, le quali raffigurano uno stesso ammasso rispettivamente nel visibile e in banda X, si noti come l'ICM sia visibile solo tramite osservazioni in banda X.
 Sebbene possieda un’elevata temperatura, la bassa densità del gas non permette il bruciamento degli atomi di idrogeno e di elio ($\rho_{ICM}\sim 10^{-2}$-- $10^{-4}\:\si{atomi.cm^{-3}}$).
-La metallicità dell’ICM è particolarmente elevata, è circa pari al $30\%$ di quella solare e questo indica al fatto che non si tratta di un gas primordiale, ma di un composto arricchito da precedenti fenomeni astrofisici.
+La metallicità dell’ICM è particolarmente elevata, è circa pari al $30\%$ di quella solare e questo indica il fatto che non si tratta di un gas primordiale, ma di un composto arricchito da precedenti fenomeni astrofisici.
+
 \begin{figure}
     \centering
-    \includegraphics[width = 0.4\textwidth]{immagini/visible-icm.png}
-    \caption{L'ammasso MACS J$1149.6+2223$ osservato nel visibile}
-    \label{fig:visible-icm}
+    \subfloat[][\emph{Osservato nel visibile.}\label{fig:visible-icm}]
+    {\includegraphics[width=.45\textwidth]{immagini/visible-icm.png}} \quad
+    \subfloat[][\emph{Osservato in banda X, in blu l'ICM.}\label{fig:X-icm}]
+    {\includegraphics[width=.45\textwidth]{immagini/icm.png}}
+    \caption{Osservazione dell'ammasso MACS J$1149.6+2223$ in due bande diverse.}
+    \label{fig:subfig-icm}
 \end{figure}
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.4\textwidth]{immagini/icm.png}
-    \caption{L'ammasso MACS J$1149.6+2223$ osservato in banda X, in blu l'ICM}
-    \label{fig:icm}
-\end{figure}
+
 Data l’elevata temperatura del gas gli atomi vengono quasi interamente ionizzati dando così vita a uno stato di plasma molto caldo (si pensi che sono presenti atomi ionizzati Fe$^{25+}$).
 
 \subsubsection{Radiazione di frenamento o Bremsstrahlung}\label{sec:bremsstrahlung}
@@ -44,7 +43,7 @@ Bisogna fare delle ipotesi prima di procedere:
 si suppone che sia presente una simmetria sferica nell’ammasso e che l’ICM si trovi in uno stato di equilibrio idrostatico; non devono essere presenti né una variazione di temperatura, né un’espansione del gas.
 Inoltre il gas viene ipotizzato ideale.
 
-\noindent Partendo dall’equazione di equilibrio idrostatico in un potenziale sferico: 
+Partendo dall’equazione di equilibrio idrostatico in un potenziale sferico: 
 \begin{equation} 
     \frac{\ud P}{\ud r} = - \frac{GM(r)}{r^2} \rho(r) 
 \end{equation}
@@ -74,7 +73,7 @@ Questo metodo indiretto di misurazione della massa presenta sia dei vantaggi sia
 \begin{figure}[htb]
     \centering
     \includegraphics[width = 0.3\textwidth]{immagini/lensing.png}
-    \caption{Nell'immagine sono ben visibili i fenomeni di deformazione gravitazionale}
+    \caption{Nell'immagine sono ben visibili i fenomeni di deformazione gravitazionale.}
     \label{fig:lensing}
 \end{figure}
 
@@ -86,6 +85,6 @@ Questo metodo indiretto di misurazione della massa presenta sia dei vantaggi sia
 \begin{figure}[htb]
     \centering
     \includegraphics[width = 0.4\textwidth]{immagini/relaxed-cluster.png}
-    \caption{Immagine di Abell 383, un esempio di ammasso well-relaxed}
+    \caption{Immagine di Abell 383, un esempio di ammasso well-relaxed.}
     \label{fig:well-relaxed-cluster}
 \end{figure}
