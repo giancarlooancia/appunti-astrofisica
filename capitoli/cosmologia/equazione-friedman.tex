@@ -1,7 +1,7 @@
 \section{Equazione di Friedman}\label{sec:equazione-friedman}
 \subsection{Dinamica cosmica}\label{sec:dinamica-cosmica}
 
-Come effettivamente l'universo si espanda in funzione del tempo e quindi quale sia l'andamento dalla funzione di scala cosmica è un problema che trova soluzione all'interno delle equazioni della relatività generale. In particolare utilizzando le equazioni che regolano l'evoluzione di quello che viene chiamato \textit{fluido cosmico}. Il modello dell'universo vuole, infatti, che questo sia pensato come una distribuzione continua di materia, simile ad un fluido. Il punto di partenza deve quindi essere l'equazione di campo di Einstein (\refeq{eq:equazione-campo-einstein}), che lega la geometria dello spazio-tempo con la distribuzione di massa ed energia al suo interno:
+Come effettivamente l'universo si espanda in funzione del tempo e quindi quale sia l'andamento dalla funzione di scala cosmica è un problema che trova soluzione all'interno delle equazioni della relatività generale. In particolare utilizzando le equazioni che regolano l'evoluzione di quello che viene chiamato \emph{fluido cosmico}. Il modello dell'universo vuole, infatti, che questo sia pensato come una distribuzione continua di materia, simile a un fluido. Il punto di partenza deve quindi essere l'equazione di campo di Einstein~\eqref{eq:equazione-campo-einstein}, che lega la geometria dello spazio-tempo con la distribuzione di massa ed energia al suo interno:
 \begin{equation}\label{eq:equazione-campo-einstein}
     R_{\mu \nu} -\frac{1}{2}R g_{\mu \nu} + \Lambda g_{\mu \nu} = \frac{8\pi G}{c^4}T_{\mu \nu}
 \end{equation}
@@ -14,14 +14,14 @@ La funzione di scala cosmica si ottiene partendo da due funzioni che soddisfano 
 \begin{equation}\label{eq:friedman}
     {\dot{R}(t)}^2 = -kc^2 + \frac{(8 \pi G \rho(t)+\Lambda) {R(t)}^2}{3}
 \end{equation}
-In essa $\rho(t)$ non è altro che la densità di massa del fluido e $k$ è il parametro di curvatura che determina la geometria spaziale dello spazio-tempo. In Particolare diremo che:
+In essa $\rho(t)$ non è altro che la densità di massa del fluido e $k$ è il parametro di curvatura che determina la geometria spaziale dello spazio-tempo. In particolare diremo che:
 \begin{description}
     \item[k=0,] curvatura nulla e geometria piatta, ovvero un universo euclideo (in cui vale il quinto postulato di Euclide);
-    \item[k>0,] curvatura positiva e geometria chiusa, cioè un universo sferico (in cui non vale il quinto postulato di Euclide ed in in particolare due rette parallele convergono);
-    \item[k<0,] curvatura negativa e geometria aperta, per cui un universo iperbolico  (in cui non vale il quinto postulato di Euclide ed in particolare due rette parallele divergono).
+    \item[k>0,] curvatura positiva e geometria chiusa, cioè un universo sferico (in cui non vale il quinto postulato di Euclide e in particolare due rette parallele convergono);
+    \item[k<0,] curvatura negativa e geometria aperta, per cui un universo iperbolico  (in cui non vale il quinto postulato di Euclide e in particolare due rette parallele divergono).
 \end{description}
 
-L'equazione~\refeq{eq:friedman}, può essere anche espressa combinandola con la (\refeq{eq:hubble-scale}) ed esprimendola come funzione del parametro di Hubble, $H$.
+L'equazione~\eqref{eq:friedman}, può essere anche espressa combinandola con la~\eqref{eq:hubble-scale} ed esprimendola come funzione del parametro di Hubble, $H$.
 \begin{equation}\label{eq:friedman-hubble}
     {H(t)}^2 = - \frac{kc^2}{{R(t)}^2} + \frac{8\pi G \rho (t)}{3} + \frac{\Lambda}{3}
 \end{equation}
@@ -34,18 +34,18 @@ risolvendo per la densità di materia
 \[
     \rho (t) = \frac{3 {H(t)}^2}{8 \pi G} = \rho_c (t)
 \]
-in cui $\rho_c$ è la \textit{densità critica} cioè la densità che l'universo avrebbe se fosse piatto. Mettendo il valore dei parametri misurati oggi si ha che $\rho_{c,0} \simeq \SI{e-29}{g.cm^{-3}}$. Il valore misurato della costante cosmologica odierna conferma la validità del modello, infatti si è stimata essere all'incirca $\Lambda \approx \SI{2e-35}{s^-2}$.
+in cui $\rho_c$ è la \emph{densità critica} cioè la densità che l'universo avrebbe se fosse piatto. Mettendo il valore dei parametri misurati oggi si ha che $\rho_{c,0} \simeq \SI{e-29}{g.cm^{-3}}$. Il valore misurato della costante cosmologica odierna conferma la validità del modello, infatti si è stimata essere all'incirca $\Lambda \approx \SI{2e-35}{s^-2}$.
 
 La misura della densità critica dell'universo è un modo efficace per misurare la curvatura dello spazio-tempo, infatti, definendo il parametro di densità $\Omega(t)$ come
 \begin{equation}\label{eq:parametro-densità}
     \Omega (t) \equiv  \frac{\rho (t)}{\rho_c (t)}
 \end{equation}
-è possibile riscrivere l'equazione~\refeq{eq:friedman} come:
+è possibile riscrivere l'equazione~\eqref{eq:friedman} come:
 \begin{equation}\label{eq:friedman-omega}
     {H(t)}^2 (1-\Omega){R(t)}^2 = -kc^2
 \end{equation}
 che mostra in maniera esplicita la connessione tra densità del fluido cosmico e la geometria dell'universo. Si nota inoltre che, nonostante la parte sinistra dell'equazione sia dipendente dal tempo, $\Omega$ rimane comunque costante, dal momento che è costante il membro destro. Questo permette di determinare la curvatura dello spazio-tempo conoscendo quella istantanea, in particolare conoscendo la geometria odierna è possibile conoscere quella intrinseca dell'universo. Diventa perciò fondamentale conoscere $\Omega_0$ a livello sperimentale.
-Dalla relazione di Friedman (\refeq{eq:friedman-omega}) si ottiene che:
+Dalla relazione di Friedman~\eqref{eq:friedman-omega} si ottiene che:
 \begin{itemize}
     \item $\Omega = 1 \; (\rho = \rho_c)\; \Rightarrow k = 0$ geometria piatta;
     \item $\Omega > 1 \; (\rho > \rho_c)\; \Rightarrow k > 0$ geometria chiusa;
@@ -55,7 +55,7 @@ La presenza della curvatura è perciò dovuta alla densità di massa di tutte le
 
 Si arriva quindi a definire la seconda equazione di Friedman, conosciuta anche come l'equazione di accelerazione:
 \begin{equation}\label{eq:second-friedman}
-    \frac{\ddot{R}(t)}{R(t)} = - \frac{4\pi G}{3} \left( {\rho + \frac{3P}{c^2}} \right)
+    \frac{\ddot{R}(t)}{R(t)} = - \frac{4\pi G}{3} \Bigl( {\rho + \frac{3P}{c^2}} \Bigr)
 \end{equation}
 dove $P$ è la pressione del fluido, legata alla densità attraverso l'equazione di stato cosmologica
 \begin{equation}\label{eq:equazione-stato-cosmologica}

@@ -1,24 +1,24 @@
 \section{Materia Oscura}\label{sec:materia-oscura}
 \subsection{Evoluzione della densità}\label{sec:evoluazione-densita}
-Mettendo insieme l'equazione~\refeq{eq:friedman} di Friedman, l'equazione~\refeq{eq:second-friedman} di accelerazione e l'equazione~\refeq{eq:equazione-stato} di stato, mantenendo l'assunzione che $w$ sia costante nel tempo, si ottiene che:
+Mettendo insieme l'equazione~\eqref{eq:friedman} di Friedman, l'equazione~\eqref{eq:second-friedman} di accelerazione e l'equazione~\eqref{eq:equazione-stato} di stato, mantenendo l'assunzione che $w$ sia costante nel tempo, si ottiene che:
 \[
     \rho = \rho_0 {(1+z)}^{3(1+w)} = \rho_0 {R(t)}^{-3(1+w)}
 \]
-in cui si nota che la densità dell'universo sta diminuendo all'aumentare del tempo. Al fine di studiare meglio questo andamento scomponiamo la densità nella componente di materia e la componente di radiazione: la prima, che tiene conto della materia barionica e della cold dark matter (CDO) ed è di tipo non relativistico ($P<<\rho c^2$), assumendo $w = 0 \Rightarrow P=0$, sarà
+in cui si nota che la densità dell'universo sta diminuendo all'aumentare del tempo. Al fine di studiare meglio questo andamento scomponiamo la densità nella componente di materia e la componente di radiazione: la prima, che tiene conto della materia barionica e della cold dark matter (CDO) ed è di tipo non relativistico ($P \ll \rho c^2$), assumendo $w = 0 \Rightarrow P=0$, sarà
 \[
-    \rho_m = \rho_{m,0}{(1+z)}^3
+    \rho_{m} = \rho_{m,0}{(1+z)}^3
 \]
 La seconda, invece, che tiene conto della radiazione, la quale avrà una dinamica relativistica, con $w = 1/3$ sarà
 \[
-    \rho_{rad} = \rho_{rad, 0}{(1+z)}^4
+    \rho_{rad} = \rho_{rad,0}{(1+z)}^4
 \]
-Si osserva quindi che entrambe le densità erano estremamente elevate in passato, ma con il tempo sono diminuite con andamenti differenti. In particolare la densità di materia decresce più velocemente di quella di radiazione e per questo motivo oggi, la densità di materia è circa $1000$ volte maggiore della densità di radiazione $(\rho_{m,0} \sim \rho_{rad, 0}$).
+Si osserva quindi che entrambe le densità erano estremamente elevate in passato, ma con il tempo sono diminuite con andamenti differenti. In particolare la densità di materia decresce più velocemente di quella di radiazione e per questo motivo oggi, la densità di materia è circa $1000$ volte maggiore della densità di radiazione $(\rho_{m,0} \sim \rho_{rad,0}$).
 
 Un'altra componente dell'universo si pensa essere l'energia oscura, ovvero una forma di energia ancora sconosciuta, ma che avrebbe come effetto l'accelerazione dell'espansione dello spazio-tempo ($\ddot{R}(t)>0$). Un caso particolare sarebbe quello dell'energia del vuoto, la quale implicherebbe un legame molto stretto con la costante cosmologica e caratterizzata da un'equazione di stato con $w = -1$. In particolare se l'energia oscura fosse l'energia del vuoto, allora questa sarebbe ben descritta da un valore $\rho_{\Lambda}$ costante durante tutta l'evoluzione dell'universo. Inoltre, mentre la costante cosmologica venne introdotta da Einstein per imporre un universo statico, poi annullata da Hubble per spiegare l'evoluzione dell'universo, ora l'ipotesi della presenza di questa energia oscura impone di tenere conto di una costante cosmologica che causa un'accelerazione nell'espansione.
 
 Gli effetti di un'espansione in accelerazione possono essere visti considerando un universo dominato da materia, assumendo quindi che
 \[
-    \rho_{m} = \rho_{m, 0}{(1+z)}^3 = \rho_{m,0}{R(t)}^{-3}
+    \rho_{m} = \rho_{m,0}{(1+z)}^3 = \rho_{m,0}{R(t)}^{-3}
 \]
 e riscrivendo l'equazione di Friedman come segue.
 \[
@@ -30,19 +30,19 @@ La derivata allora diventa:
 \]
 in cui il termine di auto-gravitazione concorre con un contributo negativo all'accelerazione dell'espansione, mentre quello contenente la costante gravitazionale ad un contributo positivo. Se quindi questi due termini si bilanciano, si avrebbe un espansione dell'universo costante.
 
-Conoscendo la dipendenza temporale della densità di ogni componente del fluido cosmico dalla determinazione del valore della densità al tempo presente, è possibile costruire l'andamento totale partendo dall'origine dell'universo. Distinguiamo in particolare cinque componenti fondamentali per la densità: la densità di radiazione ($\rho_{rad, 0}$), di materia barionica ($\rho_{b, 0}$), di materia oscura ($\rho_{DM, 0}$) e di energia oscura ($\rho_{\Lambda, 0}$. Le quali concorrono all'andamento totale quella totale ($\rho_{0}$).
+Conoscendo la dipendenza temporale della densità di ogni componente del fluido cosmico dalla determinazione del valore della densità al tempo presente, è possibile costruire l'andamento totale partendo dall'origine dell'universo. Distinguiamo in particolare cinque componenti fondamentali per la densità: la densità di radiazione ($\rho_{rad,0}$), di materia barionica ($\rho_{b,0}$), di materia oscura ($\rho_{DM,0}$) e di energia oscura ($\rho_{\Lambda, 0}$). Le quali concorrono all'andamento di quella totale ($\rho_{0}$).
 
 \subsection{Cosmic Microwave background (CMB)}\label{sec:CMB}
-Il \textit{Cosmic Microwave background} ci permette di studiare l'universo nei suoi primissimi istanti di vita: la figura~\ref{fig:CMB1}, ad esempio, mostra la distribuzione di temperatura dell'universo primordiale e si osserva che questa non è perfettamente uniforme, ma sono presenti delle minuscole fluttuazioni di circa $\SI{100}{\micro K}$ in una scala angolare di $\sim 1\si{\degree}$ il cui scarto relativo è $\Delta T/T \sim 10^{-5}$.
+Il \emph{Cosmic Microwave background} ci permette di studiare l'universo nei suoi primissimi istanti di vita: la figura~\ref{fig:CMB1}, ad esempio, mostra la distribuzione di temperatura dell'universo primordiale e si osserva che questa non è perfettamente uniforme, ma sono presenti delle minuscole fluttuazioni di circa $\SI{100}{\micro K}$ in una scala angolare di $\sim 1\si{\degree}$ il cui scarto relativo è $\Delta T/T \sim 10^{-5}$.
 \begin{figure}
     \centering
     \includegraphics[width = 0.6\textwidth]{immagini/CMB1.png}
     \caption{L'immagine mostra il Cosmic Microwave background su tutto l'arco celeste.}\label{fig:CMB1}
 \end{figure}
 
-La misura della temperatura permette di stabilire la densità di radiazione che permea una determinata sezione di universo. Infatti, Se
+La misura della temperatura permette di stabilire la densità di radiazione che permea una determinata sezione di universo. Infatti, se
 \[
-    \rho_{rad} = \frac{4\sigma T^4}{c^3}
+    \rho_\textup{rad} = \frac{4\sigma T^4}{c^3}
 \]
 con $\rho_{rad}$ la densità di massa della radiazione, $T$ la temperatura e $\sigma = \SI{5.67e-8}{W.m^{-2}.K^{-4}}$ la costante di Stefan-Boltzmann, allora la stima della temperatura della CMB al giorno d'oggi è $T=\SI{2.725}{K}$, che equivale a una densità $\rho_{rad, 0} \simeq \SI{4.9e-34}{g.cm^{-3}}$. Questa appare decisamente più piccola rispetto alla densità critica $\rho_{c,0}$, definita nella sezione~\ref{sec:equazione-friedman}, per cui $\Omega_{rad,0} \approx 5\times 10^-5 \sim 0$. La dimensione delle fluttuazioni relative di temperatura implicano inoltre una geometria dello spazio piatta, poiché dal CMB si osserva in media una radiazione uniforme. Se così non fosse, si avrebbero fluttuazioni che prendono una sezione angolare decisamente maggiore. Questo vuol dire che $\Omega_0 = 1$ e che quindi $\rho_0 = \rho_{c,0}$ con un accuratezza di circa il $2\%$.
 
@@ -57,7 +57,7 @@ Dall'osservazione del gravitational lensing delle galassie, inoltre, si è misur
 \[
     \Omega = \Omega_{rad,0} + \Omega_{b,0} + \Omega_{DM,0} = 0.31
 \]
-manca perciò una frazione di densità di massa pari a $0.69$ per arrivare a $\Omega_0 = 1$. Tale contributo è stato assunto provenire da dall'\textit{Energia Oscura}, che permea l'intero universo. La prova diretta di questo fatto valse il Premio Nobel del 2011 a Perlmutter, Schmidt e Riess, che attraverso lo studio di supernove a distanza variabile, ottennero che il miglior modello prevedeva valori per le densità di massa pari a $\Omega_M = 0.3$ e $\Omega_\Lambda = 0.7$, usando quello che viene detto \textit{Diagramma di Hubble}, ovvero un piano distanza-redshift (figura~\ref{fig:diagramma-hubble}).
+manca perciò una frazione di densità di massa pari a $0.69$ per arrivare a $\Omega_0 = 1$. Tale contributo è stato assunto provenire da dall'\emph{Energia Oscura}, che permea l'intero universo. La prova diretta di questo fatto valse il Premio Nobel del 2011 a Perlmutter, Schmidt e Riess, che attraverso lo studio di supernove a distanza variabile, ottennero che il miglior modello prevedeva valori per le densità di massa pari a $\Omega_M = 0.3$ e $\Omega_\Lambda = 0.7$, usando quello che viene detto \emph{Diagramma di Hubble}, ovvero un piano distanza-redshift (figura~\ref{fig:diagramma-hubble}).
 \begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{immagini/hubble_diagram.png}
