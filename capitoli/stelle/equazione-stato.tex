@@ -1,9 +1,9 @@
 \section{Equazione di stato}\label{sec:equazione-stato}
 Guardando le equazioni~\eqref{eq:equilibrio-idrostatico} e~\eqref{eq:continuità-massa}, notiamo come queste siano 2 equazioni in 3 incognite: $P(r)$, $M(r)$ e $\rho(r)$. Per risolvere completamente il sistema è necessario stabilire un'altra relazione tra grandezze indipendenti. Una relazione tra $P$ e $\rho$ è stabilita dall'\emph{equazione di stato}:
 \begin{equation}\label{eq:equazione-stato}
-    P = \dfrac{aT^4}{3} + \dfrac{k \rho T}{\mu_i H} + 
+    P = \dfrac{aT^4}{3} + \dfrac{\kb \rho T}{\mu_i H} + 
     \begin{cases} 
-    \dfrac{k \rho T}{\mu_e H} \quad \, \, \, \,   \textup{(gas perfetto)} \\ 
+    \dfrac{\kb \rho T}{\mu_e H} \quad \, \, \, \,   \textup{(gas perfetto)} \\ 
     k_1 \rho^{5/3} \quad \textup{(gas degenere non relativistico)} \\ 
     k_2 \rho^{4/3} \quad \textup{(gas degenere relativistico)}
     \end{cases}
@@ -95,7 +95,7 @@ Sostituendo con i valori che sono stati introdotti precedentemente si ha:
 \[
 \mu = \dfrac{1}{\frac{X_1}{A_1}(1+Z_1) + \frac{X_2}{A_2}(1+Z_2) + \frac{X_3}{A_3}(1+Z_3)} = \dfrac{1}{\frac{X}{1}(1+1) + \frac{Y}{4}(1+2) + \frac{Z}{2 Z_a}(1+Z_a)}
 \]
-In definitiva, per un \emph{gas totalmente ionizzato}, considerando sia il contributo degli \emph{ioni} che il contributo degli \emph{elettroni}, si ottiene un \emph{peso molecolare medio} pari a:
+In definitiva, per un \emph{gas totalmente ionizzato}, considerando sia il contributo degli \emph{ioni} che il contributo degli \emph{elettroni}, si ottiene un \emph{peso molecolare medio} pari a\footnote{Si noti che, nell'approssimazione di $Z_a$ grande, abbiamo considerato $(1+Z_a)/Z_a \simeq 1$}:
 \begin{equation}\label{eq:peso-molecolare-gas-ionizzato}
     \mu = \dfrac{1}{2 X + \frac{3}{4} Y + \frac{1}{2} Z}
 \end{equation}
@@ -105,7 +105,7 @@ Se ora consideriamo il solo contributi degli \emph{elettroni} in un gas totalmen
     \mu_e = \dfrac{1}{X + \frac{1}{2} Y + \frac{1}{2}Z}
     \label{eq:formula-mu-elettroni}
 \end{equation}
-infatti se consideriamo solo il contributo degli \emph{elettroni} di ogni componente del gas non stiamo considerando il contributo degli \emph{ioni}, che altro non sono che i nuclei; perciò si avrà che ogni componente contribuisce solo con $Z_j$ particelle invece che con $1+Z_j$ e se si modifica in questo modo l'equazione~\eqref{eq:formula-generale-mu} si ottiene la formula riportata.
+infatti se consideriamo solo il contributo degli \emph{elettroni} di ogni componente del gas non stiamo considerando il contributo degli \emph{ioni}, che altro non sono che i nuclei; perciò si avrà che ogni componente contribuisce solo con $Z_j$ particelle invece che con $1+Z_j$ e se si modifica in questo modo l'equazione~\eqref{eq:formula-generale-mu} si ottiene la~\eqref{eq:formula-mu-elettroni}.
 
 Ma in più possiamo usare il fatto che la somma delle frazioni in massa delle varie componenti è pari a 1, quindi si ottiene che:  
 \[
@@ -117,7 +117,7 @@ Inserendo nell'equazione~\eqref{eq:formula-mu-elettroni} otteniamo infine:
 \end{equation}
 
 \subsection{Degenerazione}\label{sec:degenerazione}
-Un gas che segue l'equazione~\eqref{eq:gas-ideale} è un gas ideale e come spiegato nel paragrafo~\ref{sec:gas-perfetto} in questo caso la struttura è \emph{termoregolata}. Nel caso in cui il gas \emph{non} sia ideale, si dice che si trova in una situazione di \emph{degenerazione}, e gli effetto quanto-meccanici diventano rilevanti. Per la \emph{componente ionica} del gas (par.~\ref{sec:peso-molecolare}) ci si può sempre mettere nell'approssimazione di gas perfetto, mentre per la \emph{componente elettronica} non sempre è così; ciò è dovuto al fatto che la massa dell'elettrone è circa mille volte inferiore alla massa del protone, dunque a densità fissata è possibile una degenerazione della sola componente elettronica del gas. Possiamo quindi studiare quest'ultima, trovando un limite inferiore che varrà sicuramente anche per la componente ionica. Ma quindi in quali situazioni bisogna preoccuparsi degli effetti quanto-meccanici?
+Un gas che segue l'equazione~\eqref{eq:gas-ideale} è un gas ideale e come spiegato nel paragrafo~\ref{sec:gas-perfetto} in questo caso la struttura è \emph{termoregolata}. Nel caso in cui il gas \emph{non} sia ideale, si dice che si trova in una situazione di \emph{degenerazione} e gli effetto quanto-meccanici diventano rilevanti. Per la \emph{componente ionica} del gas (par.~\ref{sec:peso-molecolare}) ci si può sempre mettere nell'approssimazione di gas perfetto, mentre per la \emph{componente elettronica} non sempre è così; ciò è dovuto al fatto che la massa dell'elettrone è circa mille volte inferiore alla massa del protone, dunque a densità fissata è possibile una degenerazione della sola componente elettronica del gas. Possiamo quindi studiare quest'ultima, trovando un limite inferiore che varrà sicuramente anche per la componente ionica. Ma quindi in quali situazioni bisogna preoccuparsi degli effetti quanto-meccanici?
 
 Ricordiamo che in meccanica quantistica una particella è rappresentabile attraverso una \emph{lunghezza d'onda di de Broglie} pari a:
 \begin{equation}\label{eq:lunghezza-de-broglie}
@@ -160,7 +160,7 @@ Il \emph{principio di esclusione di Pauli} afferma che in ciascuna cella dello s
 
 Questi due principi hanno un effetto diretto sulla \emph{distribuzione di velocità (momenti)} delle particelle, e quindi in definitiva sulla dipendenza della pressione dalle proprietà del gas. 
 
-Consideriamo un gas di elettroni in condizioni di bassa densità: potremo trattarlo come gas perfetto e seguirà la distribuzione di Maxwell. Aumentando il numero di elettroni tenendo fissa la temperatura $T$, al curva di Maxwell si abbasserà, fino a un limite in cui non posso più trascurare gli effetti quantistici. In questo caso, il numero di elettroni con quantità di moto compresa tra $p$ e $p + \ud p$, in  un dato volume $V$, non può più essere infinito come nel caso della distribuzione di Maxwell, ma sarà:
+Consideriamo un gas di elettroni in condizioni di bassa densità: potremo trattarlo come gas perfetto e seguirà la distribuzione di Maxwell. Aumentando il numero di elettroni tenendo fissa la temperatura $T$, la curva di Maxwell si abbasserà, fino a un limite in cui non posso più trascurare gli effetti quantistici. In questo caso, il numero di elettroni con quantità di moto compresa tra $p$ e $p + \ud p$, in  un dato volume $V$, non può più essere infinito come nel caso della distribuzione di Maxwell, ma sarà:
 \[
 n(p) \ud p \leq \frac{2V}{h^3} \ud p_x \ud p_y \ud p_z
 \]
@@ -175,7 +175,7 @@ P \neq P(T)
 \]
 
 \subsection{Distribuzione di Fermi-Dirac}
-Se il volume mimimo nello spazio delle fasi, come evidenziato in eq.~\eqref{eq:volume-minimo}, è $h^3$, considerando per un fermione ci sono 2 possibili stati possibili (par.~\ref{sec:principio-indeterminazione}), il peso statistico di uno stato corrisponde a $2 / h^3$ e dunque si può esprimere il numero di elettroni con quantità di moto tra $p$ e $\ud p$ in un dato volume $V$ come:
+Se il volume mimimo nello spazio delle fasi, come evidenziato in eq.~\eqref{eq:volume-minimo}, è $h^3$, considerando che per un fermione ci sono 2 possibili stati (par.~\ref{sec:principio-indeterminazione}), il peso statistico di uno stato corrisponde a $2 / h^3$ e dunque si può esprimere il numero di elettroni con quantità di moto tra $p$ e $\ud p$ in un dato volume $V$ come:
 \[
 n(p) \ud p = \frac{2}{h^3} \ud p_x \ud p_y \ud p_z
 \]
@@ -339,7 +339,7 @@ Sostituendo tutti i valori ricordati sopra e sviluppando il conto, si può trova
     U = \int_0^\infty \ud E \, g(E) \, E \, n(E) = \frac{3}{5} N \epsilon_F
  \end{equation}
 
- A questo punto si può procedere nel calcolo della pressione di un gas di Fermi in condizione di forte degenerazione utilizzando due risultati noti per il grande potenziale $\Phi$ del sistema grancanonico (si rimanda al Kennett per ulteriori dettagli):
+ A questo punto si può procedere nel calcolo della pressione di un gas di Fermi in condizione di forte degenerazione utilizzando due risultati noti per il grande potenziale $\Phi$ del sistema grancanonico (si rimanda al \emph{Kennett} per ulteriori dettagli):
 
  \[
     \Phi = PV, \qquad \Phi = \frac{2}{3} U
@@ -371,7 +371,7 @@ rappresenta il contributo della pressione di radiazione per un corpo nero, secon
 \paragraph{Pressione degli ioni}
 Il termine:
 \[
-\dfrac{k \rho T}{\mu_i H}
+\dfrac{\kb \rho T}{\mu_i H}
 \]
 è il contributo degli ioni nel materiale stellare, che pensiamo come a un plasma. Questi sono sempre approssimati come a un gas perfetto, infatti seguono la legge~\eqref{eq:gas-ideale}.
 
@@ -379,7 +379,7 @@ Il termine:
 Il contributo:
 \[
 \begin{cases} 
-    \dfrac{k \rho T}{\mu_e H} \\ 
+    \dfrac{\kb \rho T}{\mu_e H} \\ 
     k_1 \rho^{5/3} \\ 
     k_2 \rho^{4/3}
     \end{cases}
